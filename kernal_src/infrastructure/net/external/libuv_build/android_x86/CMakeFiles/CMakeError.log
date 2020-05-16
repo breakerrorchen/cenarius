@@ -1,0 +1,13 @@
+Performing C SOURCE FILE Test UV_LINT_W4 failed with the following output:
+Change Dir: /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/android_x86/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5c28e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5c28e.dir/build.make CMakeFiles/cmTC_5c28e.dir/build
+Building C object CMakeFiles/cmTC_5c28e.dir/src.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android16 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -DUV_LINT_W4 -fPIE   /W4 -o CMakeFiles/cmTC_5c28e.dir/src.c.o   -c /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/android_x86/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '/W4'
+make[1]: *** [CMakeFiles/cmTC_5c28e.dir/src.c.o] Error 1
+make: *** [cmTC_5c28e/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }

@@ -1,0 +1,532 @@
+The system is: Darwin - 19.0.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/3.16.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/3.16.4/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b21b9/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b21b9.dir/build.make CMakeFiles/cmTC_b21b9.dir/build
+Building C object CMakeFiles/cmTC_b21b9.dir/testCCompiler.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_b21b9.dir/testCCompiler.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b21b9
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b21b9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b21b9.dir/testCCompiler.c.o  -o cmTC_b21b9 
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b7695/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b7695.dir/build.make CMakeFiles/cmTC_b7695.dir/build
+Building C object CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -v -Wl,-v -o CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin19.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdebug-compilation-dir /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.15.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin19.0.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_b7695
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7695.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o  -o cmTC_b7695 
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin19.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_b7695 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-530
+BUILD 18:57:17 Dec 13 2019
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_b7695/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b7695.dir/build.make CMakeFiles/cmTC_b7695.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -v -Wl -v -o CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
+  ignore line: [Target: x86_64-apple-darwin19.0.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdebug-compilation-dir /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.15.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin19.0.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_b7695]
+  ignore line: [/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7695.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o  -o cmTC_b7695 ]
+  ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
+  ignore line: [Target: x86_64-apple-darwin19.0.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_b7695 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.15.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b7695] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_b7695.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c6236/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c6236.dir/build.make CMakeFiles/cmTC_c6236.dir/build
+Building CXX object CMakeFiles/cmTC_c6236.dir/testCXXCompiler.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_c6236.dir/testCXXCompiler.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c6236
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6236.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c6236.dir/testCXXCompiler.cxx.o  -o cmTC_c6236 
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3af2f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3af2f.dir/build.make CMakeFiles/cmTC_3af2f.dir/build
+Building CXX object CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -v -Wl,-v -o CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin19.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1 -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdeprecated-macro -fdebug-compilation-dir /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.15.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin19.0.0
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/c++/v1"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking CXX executable cmTC_3af2f
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3af2f.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3af2f 
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin19.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_3af2f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-530
+BUILD 18:57:17 Dec 13 2019
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_3af2f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3af2f.dir/build.make CMakeFiles/cmTC_3af2f.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -v -Wl -v -o CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
+  ignore line: [Target: x86_64-apple-darwin19.0.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-sdk-version=10.15 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -v -coverage-notes-file /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1 -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -fdeprecated-macro -fdebug-compilation-dir /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.15.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 11.0.0 (clang-1100.0.33.17) default target x86_64-apple-darwin19.0.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/c++/v1"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_3af2f]
+  ignore line: [/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3af2f.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3af2f ]
+  ignore line: [Apple clang version 11.0.0 (clang-1100.0.33.17)]
+  ignore line: [Target: x86_64-apple-darwin19.0.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o cmTC_3af2f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.15.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3af2f] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_3af2f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks]
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b6af3/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b6af3.dir/build.make CMakeFiles/cmTC_b6af3.dir/build
+Building C object CMakeFiles/cmTC_b6af3.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_b6af3.dir/CheckIncludeFile.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b6af3
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6af3.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b6af3.dir/CheckIncludeFile.c.o  -o cmTC_b6af3 
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bee27/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_bee27.dir/build.make CMakeFiles/cmTC_bee27.dir/build
+Building C object CMakeFiles/cmTC_bee27.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_bee27.dir/CheckIncludeFile.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_bee27
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bee27.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_bee27.dir/CheckIncludeFile.c.o  -o cmTC_bee27 
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6f9ee/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6f9ee.dir/build.make CMakeFiles/cmTC_6f9ee.dir/build
+Building C object CMakeFiles/cmTC_6f9ee.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_6f9ee.dir/CheckIncludeFile.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6f9ee
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f9ee.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6f9ee.dir/CheckIncludeFile.c.o  -o cmTC_6f9ee 
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_69d57/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_69d57.dir/build.make CMakeFiles/cmTC_69d57.dir/build
+Building C object CMakeFiles/cmTC_69d57.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_69d57.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_69d57
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69d57.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_69d57.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_69d57 
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_52749/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_52749.dir/build.make CMakeFiles/cmTC_52749.dir/build
+Building C object CMakeFiles/cmTC_52749.dir/TestEndianess.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_52749.dir/TestEndianess.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_52749
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52749.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_52749.dir/TestEndianess.c.o  -o cmTC_52749 
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_42450/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_42450.dir/build.make CMakeFiles/cmTC_42450.dir/build
+Building C object CMakeFiles/cmTC_42450.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_42450.dir/CheckIncludeFile.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_42450
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42450.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_42450.dir/CheckIncludeFile.c.o  -o cmTC_42450 
+
+
+
+Determining if the F_FULLFSYNC exist passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_28fa0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_28fa0.dir/build.make CMakeFiles/cmTC_28fa0.dir/build
+Building CXX object CMakeFiles/cmTC_28fa0.dir/CheckSymbolExists.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_28fa0.dir/CheckSymbolExists.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_28fa0
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28fa0.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_28fa0.dir/CheckSymbolExists.cxx.o  -o cmTC_28fa0 
+
+
+File /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef F_FULLFSYNC
+  return ((int*)(&F_FULLFSYNC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the O_CLOEXEC exist passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d6e9/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4d6e9.dir/build.make CMakeFiles/cmTC_4d6e9.dir/build
+Building CXX object CMakeFiles/cmTC_4d6e9.dir/CheckSymbolExists.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_4d6e9.dir/CheckSymbolExists.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_4d6e9
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d6e9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4d6e9.dir/CheckSymbolExists.cxx.o  -o cmTC_4d6e9 
+
+
+File /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef O_CLOEXEC
+  return ((int*)(&O_CLOEXEC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE_CLANG_THREAD_SAFETY succeeded with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e113d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e113d.dir/build.make CMakeFiles/cmTC_e113d.dir/build
+Building CXX object CMakeFiles/cmTC_e113d.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -fno-exceptions -fno-rtti -DHAVE_CLANG_THREAD_SAFETY -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -Wthread-safety -std=c++11 -o CMakeFiles/cmTC_e113d.dir/src.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e113d
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e113d.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fno-exceptions -fno-rtti -DHAVE_CLANG_THREAD_SAFETY -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e113d.dir/src.cxx.o  -o cmTC_e113d 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS succeeded with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_038f5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_038f5.dir/build.make CMakeFiles/cmTC_038f5.dir/build
+Building CXX object CMakeFiles/cmTC_038f5.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -fno-exceptions -fno-rtti -DLEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/cmTC_038f5.dir/src.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_038f5
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_038f5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fno-exceptions -fno-rtti -DLEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_038f5.dir/src.cxx.o  -o cmTC_038f5 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX17_HAS_INCLUDE succeeded with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c84d5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c84d5.dir/build.make CMakeFiles/cmTC_c84d5.dir/build
+Building CXX object CMakeFiles/cmTC_c84d5.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -fno-exceptions -fno-rtti -DHAVE_CXX17_HAS_INCLUDE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_c84d5.dir/src.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c84d5
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c84d5.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fno-exceptions -fno-rtti -DHAVE_CXX17_HAS_INCLUDE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c84d5.dir/src.cxx.o  -o cmTC_c84d5 
+
+
+Source file was:
+
+#if defined(__has_include) &&  __has_include(<string>)
+#include <string>
+#endif
+int main() { std::string str; return 0; }
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_16a7c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_16a7c.dir/build.make CMakeFiles/cmTC_16a7c.dir/build
+Building C object CMakeFiles/cmTC_16a7c.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wstrict-prototypes  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_16a7c.dir/CheckIncludeFile.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_16a7c
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16a7c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wstrict-prototypes  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_16a7c.dir/CheckIncludeFile.c.o  -o cmTC_16a7c 
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_06376/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_06376.dir/build.make CMakeFiles/cmTC_06376.dir/build
+Building C object CMakeFiles/cmTC_06376.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wstrict-prototypes -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_06376.dir/src.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_06376
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06376.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wstrict-prototypes -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_06376.dir/src.c.o  -o cmTC_06376 
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function sqlite3_open exists in the sqlite3 passed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a58db/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a58db.dir/build.make CMakeFiles/cmTC_a58db.dir/build
+Building C object CMakeFiles/cmTC_a58db.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wstrict-prototypes -DCHECK_FUNCTION_EXISTS=sqlite3_open -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_a58db.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a58db
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a58db.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -Wstrict-prototypes -DCHECK_FUNCTION_EXISTS=sqlite3_open -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a58db.dir/CheckFunctionExists.c.o  -o cmTC_a58db  -lsqlite3 
+
+
+

@@ -1,0 +1,111 @@
+Determining if the function crc32c_value exists in the crc32c failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e461e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e461e.dir/build.make CMakeFiles/cmTC_e461e.dir/build
+Building C object CMakeFiles/cmTC_e461e.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=crc32c_value -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_e461e.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e461e
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e461e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=crc32c_value -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e461e.dir/CheckFunctionExists.c.o  -o cmTC_e461e  -lcrc32c 
+ld: library not found for -lcrc32c
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_e461e] Error 1
+make: *** [cmTC_e461e/fast] Error 2
+
+
+
+Determining if the function snappy_compress exists in the snappy failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bb31f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_bb31f.dir/build.make CMakeFiles/cmTC_bb31f.dir/build
+Building C object CMakeFiles/cmTC_bb31f.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=snappy_compress -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_bb31f.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bb31f
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb31f.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=snappy_compress -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_bb31f.dir/CheckFunctionExists.c.o  -o cmTC_bb31f  -lsnappy 
+ld: library not found for -lsnappy
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_bb31f] Error 1
+make: *** [cmTC_bb31f/fast] Error 2
+
+
+
+Determining if the function malloc exists in the tcmalloc failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4369/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b4369.dir/build.make CMakeFiles/cmTC_b4369.dir/build
+Building C object CMakeFiles/cmTC_b4369.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=malloc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c11 -o CMakeFiles/cmTC_b4369.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'malloc' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+/usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'malloc' is a builtin with type 'void *(unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+1 warning generated.
+Linking C executable cmTC_b4369
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4369.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=malloc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b4369.dir/CheckFunctionExists.c.o  -o cmTC_b4369  -ltcmalloc 
+ld: library not found for -ltcmalloc
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_b4369] Error 1
+make: *** [cmTC_b4369/fast] Error 2
+
+
+
+Determining if the fdatasync exist failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0e336/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0e336.dir/build.make CMakeFiles/cmTC_0e336.dir/build
+Building CXX object CMakeFiles/cmTC_0e336.dir/CheckSymbolExists.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_0e336.dir/CheckSymbolExists.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'fdatasync'
+  return ((int*)(&fdatasync))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_0e336.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_0e336/fast] Error 2
+
+
+File /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fdatasync
+  return ((int*)(&fdatasync))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE_KYOTOCABINET failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ecf47/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ecf47.dir/build.make CMakeFiles/cmTC_ecf47.dir/build
+Building CXX object CMakeFiles/cmTC_ecf47.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -fno-exceptions -fno-rtti -DHAVE_KYOTOCABINET -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_ecf47.dir/src.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/src.cxx
+/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/mac/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'kcpolydb.h' file not found
+#include <kcpolydb.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ecf47.dir/src.cxx.o] Error 1
+make: *** [cmTC_ecf47/fast] Error 2
+
+
+Source file was:
+
+#include <kcpolydb.h>
+
+int main() {
+  kyotocabinet::TreeDB* db = new kyotocabinet::TreeDB();
+  delete db;
+  return 0;
+}
+  

@@ -1,0 +1,41 @@
+{
+    files = {
+        "build/.objs/network/macosx/x86_64/release/src/websocket.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/io_curl_stond.cc.o",
+        "build/.objs/network/macosx/x86_64/release/benchmark/_start.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/poller.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/http_downloader.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/http_cancelable.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/http_client.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/websocket_channel.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/webscoket_parser_cxx.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/http_client_related.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/io_center.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/websocket_buffer.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/poller_thread.cc.o",
+        "build/.objs/network/macosx/x86_64/release/src/webscoket_parser.c.o"
+    },
+    values = {
+        "/usr/bin/xcrun -sdk macosx clang++",
+        {
+            "-L/Users/bytedance/Desktop/Cenarius/kernal_src/infrastructure/net/external/libuv_build/mac",
+            "-L/Users/bytedance/Desktop/Cenarius/kernal_src/infrastructure/net/external/curl_build/mac/lib",
+            "-L/Users/bytedance/Desktop/Cenarius/kernal_src/infrastructure/net/external/mbedtls_build/mac/crypto/library",
+            "-L/Users/bytedance/Desktop/Cenarius/kernal_src/infrastructure/net/external/mbedtls_build/mac/library",
+            "-Wl,-x",
+            "-fvisibility=hidden",
+            "-luv_a",
+            "-lcurl",
+            "-lmbedx509",
+            "-lmbedtls",
+            "-lmbedcrypto",
+            "-arch",
+            "x86_64",
+            "-mmacosx-version-min=10.15",
+            "-isysroot",
+            "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+            "-stdlib=libc++",
+            "-lz"
+        }
+    }
+}

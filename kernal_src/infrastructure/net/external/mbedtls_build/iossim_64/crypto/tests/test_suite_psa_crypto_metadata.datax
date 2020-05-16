@@ -1,0 +1,380 @@
+Hash: MD2
+depends_on:0
+0:exp:0:int:16
+
+Hash: MD4
+depends_on:1
+0:exp:1:int:16
+
+Hash: MD5
+depends_on:2
+0:exp:2:int:16
+
+Hash: RIPEMD160
+depends_on:3
+0:exp:3:int:20
+
+Hash: SHA-1
+depends_on:4
+0:exp:4:int:20
+
+Hash: SHA-2 SHA-224
+depends_on:5
+0:exp:5:int:28
+
+Hash: SHA-2 SHA-256
+depends_on:5
+0:exp:6:int:32
+
+Hash: SHA-2 SHA-384
+depends_on:6
+0:exp:7:int:48
+
+Hash: SHA-2 SHA-512
+depends_on:6
+0:exp:8:int:64
+
+Hash: SHA-2 SHA-512/224
+depends_on:6:7
+0:exp:9:int:28
+
+Hash: SHA-2 SHA-512/256
+depends_on:6:7
+0:exp:10:int:32
+
+Hash: SHA-3 SHA3-224
+depends_on:8
+0:exp:11:int:28
+
+Hash: SHA-3 SHA3-256
+depends_on:8
+0:exp:12:int:32
+
+Hash: SHA-3 SHA3-384
+depends_on:8
+0:exp:13:int:48
+
+Hash: SHA-3 SHA3-512
+depends_on:8
+0:exp:14:int:64
+
+MAC: HMAC-MD2
+depends_on:0
+2:exp:15:int:16:int:64
+
+MAC: HMAC-MD4
+depends_on:1
+2:exp:16:int:16:int:64
+
+MAC: HMAC-MD5
+depends_on:2
+2:exp:17:int:16:int:64
+
+MAC: HMAC-RIPEMD160
+depends_on:3
+2:exp:18:int:20:int:64
+
+MAC: HMAC-SHA-1
+depends_on:4
+2:exp:19:int:20:int:64
+
+MAC: HMAC-SHA-224
+depends_on:5
+2:exp:20:int:28:int:64
+
+MAC: HMAC-SHA-256
+depends_on:5
+2:exp:21:int:32:int:64
+
+MAC: HMAC-SHA-384
+depends_on:6
+2:exp:22:int:48:int:128
+
+MAC: HMAC-SHA-512
+depends_on:6
+2:exp:23:int:64:int:128
+
+MAC: HMAC-SHA-512/224
+depends_on:6:7
+2:exp:24:int:28:int:128
+
+MAC: HMAC-SHA-512/256
+depends_on:6:7
+2:exp:25:int:32:int:128
+
+MAC: HMAC-SHA3-224
+depends_on:8
+2:exp:26:int:28:int:144
+
+MAC: HMAC-SHA3-256
+depends_on:8
+2:exp:27:int:32:int:136
+
+MAC: HMAC-SHA3-384
+depends_on:8
+2:exp:28:int:48:int:104
+
+MAC: HMAC-SHA3-512
+depends_on:8
+2:exp:29:int:64:int:72
+
+MAC: CBC_MAC-AES-128
+depends_on:9:10
+1:exp:30:exp:31:int:16:exp:32:int:128
+
+MAC: CBC_MAC-AES-192
+depends_on:9:10
+1:exp:30:exp:31:int:16:exp:32:int:192
+
+MAC: CBC_MAC-AES-256
+depends_on:9:10
+1:exp:30:exp:31:int:16:exp:32:int:256
+
+MAC: CBC_MAC-3DES
+depends_on:11:10
+1:exp:30:exp:31:int:8:exp:33:int:192
+
+MAC: CMAC-AES-128
+depends_on:9:12
+1:exp:34:exp:31:int:16:exp:32:int:128
+
+MAC: CMAC-AES-192
+depends_on:9:12
+1:exp:34:exp:31:int:16:exp:32:int:192
+
+MAC: CMAC-AES-256
+depends_on:9:12
+1:exp:34:exp:31:int:16:exp:32:int:256
+
+MAC: CMAC-3DES
+depends_on:11:12
+1:exp:34:exp:31:int:8:exp:33:int:192
+
+Cipher: ARC4
+depends_on:13
+3:exp:35:exp:36
+
+Cipher: ChaCha20
+depends_on:14
+3:exp:37:exp:36
+
+Cipher: CTR
+depends_on:10:15
+3:exp:38:exp:36
+
+Cipher: CFB
+depends_on:10:16
+3:exp:39:exp:36
+
+Cipher: OFB
+depends_on:10:17
+3:exp:40:exp:36
+
+Cipher: CBC-nopad
+depends_on:10:18
+3:exp:41:int:0
+
+Cipher: CBC-PKCS#7
+depends_on:10:18:19
+3:exp:42:int:0
+
+Cipher: XTS
+depends_on:10:20
+3:exp:43:int:0
+
+AEAD: CCM
+depends_on:21
+4:exp:44:exp:45:int:16
+
+AEAD: GCM
+depends_on:22
+4:exp:46:exp:45:int:16
+
+AEAD: ChaCha20_Poly1305
+depends_on:23
+4:exp:47:int:0:int:16
+
+Asymmetric signature: RSA PKCS#1 v1.5 raw
+depends_on:24:25
+5:exp:48:exp:49
+
+Asymmetric signature: RSA PKCS#1 v1.5 SHA-256
+depends_on:24:25:5
+5:exp:50:exp:49
+
+Asymmetric signature: RSA PSS SHA-256
+depends_on:24:26:5
+5:exp:51:exp:52
+
+Asymmetric signature: SHA-256 + randomized DSA SHA-256 using SHA-256
+depends_on:27:5
+5:exp:53:exp:54
+
+Asymmetric signature: SHA-256 + deterministic DSA using SHA-256 [#1]
+depends_on:27:5:28
+5:exp:55:exp:56
+
+Asymmetric signature: randomized ECDSA (no hashing)
+depends_on:29
+5:exp:57:exp:58
+
+Asymmetric signature: SHA-256 + randomized ECDSA
+depends_on:29:5
+5:exp:59:exp:58
+
+Asymmetric signature: SHA-256 + deterministic DSA using SHA-256 [#2]
+depends_on:29:30:5
+5:exp:60:exp:61
+
+Asymmetric signature: RSA PKCS#1 v1.5 with wildcard hash
+depends_on:24:25
+6:exp:62:exp:63
+
+Asymmetric signature: RSA PSS with wildcard hash
+depends_on:24:26
+6:exp:64:exp:65
+
+Asymmetric signature: randomized DSA with wildcard hash
+depends_on:27
+6:exp:66:exp:67
+
+Asymmetric signature: deterministic DSA with wildcard hash [#1]
+depends_on:27:28
+6:exp:68:exp:69
+
+Asymmetric signature: randomized ECDSA with wildcard hash
+depends_on:29
+6:exp:70:exp:71
+
+Asymmetric signature: deterministic DSA with wildcard hash [#2]
+depends_on:29:30
+6:exp:72:exp:73
+
+Asymmetric encryption: RSA PKCS#1 v1.5
+depends_on:24:25
+7:exp:74:int:0
+
+Asymmetric encryption: RSA OAEP using SHA-256
+depends_on:24:26:5
+7:exp:75:exp:76
+
+Key derivation: HKDF using SHA-256
+depends_on:5
+8:exp:77:exp:78
+
+Key derivation: HKDF using SHA-384
+depends_on:6
+8:exp:79:exp:78
+
+Key derivation: TLS 1.2 PRF using SHA-256
+depends_on:5
+8:exp:80:exp:81
+
+Key derivation: TLS 1.2 PRF using SHA-384
+depends_on:6
+8:exp:82:exp:81
+
+Key derivation: TLS 1.2 PSK-to-MS using SHA-256
+depends_on:5
+8:exp:83:exp:84
+
+Key derivation: TLS 1.2 PSK-to-MS using SHA-384
+depends_on:6
+8:exp:85:exp:84
+
+Key agreement: FFDH, raw output
+depends_on:31
+9:exp:86:exp:87:exp:86:exp:88
+
+Key agreement: FFDH, HKDF using SHA-256
+depends_on:31
+9:exp:89:exp:90:exp:86:exp:77
+
+Key agreement: FFDH, HKDF using SHA-384
+depends_on:31
+9:exp:91:exp:90:exp:86:exp:79
+
+Key agreement: ECDH, raw output
+depends_on:32
+9:exp:92:exp:93:exp:92:exp:88
+
+Key agreement: ECDH, HKDF using SHA-256
+depends_on:32
+9:exp:94:exp:95:exp:92:exp:77
+
+Key agreement: ECDH, HKDF using SHA-384
+depends_on:32
+9:exp:96:exp:95:exp:92:exp:79
+
+Key type: raw data
+10:exp:97:exp:98
+
+Key type: HMAC
+10:exp:99:exp:98
+
+Key type: secret for key derivation
+10:exp:100:exp:98
+
+Block cipher key type: AES
+depends_on:9
+11:exp:32:int:16
+
+Block cipher key type: DES
+depends_on:11
+11:exp:33:int:8
+
+Block cipher key type: Camellia
+depends_on:33
+11:exp:101:int:16
+
+Stream cipher key type: ARC4
+depends_on:13
+12:exp:102
+
+Stream cipher key type: ChaCha20
+depends_on:34
+12:exp:103
+
+Key type: RSA public key
+depends_on:24
+10:exp:104:exp:105
+
+Key type: RSA key pair
+depends_on:24
+10:exp:106:exp:107
+
+Key type: DSA public key
+depends_on:27
+10:exp:108:exp:109
+
+Key type: DSA key pair
+depends_on:27
+10:exp:110:exp:111
+
+ECC key family: SECP K1
+13:exp:112
+
+ECC key family: SECP R1
+13:exp:113
+
+ECC key family: SECP R2
+13:exp:114
+
+ECC key family: SECT K1
+13:exp:115
+
+ECC key family: SECT R1
+13:exp:116
+
+ECC key family: SECT R2
+13:exp:117
+
+ECC key family: Brainpool P R1
+13:exp:118
+
+ECC key family: Montgomery (Curve25519, Curve448)
+13:exp:119
+
+DH group family: RFC 7919
+14:exp:120
+

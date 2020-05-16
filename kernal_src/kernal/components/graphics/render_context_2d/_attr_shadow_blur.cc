@@ -1,0 +1,42 @@
+
+#include "_.h"
+using namespace cenarius;
+using namespace kernal;
+using namespace infrastructure;
+using namespace renderer;
+using namespace components;
+
+void render_context_2d::shadow_blur(js_parameter& _parameter) {
+    assert(related_ && !related_->lt_context_stack_.empty());
+    auto& context = related_->lt_context_stack_.top();
+    auto js_context = _parameter.get_context();
+    _parameter.set_return(
+        js_value::create(js_context, context.shadow_blur_));
+}
+
+void render_context_2d::set_shadow_blur(js_parameter& _parameter) {
+    assert(related_ && !related_->lt_context_stack_.empty());
+    if (_parameter.get_argument_count() <= 0) return;
+    auto shadow_blur = _parameter[0].to_float();
+    auto& context = related_->lt_context_stack_.top();
+    context.shadow_blur_ = shadow_blur;
+    struct __task__ {
+        render_context_thread_related* related_ = nullptr;
+        float shadow_blur_;
+        void run(barrel_buffer*) {
+            assert(related_);
+            assert(!related_->rt_context_stack_.empty());
+            auto& context = related_->rt_context_stack_.top();
+            if (shadow_blur_ != context.shadow_blur_) {
+                context.shadow_masker_ = nullptr;
+                context.shadow_blur_ = shadow_blur_;
+            }
+        }
+    };
+    auto task = transmitter_->alloc<__task__>();
+    assert(nullptr != task);
+    if (task) {
+        task->shadow_blur_ = shadow_blur;
+        task->related_ = related_.get();
+    }
+}

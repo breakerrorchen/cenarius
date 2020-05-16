@@ -1,0 +1,9 @@
+{
+    options_all = { },
+    mtimes = {
+        ["xmake.lua"] = 1584273346
+    },
+    options_ora_maker = ref("options_all"),
+    __version = "2.3.1",
+    options_archiver = ref("options_all")
+}

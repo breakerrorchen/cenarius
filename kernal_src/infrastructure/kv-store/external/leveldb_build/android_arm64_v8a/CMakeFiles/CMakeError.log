@@ -1,0 +1,165 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cc923/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cc923.dir/build.make CMakeFiles/cmTC_cc923.dir/build
+Building C object CMakeFiles/cmTC_cc923.dir/testCCompiler.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_cc923.dir/testCCompiler.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/testCCompiler.c
+make[1]: *** [CMakeFiles/cmTC_cc923.dir/testCCompiler.c.o] Killed: 9
+make: *** [cmTC_cc923/fast] Error 2
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_969c4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_969c4.dir/build.make CMakeFiles/cmTC_969c4.dir/build
+Building C object CMakeFiles/cmTC_969c4.dir/testCCompiler.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE   -o CMakeFiles/cmTC_969c4.dir/testCCompiler.c.o   -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_969c4
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_969c4.dir/link.txt --verbose=1
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security    -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_969c4.dir/testCCompiler.c.o  -o cmTC_969c4  -latomic -lm 
+clang: error: unable to execute command: Killed: 9
+clang: error: linker command failed due to signal (use -v to see invocation)
+make[1]: *** [cmTC_969c4] Error 254
+make: *** [cmTC_969c4/fast] Error 2
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bffba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_bffba.dir/build.make CMakeFiles/cmTC_bffba.dir/build
+Building CXX object CMakeFiles/cmTC_bffba.dir/testCXXCompiler.cxx.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security    -fPIE   -o CMakeFiles/cmTC_bffba.dir/testCXXCompiler.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+make[1]: *** [CMakeFiles/cmTC_bffba.dir/testCXXCompiler.cxx.o] Killed: 9
+make: *** [cmTC_bffba/fast] Error 2
+
+
+
+Determining if the function crc32c_value exists in the crc32c failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d3ef5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_d3ef5.dir/build.make CMakeFiles/cmTC_d3ef5.dir/build
+Building C object CMakeFiles/cmTC_d3ef5.dir/CheckFunctionExists.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=crc32c_value -fPIE   -std=c11 -o CMakeFiles/cmTC_d3ef5.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d3ef5
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3ef5.dir/link.txt --verbose=1
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=crc32c_value  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_d3ef5.dir/CheckFunctionExists.c.o  -o cmTC_d3ef5  -lcrc32c -latomic -lm 
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: cannot find -lcrc32c
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_d3ef5] Error 1
+make: *** [cmTC_d3ef5/fast] Error 2
+
+
+
+Determining if the function snappy_compress exists in the snappy failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_85fed/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_85fed.dir/build.make CMakeFiles/cmTC_85fed.dir/build
+Building C object CMakeFiles/cmTC_85fed.dir/CheckFunctionExists.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=snappy_compress -fPIE   -std=c11 -o CMakeFiles/cmTC_85fed.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_85fed
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85fed.dir/link.txt --verbose=1
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=snappy_compress  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_85fed.dir/CheckFunctionExists.c.o  -o cmTC_85fed  -lsnappy -latomic -lm 
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: cannot find -lsnappy
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_85fed] Error 1
+make: *** [cmTC_85fed/fast] Error 2
+
+
+
+Determining if the function malloc exists in the tcmalloc failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e8c67/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e8c67.dir/build.make CMakeFiles/cmTC_e8c67.dir/build
+Building C object CMakeFiles/cmTC_e8c67.dir/CheckFunctionExists.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=malloc -fPIE   -std=c11 -o CMakeFiles/cmTC_e8c67.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'malloc' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+/usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'malloc' is a builtin with type 'void *(unsigned long)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+1 warning generated.
+Linking C executable cmTC_e8c67
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8c67.dir/link.txt --verbose=1
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -DCHECK_FUNCTION_EXISTS=malloc  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_e8c67.dir/CheckFunctionExists.c.o  -o cmTC_e8c67  -ltcmalloc -latomic -lm 
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: cannot find -ltcmalloc
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_e8c67] Error 1
+make: *** [cmTC_e8c67/fast] Error 2
+
+
+
+Determining if the F_FULLFSYNC exist failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_37031/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_37031.dir/build.make CMakeFiles/cmTC_37031.dir/build
+Building CXX object CMakeFiles/cmTC_37031.dir/CheckSymbolExists.cxx.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security    -fPIE   -std=c++11 -o CMakeFiles/cmTC_37031.dir/CheckSymbolExists.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'F_FULLFSYNC'
+  return ((int*)(&F_FULLFSYNC))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_37031.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_37031/fast] Error 2
+
+
+File /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef F_FULLFSYNC
+  return ((int*)(&F_FULLFSYNC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function sqlite3_open exists in the sqlite3 failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_42689/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_42689.dir/build.make CMakeFiles/cmTC_42689.dir/build
+Building C object CMakeFiles/cmTC_42689.dir/CheckFunctionExists.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -Wstrict-prototypes -DCHECK_FUNCTION_EXISTS=sqlite3_open -fPIE   -std=c11 -o CMakeFiles/cmTC_42689.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.16.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_42689
+/usr/local/Cellar/cmake/3.16.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42689.dir/link.txt --verbose=1
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -Wstrict-prototypes -DCHECK_FUNCTION_EXISTS=sqlite3_open  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_42689.dir/CheckFunctionExists.c.o  -o cmTC_42689  -lsqlite3 -latomic -lm 
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: cannot find -lsqlite3
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_42689] Error 1
+make: *** [cmTC_42689/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test HAVE_KYOTOCABINET failed with the following output:
+Change Dir: /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_29e36/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_29e36.dir/build.make CMakeFiles/cmTC_29e36.dir/build
+Building CXX object CMakeFiles/cmTC_29e36.dir/src.cxx.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -fno-exceptions -fno-rtti -DHAVE_KYOTOCABINET -fPIE   -std=c++11 -o CMakeFiles/cmTC_29e36.dir/src.cxx.o -c /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/src.cxx
+/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/android_arm64_v8a/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'kcpolydb.h' file not found
+#include <kcpolydb.h>
+         ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_29e36.dir/src.cxx.o] Error 1
+make: *** [cmTC_29e36/fast] Error 2
+
+
+Source file was:
+
+#include <kcpolydb.h>
+
+int main() {
+  kyotocabinet::TreeDB* db = new kyotocabinet::TreeDB();
+  delete db;
+  return 0;
+}
+  

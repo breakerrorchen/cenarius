@@ -1,0 +1,1609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		03441D3B5CA54E7C90A3D75C /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7B4FD1A6C4094EDEB28977B1 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				234EFDCEC24A453AB7D4336A /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		2B256DE95E89448FA1321E6A /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 96E23EB901874C1890F1D66D /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				298C9E0884444149BBFA454C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				31771EA6434C453EB96122D6 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		DECC5BBE34324FE99BC72827 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0AC39E14023246F39B965A57 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				5F32EA1C84E5466F97B35AB9 /* CMake Rules */,
+			);
+			dependencies = (
+				E224CB7A37CA49CEA3A2FCDD /* PBXTargetDependency */,
+				D3734E9A28CC4CF2B94C5C66 /* PBXTargetDependency */,
+				44FC9C95A62B4144B301D87C /* PBXTargetDependency */,
+				15B00A92F1244DFAA234C316 /* PBXTargetDependency */,
+				80D7AE9C412C4AA682271AD0 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		EF2E7B32FF0A446992185CCA /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8D138796348F4160948BD140 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				4B83BB9884624E7785D7939C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1202D8CC023C4A88AB1E29B3 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock-all.cc */ = {isa = PBXBuildFile; fileRef = 33BB18ED02CC4D7788A325C5 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock-all.cc */; };
+		5301D33C20A140B8A1508C50 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B75D7413EB7D4BAFA8D5D45B /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */; };
+		75C45C2C40AF48FB9C5D5EED /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest-all.cc */ = {isa = PBXBuildFile; fileRef = 432996873772442A92E76CB5 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest-all.cc */; };
+		9128F75F4A5A4C83B67844DC /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest_main.cc */ = {isa = PBXBuildFile; fileRef = 0ED8C8B8F32548D2BCC69D5A /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest_main.cc */; };
+		92DAEE6F8AA4456C8447AF8E /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B960DE1C38334A878A09C046 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */; };
+		98A878F9203948FEAA82CCB1 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CD868C83DF5649F8898FA60B /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */; };
+		B9B91AE2BA5B4F379E6D50CC /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock_main.cc */ = {isa = PBXBuildFile; fileRef = AA577FE98D724C13B26F0CCC /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock_main.cc */; };
+		C50AF357886B46E4928DBF6B /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = C2206B89C01A4A1EAF9F1498 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest.dir/Info.plist */; };
+		D5D18C47F06B48D682290E8A /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest_main.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 013CC5E79BFA4A2A8544302E /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest_main.dir/Info.plist */; };
+		EF718616955242CDB720DB42 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 4ABC6DE77DC241E7BAB24A62 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock.dir/Info.plist */; };
+		F41467EF26A84A17BF40116A /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 8ABD7B3CCE3347B1BE2922F0 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/Info.plist */; };
+		FE30E27F52274084BDCB048E /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1A6F33892DA94666A0F22A98 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0AF23B7910F7449FA4827E1C /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		22D49142287F4F679AB0F4EA /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		71F272E22E074ED1AE89BFC9 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		7EB6C8F38EA8453ABA7011E9 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		16464072065542A2B3BF8A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DECC5BBE34324FE99BC72827;
+			remoteInfo = ALL_BUILD;
+		};
+		1BE849FDC77148DB82278FC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B0B9C3D0604E18893B3261;
+			remoteInfo = gtest;
+		};
+		20939D664475483EBDDD3AA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD0E90F73E84DB682B0F394;
+			remoteInfo = gmock_main;
+		};
+		814C020CBECB44D6833AABC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210DA171DBB54963A7A493E4;
+			remoteInfo = gtest_main;
+		};
+		97B217BC535F4196865DB5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B0B9C3D0604E18893B3261;
+			remoteInfo = gtest;
+		};
+		A38EC7D66A684F3DBF864934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7EC8AB166CE4E66B43278D5;
+			remoteInfo = gmock;
+		};
+		C7D971C300A142C590928D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7EC8AB166CE4E66B43278D5;
+			remoteInfo = gmock;
+		};
+		CE05111C9E2048E09886BB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2E7B32FF0A446992185CCA;
+			remoteInfo = ZERO_CHECK;
+		};
+		D3CCA06CCAE4424FB459663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B0B9C3D0604E18893B3261;
+			remoteInfo = gtest;
+		};
+		F0ACB0FCB2D34937B56FFEBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B0B9C3D0604E18893B3261;
+			remoteInfo = gtest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013CC5E79BFA4A2A8544302E /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest_main.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ../../../leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest_main.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		02AAC660F3D947B98B2D50D9 /* gmock_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgmock_maind.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED8C8B8F32548D2BCC69D5A /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest_main.cc; path = googletest/src/gtest_main.cc; sourceTree = SOURCE_ROOT; };
+		1A6F33892DA94666A0F22A98 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		33BB18ED02CC4D7788A325C5 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gmock-all.cc"; path = "googlemock/src/gmock-all.cc"; sourceTree = SOURCE_ROOT; };
+		432996873772442A92E76CB5 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "googletest/src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		47537148C11644F2BF72960D /* gmock */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgmockd.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ABC6DE77DC241E7BAB24A62 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ../../../leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		5F17374C46174F848465C0DD /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6E94F9872358493C90607F9C /* gtest_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtest_maind.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABD7B3CCE3347B1BE2922F0 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ../../../leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		AA577FE98D724C13B26F0CCC /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gmock_main.cc; path = googlemock/src/gmock_main.cc; sourceTree = SOURCE_ROOT; };
+		B75D7413EB7D4BAFA8D5D45B /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B960DE1C38334A878A09C046 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C2206B89C01A4A1EAF9F1498 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ../../../leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		CD868C83DF5649F8898FA60B /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D3488D4B31C24B11B2365DA1 /* gtest */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgtestd.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		07FBBB04E731442696F09BFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4ABC6DE77DC241E7BAB24A62 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1B9B5B1C6597402685EB76CF /* gmock_main */ = {
+			isa = PBXGroup;
+			children = (
+				9DD5DFDA64E84EC2BAB37536 /* Source Files */,
+				72593402B6884199A51412C0 /* Resources */,
+				B75D7413EB7D4BAFA8D5D45B /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */,
+			);
+			name = gmock_main;
+			sourceTree = "<group>";
+		};
+		1CB27EDAD12B406B91CD3CAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				013CC5E79BFA4A2A8544302E /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest_main.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		26B67FCA7B8244ED86F35032 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3CEC7B841F1D4ACD886F9ADA /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				26B67FCA7B8244ED86F35032 /* CMake Rules */,
+				5F17374C46174F848465C0DD /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		72593402B6884199A51412C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8ABD7B3CCE3347B1BE2922F0 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9B2D2FE1716E4965B07ECEAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2206B89C01A4A1EAF9F1498 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest/CMakeFiles/gtest.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9DD5DFDA64E84EC2BAB37536 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA577FE98D724C13B26F0CCC /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9E53868076574D8481D1169D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				432996873772442A92E76CB5 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A07DBF16A28C4E938518D75C = {
+			isa = PBXGroup;
+			children = (
+				3CEC7B841F1D4ACD886F9ADA /* ALL_BUILD */,
+				1B9B5B1C6597402685EB76CF /* gmock_main */,
+				F2BC6C9F65934763999C6ECC /* gmock */,
+				DD7801CFAE2E4EE9BB14740B /* gtest_main */,
+				B660A18DB831402B86C37B7B /* gtest */,
+				FF2BA8CAE08F417E9A91B6F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B660A18DB831402B86C37B7B /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				9E53868076574D8481D1169D /* Source Files */,
+				9B2D2FE1716E4965B07ECEAD /* Resources */,
+				1A6F33892DA94666A0F22A98 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */,
+			);
+			name = gtest;
+			sourceTree = "<group>";
+		};
+		D99BC5B710D8435B85A11310 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				33BB18ED02CC4D7788A325C5 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DD7801CFAE2E4EE9BB14740B /* gtest_main */ = {
+			isa = PBXGroup;
+			children = (
+				E49EEB48C749492C997CCF9E /* Source Files */,
+				1CB27EDAD12B406B91CD3CAF /* Resources */,
+				B960DE1C38334A878A09C046 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/CMakeLists.txt */,
+			);
+			name = gtest_main;
+			sourceTree = "<group>";
+		};
+		E49EEB48C749492C997CCF9E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ED8C8B8F32548D2BCC69D5A /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F2BC6C9F65934763999C6ECC /* gmock */ = {
+			isa = PBXGroup;
+			children = (
+				D99BC5B710D8435B85A11310 /* Source Files */,
+				07FBBB04E731442696F09BFE /* Resources */,
+				CD868C83DF5649F8898FA60B /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/CMakeLists.txt */,
+			);
+			name = gmock;
+			sourceTree = "<group>";
+		};
+		FF2BA8CAE08F417E9A91B6F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47537148C11644F2BF72960D /* gmock */,
+				02AAC660F3D947B98B2D50D9 /* gmock_main */,
+				D3488D4B31C24B11B2365DA1 /* gtest */,
+				6E94F9872358493C90607F9C /* gtest_main */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		210DA171DBB54963A7A493E4 /* gtest_main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E096FA7C4E5E4E73AA2AE821 /* Build configuration list for PBXNativeTarget "gtest_main" */;
+			buildPhases = (
+				8CAD5F93F329409794C8C6F3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5888E52F49404670A769CC51 /* PBXTargetDependency */,
+			);
+			name = gtest_main;
+			productName = gtest_main;
+			productReference = 6E94F9872358493C90607F9C /* gtest_main */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7EC8AB166CE4E66B43278D5 /* gmock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE31641382C14B01A0CA62C4 /* Build configuration list for PBXNativeTarget "gmock" */;
+			buildPhases = (
+				A17288E78A5A43B1B4994E4C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310B0BE1FD4A4FC8A6317A7B /* PBXTargetDependency */,
+			);
+			name = gmock;
+			productName = gmock;
+			productReference = 47537148C11644F2BF72960D /* gmock */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CFD0E90F73E84DB682B0F394 /* gmock_main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A328196B5AD4C8DBCDD8BDE /* Build configuration list for PBXNativeTarget "gmock_main" */;
+			buildPhases = (
+				DB5A9C734224433E82063A7A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				611BC2FCFED449238E1F98AF /* PBXTargetDependency */,
+				F56795EEBA8646CBB87B92BE /* PBXTargetDependency */,
+			);
+			name = gmock_main;
+			productName = gmock_main;
+			productReference = 02AAC660F3D947B98B2D50D9 /* gmock_main */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D7B0B9C3D0604E18893B3261 /* gtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E960CCCA2D304B518F4D7E97 /* Build configuration list for PBXNativeTarget "gtest" */;
+			buildPhases = (
+				019D8CF5640E40D082256ED2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gtest;
+			productName = gtest;
+			productReference = D3488D4B31C24B11B2365DA1 /* gtest */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93F2F2B3F32D40DCACCD1300 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 4E972562FEBC4023B83498BF /* Build configuration list for PBXProject "googletest-distribution" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				7EB6C8F38EA8453ABA7011E9 /* Debug */,
+				22D49142287F4F679AB0F4EA /* Release */,
+				0AF23B7910F7449FA4827E1C /* MinSizeRel */,
+				71F272E22E074ED1AE89BFC9 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = A07DBF16A28C4E938518D75C;
+			projectDirPath = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest";
+			projectRoot = "";
+			targets = (
+				DECC5BBE34324FE99BC72827 /* ALL_BUILD */,
+				03441D3B5CA54E7C90A3D75C /* RUN_TESTS */,
+				EF2E7B32FF0A446992185CCA /* ZERO_CHECK */,
+				C7EC8AB166CE4E66B43278D5 /* gmock */,
+				CFD0E90F73E84DB682B0F394 /* gmock_main */,
+				D7B0B9C3D0604E18893B3261 /* gtest */,
+				210DA171DBB54963A7A493E4 /* gtest_main */,
+				2B256DE95E89448FA1321E6A /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		190120C61D5B4AADAF485153 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		20E4BEDA8C6C4AE2B30E562F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		234EFDCEC24A453AB7D4336A /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest -f /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		298C9E0884444149BBFA454C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest -f /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		2B35D404587B4C52AEE85409 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4B83BB9884624E7785D7939C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest -f /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		5F32EA1C84E5466F97B35AB9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest -f /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		83CBB7C5B71048558247FFF5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		019D8CF5640E40D082256ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C45C2C40AF48FB9C5D5EED /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest-all.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CAD5F93F329409794C8C6F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9128F75F4A5A4C83B67844DC /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/src/gtest_main.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17288E78A5A43B1B4994E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1202D8CC023C4A88AB1E29B3 /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock-all.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5A9C734224433E82063A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B91AE2BA5B4F379E6D50CC /* /Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/src/gmock_main.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15B00A92F1244DFAA234C316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7B0B9C3D0604E18893B3261 /* gtest */;
+			targetProxy = 1BE849FDC77148DB82278FC4 /* PBXContainerItemProxy */;
+		};
+		310B0BE1FD4A4FC8A6317A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7B0B9C3D0604E18893B3261 /* gtest */;
+			targetProxy = D3CCA06CCAE4424FB459663A /* PBXContainerItemProxy */;
+		};
+		31771EA6434C453EB96122D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DECC5BBE34324FE99BC72827 /* ALL_BUILD */;
+			targetProxy = 16464072065542A2B3BF8A80 /* PBXContainerItemProxy */;
+		};
+		44FC9C95A62B4144B301D87C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 210DA171DBB54963A7A493E4 /* gtest_main */;
+			targetProxy = 814C020CBECB44D6833AABC5 /* PBXContainerItemProxy */;
+		};
+		5888E52F49404670A769CC51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7B0B9C3D0604E18893B3261 /* gtest */;
+			targetProxy = F0ACB0FCB2D34937B56FFEBD /* PBXContainerItemProxy */;
+		};
+		611BC2FCFED449238E1F98AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7EC8AB166CE4E66B43278D5 /* gmock */;
+			targetProxy = A38EC7D66A684F3DBF864934 /* PBXContainerItemProxy */;
+		};
+		80D7AE9C412C4AA682271AD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2E7B32FF0A446992185CCA /* ZERO_CHECK */;
+			targetProxy = CE05111C9E2048E09886BB98 /* PBXContainerItemProxy */;
+		};
+		D3734E9A28CC4CF2B94C5C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7EC8AB166CE4E66B43278D5 /* gmock */;
+			targetProxy = C7D971C300A142C590928D6C /* PBXContainerItemProxy */;
+		};
+		E224CB7A37CA49CEA3A2FCDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD0E90F73E84DB682B0F394 /* gmock_main */;
+			targetProxy = 20939D664475483EBDDD3AA4 /* PBXContainerItemProxy */;
+		};
+		F56795EEBA8646CBB87B92BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7B0B9C3D0604E18893B3261 /* gtest */;
+			targetProxy = 97B217BC535F4196865DB5DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05B842C65EF34E949AEBB104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		088848FEEB8A489A93958EE1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti        -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0C85A7B18A8E43C6A9C52696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0E74515610C843C2B2E5FA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti    -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_maind;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0F952BBF81D7411F886E743A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti        -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1B386CDB5FC8440BBDC88540 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1FFDE14CDB1F4A548537709C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2580ED9ACA4B48308243FE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/build";
+			};
+			name = Debug;
+		};
+		2687F5F739F644C79FA8B898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		36DFC3D140F24D89B7A7B727 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		394EFE1AC5764A9B909C8E23 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		39E0B23B074347039C67EBAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti    -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtestd;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3C771BBF4DB747F89D011BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti    -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_maind;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		49BEFD7902EA49259083049F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4B431C0EC1284480921D5608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4F61DCF68BDC495480FE8590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti    -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmockd;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4FE864CF2B65443A8E64A1DE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/build";
+			};
+			name = MinSizeRel;
+		};
+		5523E585AAB6441789921366 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti        -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		556795CDCF924E10AE927032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5B2BD4BDE72A4B5EA71D3C75 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5B619DE6C97A4B32B51003D8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		637ECDCAAB4B47E5AD8425F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7CFBBEF859054982AEC1C57B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7E403B3E14DC4858A2ADB1B4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7F6E8A8B992B46F0AC97D250 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8914B6793D0C4B8DB3FFFFBA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/build";
+			};
+			name = RelWithDebInfo;
+		};
+		A356D78CBB26477E8B456F6D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C2CAE4BF733744E1B2F92C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C2E227A3FD144517B77B5659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/build";
+			};
+			name = Release;
+		};
+		D55FA4587F75441EBE4AC27F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DA938BEC8701438390D927DE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DF7815DF25DF491E9BD90CA2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EE0E1D8621324FDF81D66CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti     -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EE8AAC8D24E748EABB545344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F2D4EB755F964E2680934CB8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/.","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googlemock");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = " -fno-exceptions -fno-rtti        -DNDEBUG -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -Wno-missing-field-initializers '-std=c++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest/include","/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb/third_party/googletest/googletest");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FE7C786329444EA5B6DD0513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/bytedance/Code/Toffee/kernal_src/source/essential/kv-store/external/leveldb_build/ios_64/third_party/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AC39E14023246F39B965A57 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE8AAC8D24E748EABB545344 /* Debug */,
+				637ECDCAAB4B47E5AD8425F2 /* Release */,
+				5B2BD4BDE72A4B5EA71D3C75 /* MinSizeRel */,
+				394EFE1AC5764A9B909C8E23 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A328196B5AD4C8DBCDD8BDE /* Build configuration list for PBXNativeTarget "gmock_main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C771BBF4DB747F89D011BDB /* Debug */,
+				EE0E1D8621324FDF81D66CA4 /* Release */,
+				7CFBBEF859054982AEC1C57B /* MinSizeRel */,
+				088848FEEB8A489A93958EE1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E972562FEBC4023B83498BF /* Build configuration list for PBXProject "googletest-distribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2580ED9ACA4B48308243FE48 /* Debug */,
+				C2E227A3FD144517B77B5659 /* Release */,
+				4FE864CF2B65443A8E64A1DE /* MinSizeRel */,
+				8914B6793D0C4B8DB3FFFFBA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B4FD1A6C4094EDEB28977B1 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49BEFD7902EA49259083049F /* Debug */,
+				0C85A7B18A8E43C6A9C52696 /* Release */,
+				36DFC3D140F24D89B7A7B727 /* MinSizeRel */,
+				7F6E8A8B992B46F0AC97D250 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8D138796348F4160948BD140 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE7C786329444EA5B6DD0513 /* Debug */,
+				05B842C65EF34E949AEBB104 /* Release */,
+				1B386CDB5FC8440BBDC88540 /* MinSizeRel */,
+				A356D78CBB26477E8B456F6D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		96E23EB901874C1890F1D66D /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B431C0EC1284480921D5608 /* Debug */,
+				2687F5F739F644C79FA8B898 /* Release */,
+				D55FA4587F75441EBE4AC27F /* MinSizeRel */,
+				DF7815DF25DF491E9BD90CA2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE31641382C14B01A0CA62C4 /* Build configuration list for PBXNativeTarget "gmock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F61DCF68BDC495480FE8590 /* Debug */,
+				1FFDE14CDB1F4A548537709C /* Release */,
+				5B619DE6C97A4B32B51003D8 /* MinSizeRel */,
+				F2D4EB755F964E2680934CB8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E096FA7C4E5E4E73AA2AE821 /* Build configuration list for PBXNativeTarget "gtest_main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E74515610C843C2B2E5FA2F /* Debug */,
+				C2CAE4BF733744E1B2F92C5E /* Release */,
+				DA938BEC8701438390D927DE /* MinSizeRel */,
+				0F952BBF81D7411F886E743A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E960CCCA2D304B518F4D7E97 /* Build configuration list for PBXNativeTarget "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E0B23B074347039C67EBAE /* Debug */,
+				556795CDCF924E10AE927032 /* Release */,
+				7E403B3E14DC4858A2ADB1B4 /* MinSizeRel */,
+				5523E585AAB6441789921366 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93F2F2B3F32D40DCACCD1300 /* Project object */;
+}

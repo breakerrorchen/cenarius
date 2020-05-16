@@ -1,0 +1,13 @@
+Performing C SOURCE FILE Test UV_LINT_W4 failed with the following output:
+Change Dir: /Users/bytedance/Desktop/Cenarius/kernal_src/infrastructure/net/external/libuv_build/android_armeabi_v7a/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eed5d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_eed5d.dir/build.make CMakeFiles/cmTC_eed5d.dir/build
+Building C object CMakeFiles/cmTC_eed5d.dir/src.c.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security  -DUV_LINT_W4 -fPIE   /W4 -o CMakeFiles/cmTC_eed5d.dir/src.c.o   -c /Users/bytedance/Desktop/Cenarius/kernal_src/infrastructure/net/external/libuv_build/android_armeabi_v7a/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '/W4'
+make[1]: *** [CMakeFiles/cmTC_eed5d.dir/src.c.o] Error 1
+make: *** [cmTC_eed5d/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }

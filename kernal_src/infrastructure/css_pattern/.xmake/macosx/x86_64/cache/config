@@ -1,0 +1,8 @@
+{
+    mtimes = {
+        ["xmake.lua"] = 1583129612
+    },
+    options_all = { },
+    __version = "2.2.9",
+    options_css_pattern = ref("options_all")
+}

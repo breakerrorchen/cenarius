@@ -1,0 +1,172 @@
+
+#include "kernal/isolate/related_thread.h"
+#include "_.h"
+using namespace cenarius;
+using namespace interpreter;
+using namespace kernal;
+using namespace isolate;
+using namespace components;
+
+void render_context_3d::outlet(js_context& _context, js_object& _object) {
+	auto thread_related = related_thread::obtain();
+	assert(thread_related);
+	assert(_context.is_useable() && _object.is_useable());
+	using __class_t__ = render_context_3d;
+	js_class _class(_context);
+
+#ifndef __render_context_3d_attr
+#define __render_context_3d_attr(name, _attr)									    \
+	_class.attr(#name, _I_BIND_NULL(), _I_BIND(render_context_3d, _attr));
+    __render_context_3d_attr(drawingBufferWidth , drawbuffer_w);
+    __render_context_3d_attr(drawingBufferHeight, drawbuffer_h);
+#undef __render_context_3d_attr
+#endif
+
+#ifndef __render_context_3d_func
+#define __render_context_3d_func(name, _func)									    \
+	_class.function(#name, _I_BIND(render_context_3d, _func));
+    __render_context_3d_func(activeTexture,             active_texture              );
+    __render_context_3d_func(attachShader,              attach_shader               );
+    __render_context_3d_func(bindAttribLocation,        bind_attrib_location        );
+    __render_context_3d_func(bindBuffer,                bind_buffer                 );
+    __render_context_3d_func(bindFramebuffer,           bind_framebuffer            );
+    __render_context_3d_func(bindRenderbuffer,          bind_renderbuffer           );
+    __render_context_3d_func(bindTexture,               bind_texture                );
+    __render_context_3d_func(blendColor,                blend_color                 );
+    __render_context_3d_func(blendEquation,             blend_equation              );
+    __render_context_3d_func(blendEquationSeparate,     blend_equation_separate     );
+    __render_context_3d_func(blendFunc,                 blend_func                  );
+    __render_context_3d_func(blendFuncSeparate,         blend_func_separate         );
+    __render_context_3d_func(bufferData,                buffer_data                 );
+    __render_context_3d_func(bufferSubData,             buffer_sub_data             );
+    __render_context_3d_func(checkFramebufferStatus,    check_framebuffer_status    );
+    __render_context_3d_func(clear,                     clear                       );
+    __render_context_3d_func(clearColor,                clear_color                 );
+    __render_context_3d_func(clearDepth,                clear_depth                 );
+    __render_context_3d_func(clearStencil,              clear_stencil               );
+    __render_context_3d_func(colorMask,                 color_mask                  );
+    __render_context_3d_func(commit,                    commit                      );
+    __render_context_3d_func(compileShader,             compile_shader              );
+    __render_context_3d_func(compressedTexImage2D,      compressed_teximage_2d      );
+    __render_context_3d_func(compressedTexImage3D,      compressed_teximage_3d      );
+    __render_context_3d_func(compressedTexSubImage2D,   compressed_texsubimage_2d   );
+    __render_context_3d_func(copyTexImage2D,            copy_teximage_2d            );
+    __render_context_3d_func(copyTexSubImage2D,         copy_texsubimage_2d         );
+    __render_context_3d_func(createBuffer,              create_buffer               );
+    __render_context_3d_func(createFramebuffer,         create_framebuffer          );
+    __render_context_3d_func(createProgram,             create_program              );
+    __render_context_3d_func(createRenderbuffer,        create_renderbuffer         );
+    __render_context_3d_func(createShader,              create_shader               );
+    __render_context_3d_func(createTexture,             create_texture              );
+    __render_context_3d_func(cullFace,                  cull_face                   );
+    __render_context_3d_func(deleteBuffer,              delete_buffer               );
+    __render_context_3d_func(deleteFramebuffer,         delete_framebuffer          );
+    __render_context_3d_func(deleteProgram,             delete_program              );
+    __render_context_3d_func(deleteRenderbuffer,        delete_renderbuffer         );
+    __render_context_3d_func(deleteShader,              delete_shader               );
+    __render_context_3d_func(deleteTexture,             delete_texture              );
+    __render_context_3d_func(depthFunc,                 depth_func                  );
+    __render_context_3d_func(depthMask,                 depth_mask                  );
+    __render_context_3d_func(depthRange,                depth_range                 );
+    __render_context_3d_func(detachShader,              detach_shader               );
+    __render_context_3d_func(disable,                   disable                     );
+    __render_context_3d_func(disableVertexAttribArray,  disable_vertex_attrib_arr   );
+    __render_context_3d_func(drawArrays,                draw_arrays                 );
+    __render_context_3d_func(drawElements,              draw_elements               );
+    __render_context_3d_func(enable,                    enable                      );
+    __render_context_3d_func(enableVertexAttribArray,   enable_vertex_attrib_arr    );
+    __render_context_3d_func(finish,                    finish                      );
+    __render_context_3d_func(flush,                     flush                       );
+    __render_context_3d_func(framebufferRenderbuffer,   framebuffer_renderbuffer    );
+    __render_context_3d_func(framebufferTexture2D,      framebuffer_texture_2d      );
+    __render_context_3d_func(frontFace,                 front_face                  );
+    __render_context_3d_func(generateMipmap,            generate_mipmap             );
+    __render_context_3d_func(getActiveAttrib,           get_active_attrib           );
+    __render_context_3d_func(getActiveUniform,          get_active_uniform          );
+    __render_context_3d_func(getAttachedShaders,        get_attached_shaders        );
+    __render_context_3d_func(getAttribLocation,         get_attrib_location         );
+    __render_context_3d_func(getBufferParameter,        get_buffer_parameter        );
+    __render_context_3d_func(getContextAttributes,      get_context_attributes      );
+    __render_context_3d_func(getError,                  get_error                   );
+    __render_context_3d_func(getExtension,              get_extension               );
+    __render_context_3d_func(
+        getFramebufferAttachmentParameter,              get_framebuffer_attachment  );
+    __render_context_3d_func(getParameter,              get_parameter               );
+    __render_context_3d_func(getProgramInfoLog,         get_program_info_log        );
+    __render_context_3d_func(getProgramParameter,       get_program_parameter       );
+    __render_context_3d_func(getRenderbufferParameter,  get_renderbuffer_parameter  );
+    __render_context_3d_func(getShaderInfoLog,          get_shader_info_log         );
+    __render_context_3d_func(getShaderParameter,        get_shader_parameter        );
+    __render_context_3d_func(getShaderPrecisionFormat,  get_shader_precision_format );
+    __render_context_3d_func(getShaderSource,           get_shader_source           );
+    __render_context_3d_func(getSupportedExtensions,    get_supported_extensions    );
+    __render_context_3d_func(getTexParameter,           get_tex_parameter           );
+    __render_context_3d_func(getUniform,                get_uniform                 );
+    __render_context_3d_func(getUniformLocation,        get_uniform_location        );
+    __render_context_3d_func(getVertexAttrib,           get_vertex_attrib           );
+    __render_context_3d_func(getVertexAttribOffset,     get_vertex_attrib_offset    );
+    __render_context_3d_func(hint,                      hint                        );
+    __render_context_3d_func(isBuffer,                  is_buffer                   );
+    __render_context_3d_func(isContextLost,             is_context_lost             );
+    __render_context_3d_func(isEnabled,                 is_enabled                  );
+    __render_context_3d_func(isFramebuffer,             is_framebuffer              );
+    __render_context_3d_func(isProgram,                 is_program                  );
+    __render_context_3d_func(isRenderbuffer,            is_renderbuffer             );
+    __render_context_3d_func(isShader,                  is_shader                   );
+    __render_context_3d_func(isTexture,                 is_texture                  );
+    __render_context_3d_func(lineWidth,                 line_width                  );
+    __render_context_3d_func(linkProgram,               link_program                );
+    __render_context_3d_func(pixelStorei,               pixel_store_i               );
+    __render_context_3d_func(polygonOffset,             polygon_offset              );
+    __render_context_3d_func(readPixels,                read_pixels                 );
+    __render_context_3d_func(renderbufferStorage,       renderbuffer_storage        );
+    __render_context_3d_func(sampleCoverage,            sample_coverage             );
+    __render_context_3d_func(scissor,                   scissor                     );
+    __render_context_3d_func(shaderSource,              shader_source               );
+    __render_context_3d_func(stencilFunc,               stencil_func                );
+    __render_context_3d_func(stencilFuncSeparate,       stencil_func_separate       );
+    __render_context_3d_func(stencilMask,               stencil_mask                );
+    __render_context_3d_func(stencilMaskSeparate,       stencil_mask_separate       );
+    __render_context_3d_func(stencilOp,                 stencil_op                  );
+    __render_context_3d_func(stencilOpSeparate,         stencil_op_separate         );
+    __render_context_3d_func(texImage2D,                teximage_2d                 );
+    __render_context_3d_func(texParameterf,             texparameter_f              );
+    __render_context_3d_func(texParameteri,             texparameter_i              );
+    __render_context_3d_func(texSubImage2D,             texsubimage_2d              );
+    __render_context_3d_func(uniform1f,                 uniform_1_f                 );
+    __render_context_3d_func(uniform1fv,                uniform_1_f_v               );
+    __render_context_3d_func(uniform1i,                 uniform_1_i                 );
+    __render_context_3d_func(uniform1iv,                uniform_1_i_v               );
+    __render_context_3d_func(uniform2f,                 uniform_2_f                 );
+    __render_context_3d_func(uniform2fv,                uniform_2_f_v               );
+    __render_context_3d_func(uniform2i,                 uniform_2_i                 );
+    __render_context_3d_func(uniform2iv,                uniform_2_i_v               );
+    __render_context_3d_func(uniform3f,                 uniform_3_f                 );
+    __render_context_3d_func(uniform3fv,                uniform_3_f_v               );
+    __render_context_3d_func(uniform3i,                 uniform_3_i                 );
+    __render_context_3d_func(uniform3iv,                uniform_3_i_v               );
+    __render_context_3d_func(uniform4f,                 uniform_4_f                 );
+    __render_context_3d_func(uniform4fv,                uniform_4_f_v               );
+    __render_context_3d_func(uniform4i,                 uniform_4_i                 );
+    __render_context_3d_func(uniform4iv,                uniform_4_i_v               );
+    __render_context_3d_func(uniformMatrix2fv,          uniform_matrix_2_f_v        );
+    __render_context_3d_func(uniformMatrix3fv,          uniform_matrix_3_f_v        );
+    __render_context_3d_func(uniformMatrix4fv,          uniform_matrix_4_f_v        );
+    __render_context_3d_func(useProgram,                use_program                 );
+    __render_context_3d_func(validateProgram,           validate_program            );
+    __render_context_3d_func(vertexAttrib1f,            vertex_attrib_1_f           );
+    __render_context_3d_func(vertexAttrib2f,            vertex_attrib_2_f           );
+    __render_context_3d_func(vertexAttrib3f,            vertex_attrib_3_f           );
+    __render_context_3d_func(vertexAttrib4f,            vertex_attrib_4_f           );
+    __render_context_3d_func(vertexAttrib1fv,           vertex_attrib_1_f_v         );
+    __render_context_3d_func(vertexAttrib2fv,           vertex_attrib_2_f_v         );
+    __render_context_3d_func(vertexAttrib3fv,           vertex_attrib_3_f_v         );
+    __render_context_3d_func(vertexAttrib4fv,           vertex_attrib_4_f_v         );
+    __render_context_3d_func(vertexAttribPointer,       vertex_attrib_pointer       );
+    __render_context_3d_func(viewport,                  viewport                    );
+#undef __render_context_3d_attr
+#endif
+    _class.build();
+    _object["WebGLRenderingContext"] = _class.to_value(_context);
+    thread_related->cls_render_context_3d_ = std::move(_class);
+};

@@ -1,0 +1,2 @@
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android-ar qc ../../../lib/libgmock_main.a  CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android-ranlib ../../../lib/libgmock_main.a

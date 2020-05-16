@@ -1,0 +1,9 @@
+target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_libplatform.a)
+
+target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_base.a)
+target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_libbase.a)
+#target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_nosnapshot.a)
+target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_snapshot.a)
+target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_libsampler.a)
+target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_init.a)
+target_link_libraries(native-lib ${CMAKE_SOURCE_DIR}/libs/libv8_initializers.a)

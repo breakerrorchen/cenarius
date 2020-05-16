@@ -1,0 +1,32 @@
+{
+    files = {
+        "build/.objs/v8_interpreter/android/arm64-v8a/release/src/interpreter.cc.o"
+    },
+    values = {
+        "/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++",
+        {
+            "-Lexternal/v8/android/v8.7.2.100/libs/arm64-v8a",
+            "-s",
+            "-fvisibility=hidden",
+            "-lv8_libplatform",
+            "-lv8_base",
+            "-lv8_libbase",
+            "-lv8_snapshot",
+            "-lv8_libsampler",
+            "-lv8_init",
+            "-lv8_initializers",
+            "-shared",
+            "-fPIC",
+            "-llog",
+            "-target",
+            "aarch64-none-linux-android",
+            "-gcc-toolchain",
+            "/Users/bytedance/Code/android-ndk-r20b/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64",
+            "--sysroot=/Users/bytedance/Code/android-ndk-r20b/platforms/android-21/arch-arm64",
+            "-L/Users/bytedance/Code/android-ndk-r20b/sources/cxx-stl/llvm-libc++/libs/arm64-v8a",
+            "-lc++_static",
+            "-lc++abi",
+            "-nostdlib++"
+        }
+    }
+}

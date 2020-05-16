@@ -1,0 +1,43 @@
+{
+    files = {
+        "src/interpreter.cc",
+        "src/i_v8.h",
+        "external/v8/android/v8.7.2.100/include/v8.h",
+        "external/v8/android/v8.7.2.100/include/v8-internal.h",
+        "external/v8/android/v8.7.2.100/include/v8-version.h",
+        "external/v8/android/v8.7.2.100/include/v8config.h",
+        "external/v8/android/v8.7.2.100/include/v8-util.h",
+        "external/v8/android/v8.7.2.100/include/v8-inspector.h",
+        "external/v8/android/v8.7.2.100/include/libplatform/libplatform.h",
+        "external/v8/android/v8.7.2.100/include/libplatform/libplatform-export.h",
+        "external/v8/android/v8.7.2.100/include/libplatform/v8-tracing.h",
+        "external/v8/android/v8.7.2.100/include/v8-platform.h",
+        "include/interpreter.h",
+        "include/i_v8.h",
+        "src/interpreter.cc"
+    },
+    values = {
+        "/Users/bytedance/Code/android-ndk-r20b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++",
+        {
+            "-fvisibility=hidden",
+            "-Oz",
+            "-std=c++11",
+            "-Iexternal/v8/android/v8.7.2.100/include",
+            "-Iinclude",
+            "-D__use_v8_backend__",
+            "--sysroot=/Users/bytedance/Code/android-ndk-r20b/sysroot",
+            "-isystem",
+            "/Users/bytedance/Code/android-ndk-r20b/sysroot/usr/include/aarch64-linux-android",
+            "-I/Users/bytedance/Code/android-ndk-r20b/sources/cxx-stl/llvm-libc++/include",
+            "-I/Users/bytedance/Code/android-ndk-r20b/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/include",
+            "-I/Users/bytedance/Code/android-ndk-r20b/sources/cxx-stl/llvm-libc++abi/include",
+            "-Qunused-arguments",
+            "-target",
+            "aarch64-none-linux-android",
+            "-gcc-toolchain",
+            "/Users/bytedance/Code/android-ndk-r20b/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64",
+            "-D__ANDROID_API__=21",
+            "-fPIC"
+        }
+    }
+}

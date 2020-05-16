@@ -1,0 +1,162 @@
+Register SE driver: good
+0:int:2:exp:0:exp:1
+
+Register SE driver: good, again
+0:int:2:exp:0:exp:1
+
+Register SE driver: invalid lifetime (0)
+0:int:0:exp:0:exp:2
+
+Register SE driver: invalid lifetime (VOLATILE)
+0:exp:3:exp:0:exp:2
+
+Register SE driver: invalid lifetime (PERSISTENT)
+0:exp:4:exp:0:exp:2
+
+Register SE driver: invalid version (ancient)
+0:int:2:int:0x00000003:exp:5
+
+Register SE driver: invalid version (future)
+0:int:2:exp:6:exp:5
+
+Register SE driver: already registered
+1:int:3
+
+Register SE driver: maximum number of drivers
+2
+
+SE key import-export (p_allocate allows all slots)
+3:int:0:int:0
+
+SE key import-export (p_allocate allows 1 slot)
+3:exp:7:int:0
+
+SE key import-export, check after restart (slot 0)
+3:int:0:int:1
+
+SE key import-export, check after restart (slot 3)
+3:int:3:int:1
+
+Key creation in a specific slot (0)
+4:int:0:int:0:exp:1
+
+Key creation in a specific slot (max)
+4:exp:7:int:0:exp:1
+
+Key creation in a specific slot (0, restart)
+4:int:0:int:1:exp:1
+
+Key creation in a specific slot (max, restart)
+4:exp:7:int:1:exp:1
+
+Key creation in a specific slot (too large)
+4:exp:8:int:0:exp:2
+
+Key import smoke test: AES-CTR
+5:exp:9:exp:10:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: AES-CBC
+5:exp:9:exp:11:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: AES-CMAC
+5:exp:9:exp:12:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: AES-CCM
+5:exp:9:exp:13:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: AES-GCM
+5:exp:9:exp:14:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: CAMELLIA-CTR
+5:exp:15:exp:10:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: CAMELLIA-CBC
+5:exp:15:exp:11:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: CAMELLIA-CMAC
+5:exp:15:exp:12:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: CAMELLIA-CCM
+5:exp:15:exp:13:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: CAMELLIA-GCM
+5:exp:15:exp:14:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: HMAC-SHA-256
+5:exp:16:exp:17:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: HKDF-SHA-256
+5:exp:18:exp:19:hex:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+Key import smoke test: RSA PKCS#1v1.5 signature
+5:exp:20:exp:21:hex:"30818902818100af057d396ee84fb75fdbb5c2b13c7fe5a654aa8aa2470b541ee1feb0b12d25c79711531249e1129628042dbbb6c120d1443524ef4c0e6e1d8956eeb2077af12349ddeee54483bc06c2c61948cd02b202e796aebd94d3a7cbf859c2c1819c324cb82b9cd34ede263a2abffe4733f077869e8660f7d6834da53d690ef7985f6bc30203010001"
+
+Key import smoke test: RSA PKCS#1v1.5 encryption
+5:exp:20:exp:22:hex:"30818902818100af057d396ee84fb75fdbb5c2b13c7fe5a654aa8aa2470b541ee1feb0b12d25c79711531249e1129628042dbbb6c120d1443524ef4c0e6e1d8956eeb2077af12349ddeee54483bc06c2c61948cd02b202e796aebd94d3a7cbf859c2c1819c324cb82b9cd34ede263a2abffe4733f077869e8660f7d6834da53d690ef7985f6bc30203010001"
+
+Key import smoke test: RSA OAEP encryption
+5:exp:20:exp:23:hex:"30818902818100af057d396ee84fb75fdbb5c2b13c7fe5a654aa8aa2470b541ee1feb0b12d25c79711531249e1129628042dbbb6c120d1443524ef4c0e6e1d8956eeb2077af12349ddeee54483bc06c2c61948cd02b202e796aebd94d3a7cbf859c2c1819c324cb82b9cd34ede263a2abffe4733f077869e8660f7d6834da53d690ef7985f6bc30203010001"
+
+Key import smoke test: ECDSA secp256r1
+5:exp:24:exp:25:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee"
+
+Key import smoke test: ECDH secp256r1
+5:exp:24:exp:26:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee"
+
+Key import smoke test: ECDH secp256r1 with HKDF
+5:exp:24:exp:27:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee"
+
+Generate key: not supported
+6:exp:9:int:128
+
+Key generation smoke test: AES-128-CTR
+7:exp:9:int:128:exp:10
+
+Key generation smoke test: AES-256-CTR
+7:exp:9:int:128:exp:10
+
+Key generation smoke test: HMAC-SHA-256
+7:exp:16:int:256:exp:17
+
+Key registration: smoke test
+9:exp:28:int:1:exp:1
+
+Key registration: invalid lifetime (volatile)
+9:exp:3:int:1:exp:2
+
+Key registration: invalid lifetime (internal storage)
+9:exp:4:int:1:exp:2
+
+Key registration: invalid lifetime (no registered driver)
+9:exp:29:int:1:exp:2
+
+Key registration: rejected
+9:exp:28:int:0:exp:30
+
+Key registration: not supported
+9:exp:28:exp:31:exp:5
+
+Import-sign-verify: sign in driver, ECDSA
+depends_on:0:1:2
+8:exp:32:exp:24:exp:25:int:0:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee":hex:"54686973206973206e6f74206120686173682e"
+
+Import-sign-verify: sign in driver then export_public, ECDSA
+depends_on:0:1:2
+8:exp:33:exp:24:exp:25:int:0:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee":hex:"54686973206973206e6f74206120686173682e"
+
+Import-sign-verify: sign in software, ECDSA
+depends_on:0:1:2
+8:exp:34:exp:24:exp:25:int:0:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee":hex:"54686973206973206e6f74206120686173682e"
+
+Generate-sign-verify: sign in driver, ECDSA
+depends_on:0:1:2
+8:exp:32:exp:24:exp:25:int:256:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee":hex:"54686973206973206e6f74206120686173682e"
+
+Generate-sign-verify: sign in driver then export_public, ECDSA
+depends_on:0:1:2
+8:exp:33:exp:24:exp:25:int:256:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee":hex:"54686973206973206e6f74206120686173682e"
+
+Generate-sign-verify: sign in software, ECDSA
+depends_on:0:1:2
+8:exp:34:exp:24:exp:25:int:256:hex:"49c9a8c18c4b885638c431cf1df1c994131609b580d4fd43a0cab17db2f13eee":hex:"54686973206973206e6f74206120686173682e"
+

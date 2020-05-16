@@ -1,0 +1,8 @@
+{
+    mtimes = {
+        ["xmake.lua"] = 1583908064
+    },
+    options_all = { },
+    __version = "2.3.1",
+    options_vorbis = ref("options_all")
+}

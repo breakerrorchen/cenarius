@@ -1,0 +1,12 @@
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/install.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/uv_run_tests.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/RUN_TESTS.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/uv.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/uv_a.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/NightlyMemoryCheck.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/uv_run_tests_a.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/Nightly.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/Continuous.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/Experimental.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/ALL_BUILD.dir
+/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/CMakeFiles/ZERO_CHECK.dir

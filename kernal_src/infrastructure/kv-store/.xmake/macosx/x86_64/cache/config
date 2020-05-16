@@ -1,0 +1,8 @@
+{
+    mtimes = {
+        ["xmake.lua"] = 1582998009
+    },
+    options_all = { },
+    __version = "2.2.9",
+    ["options_kv-store"] = ref("options_all")
+}

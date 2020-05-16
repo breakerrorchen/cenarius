@@ -1,0 +1,172 @@
+Test case mbedtls_base64_encode #1 buffer just right
+0:char*:"":char*:"":int:0:int:0
+
+Test case mbedtls_base64_encode #2 buffer just right
+0:char*:"f":char*:"Zg==":int:5:int:0
+
+Test case mbedtls_base64_encode #2 buffer too small
+0:char*:"f":char*:"Zg==":int:4:exp:0
+
+Test case mbedtls_base64_encode #3 buffer just right
+0:char*:"fo":char*:"Zm8=":int:5:int:0
+
+Test case mbedtls_base64_encode #3 buffer too small
+0:char*:"fo":char*:"Zm8=":int:4:exp:0
+
+Test case mbedtls_base64_encode #4 buffer just right
+0:char*:"foo":char*:"Zm9v":int:5:int:0
+
+Test case mbedtls_base64_encode #4 buffer too small
+0:char*:"foo":char*:"Zm9v":int:4:exp:0
+
+Test case mbedtls_base64_encode #5 buffer just right
+0:char*:"foob":char*:"Zm9vYg==":int:9:int:0
+
+Test case mbedtls_base64_encode #5 buffer too small
+0:char*:"foob":char*:"Zm9vYg==":int:8:exp:0
+
+Test case mbedtls_base64_encode #6 buffer just right
+0:char*:"fooba":char*:"Zm9vYmE=":int:9:int:0
+
+Test case mbedtls_base64_encode #6 buffer too small
+0:char*:"fooba":char*:"Zm9vYmE=":int:8:exp:0
+
+Test case mbedtls_base64_encode #7 buffer just right
+0:char*:"foobar":char*:"Zm9vYmFy":int:9:int:0
+
+Test case mbedtls_base64_encode #7 buffer too small
+0:char*:"foobar":char*:"Zm9vYmFy":int:8:exp:0
+
+Test case mbedtls_base64_decode #1
+1:char*:"":char*:"":int:0
+
+Test case mbedtls_base64_decode #2
+1:char*:"Zg==":char*:"f":int:0
+
+Test case mbedtls_base64_decode #3
+1:char*:"Zm8=":char*:"fo":int:0
+
+Test case mbedtls_base64_decode #4
+1:char*:"Zm9v":char*:"foo":int:0
+
+Test case mbedtls_base64_decode #5
+1:char*:"Zm9vYg==":char*:"foob":int:0
+
+Test case mbedtls_base64_decode #6
+1:char*:"Zm9vYmE=":char*:"fooba":int:0
+
+Test case mbedtls_base64_decode #7
+1:char*:"Zm9vYmFy":char*:"foobar":int:0
+
+Base64 decode (Illegal character)
+1:char*:"zm#=":char*:"":exp:1
+
+Base64 decode (Too much equal signs)
+1:char*:"zm===":char*:"":exp:1
+
+Base64 decode (Invalid char after equal signs)
+1:char*:"zm=masd":char*:"":exp:1
+
+Base64 decode (Space inside string)
+1:char*:"zm masd":char*:"":exp:1
+
+Base64 decode "Zm9vYmFy" (no newline nor '\0' at end)
+4:hex:"5a6d3976596d4679":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy\n" (LF at end)
+4:hex:"5a6d3976596d46790a":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy\r\n" (CRLF at end)
+4:hex:"5a6d3976596d46790d0a":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy\r" (CR at end)
+4:hex:"5a6d3976596d46790d":char*:"":exp:1
+
+Base64 decode "Zm9vYmFy " (SP at end)
+4:hex:"5a6d3976596d467920":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy \n" (SP+LF at end)
+4:hex:"5a6d3976596d4679200a":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy \r\n" (SP+CRLF at end)
+4:hex:"5a6d3976596d4679200d0a":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy \r" (SP+CR at end)
+4:hex:"5a6d3976596d4679200d":char*:"":exp:1
+
+Base64 decode "Zm9vYmFy  " (2SP at end)
+4:hex:"5a6d3976596d46792020":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy  \n" (2SP+LF at end)
+4:hex:"5a6d3976596d467920200a":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy  \r\n" (2SP+CRLF at end)
+4:hex:"5a6d3976596d467920200d0a":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmFy  \r" (2SP+CR at end)
+4:hex:"5a6d3976596d467920200d":char*:"":exp:1
+
+Base64 decode "Zm9vYmF\ny" (LF inside)
+4:hex:"5a6d3976596d460a79":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmF\ry" (CRLF inside)
+4:hex:"5a6d3976596d460d0a79":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmF\ry" (CR inside)
+4:hex:"5a6d3976596d460d79":char*:"":exp:1
+
+Base64 decode "Zm9vYmF y" (SP inside)
+4:hex:"5a6d3976596d462079":char*:"":exp:1
+
+Base64 decode "Zm9vYmF \ny" (SP+LF inside)
+4:hex:"5a6d3976596d46200a79":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmF \ry" (SP+CRLF inside)
+4:hex:"5a6d3976596d46200d0a79":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmF \ry" (SP+CR inside)
+4:hex:"5a6d3976596d46200d79":char*:"":exp:1
+
+Base64 decode "Zm9vYmF  y" (2SP inside)
+4:hex:"5a6d3976596d46202079":char*:"":exp:1
+
+Base64 decode "Zm9vYmF  \ny" (2SP+LF inside)
+4:hex:"5a6d3976596d4620200a79":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmF  \ry" (2SP+CRLF inside)
+4:hex:"5a6d3976596d4620200d0a79":char*:"foobar":int:0
+
+Base64 decode "Zm9vYmF  \ry" (2SP+CR inside)
+4:hex:"5a6d3976596d4620200d79":char*:"":exp:1
+
+Base64 encode hex #1
+2:hex:"010203040506070809":char*:"AQIDBAUGBwgJ":int:13:int:0
+
+Base64 encode hex #2 (buffer too small)
+2:hex:"010203040506070809":char*:"AQIDBAUGBwgJ":int:12:exp:0
+
+Base64 encode hex #3
+2:hex:"0102030405060708":char*:"AQIDBAUGBwg=":int:13:int:0
+
+Base64 encode hex #4
+2:hex:"01020304050607":char*:"AQIDBAUGBw==":int:13:int:0
+
+Base64 decode hex #1
+3:char*:"AQIDBAUGBwgJ":hex:"010203040506070809":int:9:int:0
+
+Base64 decode hex #2 (buffer too small)
+3:char*:"AQIDBAUGBwgJ":hex:"010203040506070809":int:8:exp:0
+
+Base64 decode hex #3
+3:char*:"AQIDBAUGBwg=":hex:"0102030405060708":int:8:int:0
+
+Base64 decode hex #4
+3:char*:"AQIDBAUGBw==":hex:"01020304050607":int:7:int:0
+
+Base64 decode hex #5 (buffer too small)
+3:char*:"AQIDBAUGBw==":hex:"01020304050607":int:6:exp:0
+
+Base64 Selftest
+depends_on:0
+5
+

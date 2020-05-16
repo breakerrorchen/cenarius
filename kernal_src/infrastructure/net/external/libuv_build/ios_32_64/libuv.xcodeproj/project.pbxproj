@@ -1,0 +1,1745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		328A962ADAC44E9FA76B90B8 /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 327AC6FF64A84D78BEBD1529 /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				9786F2970E2A4429ACA0C7BB /* CMake Rules */,
+			);
+			dependencies = (
+				233FE4743F824701960C2D0E /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1896B6AF8F684DF3ABE3DD95 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				7E925554C0384954864E651B /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6E54FD69E498450FA84F3E6E /* Continuous */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8A4AAFDE3B21440981C7D7EA /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildPhases = (
+				9C1152EEB2E248F8834F06E8 /* CMake Rules */,
+			);
+			dependencies = (
+				D86B5BBE80184E4283A08354 /* PBXTargetDependency */,
+			);
+			name = Continuous;
+			productName = Continuous;
+		};
+		8913D7B76B78456B89DA40F1 /* Nightly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FE84586CB70B444ABD7DAD7E /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildPhases = (
+				B08B8D01911047359DB493F3 /* CMake Rules */,
+			);
+			dependencies = (
+				B7AA6586C97A41C2B8E395C9 /* PBXTargetDependency */,
+			);
+			name = Nightly;
+			productName = Nightly;
+		};
+		90E663257CFA430EA6EF5B70 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 842CF16348084558AE734516 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				482006B262D54DE499C68E8D /* CMake Rules */,
+			);
+			dependencies = (
+				F91DC0A75A2C40DA94B70BF0 /* PBXTargetDependency */,
+				91BFAC794DEE4B8690DC4CFB /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D9E445321D2F413E88FBD127 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3EBE94DC05AE4868AFA1B6B8 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				6A17006E55BE44888E0FA8E1 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				803F606605FB48DE997781D0 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		EA66B689C5B84DDDABA88C40 /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 76079679042C469A91E12362 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				FEED70D0215F41518952AB1C /* CMake Rules */,
+			);
+			dependencies = (
+				4DDE63DF9946449E830BD234 /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		F11DDAFF12614BA2B8A70C97 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C1FAB4DE78E0421480167801 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				6AF6CDC46A974E18B5EF1CA4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02B7EB27A5434FDF9E73E116 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/idna.c */ = {isa = PBXBuildFile; fileRef = 32AB898B37DE44788B5C61A7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/idna.c */; };
+		0DC8825065E341C88A943ACF /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/inet.c */ = {isa = PBXBuildFile; fileRef = B670D67460D8419993D2B91E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/inet.c */; };
+		185EDE8FC31049478589F048 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeFiles/uv_a.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = D56536E699AA4291BA374AF7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeFiles/uv_a.dir/Info.plist */; };
+		1A378EF100DE4CA3A2891C48 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getaddrinfo.c */ = {isa = PBXBuildFile; fileRef = BFF0CC9B0418458098890D78 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getaddrinfo.c */; };
+		240A9926389348EDA3F0EEC8 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tty.c */ = {isa = PBXBuildFile; fileRef = 9C4BE58BFE61484C8905EF5D /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tty.c */; };
+		25731AEBA61B4FD18C28A2DD /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/core.c */ = {isa = PBXBuildFile; fileRef = BE4ACEDE984042F58E82D7F5 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/core.c */; };
+		2A3FAB352B7F40DB879C08B7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/async.c */ = {isa = PBXBuildFile; fileRef = 5AA644369F934ADE9DD2D43E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/async.c */; };
+		44876EAECB3A401F8D5131E7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-data-getter-setters.c */ = {isa = PBXBuildFile; fileRef = 8B41B99FD5A245D09E363283 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-data-getter-setters.c */; };
+		4AA82899D31E4C478990F96C /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/fs-poll.c */ = {isa = PBXBuildFile; fileRef = E45A5AEDD57E4263B19D77F3 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/fs-poll.c */; };
+		4FF03001706D4B3AA076620A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tcp.c */ = {isa = PBXBuildFile; fileRef = 0670D33DB8824DE9AA1C7450 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tcp.c */; };
+		5671744ACD6340BE8418E37E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/bsd-ifaddrs.c */ = {isa = PBXBuildFile; fileRef = 4D0BF1EA74CD43AE9B82980B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/bsd-ifaddrs.c */; };
+		5F3966605B494348BDF5B6D2 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/kqueue.c */ = {isa = PBXBuildFile; fileRef = 407B4C88C00C4704891A89EB /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/kqueue.c */; };
+		63519044BE87487C81B7DBD3 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop.c */ = {isa = PBXBuildFile; fileRef = 8C230633188E48A188282C4A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop.c */; };
+		68F28E84709F4114A9185A92 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getnameinfo.c */ = {isa = PBXBuildFile; fileRef = 64D10D039CB74DBB88DBA3F9 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getnameinfo.c */; };
+		71D3A8ADBC654097A07B4404 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/strscpy.c */ = {isa = PBXBuildFile; fileRef = 08B43E4C2D9E4826B5C85F93 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/strscpy.c */; };
+		77968BB546834E98BBBFE0FE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin.c */ = {isa = PBXBuildFile; fileRef = 206BB646CEB34C94A123FEF6 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin.c */; };
+		7DA9E900E12B484AB7EDEA3A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-common.c */ = {isa = PBXBuildFile; fileRef = D4C00DB6B31B42908C3486DE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-common.c */; };
+		9098831FA5014D1DB74FAE22 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/proctitle.c */ = {isa = PBXBuildFile; fileRef = F973DA49F1F34CA2BA49B155 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/proctitle.c */; };
+		954F947B346E4FA7AA769FDA /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/process.c */ = {isa = PBXBuildFile; fileRef = 44E98A8D3F1D4BBEA396ED63 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/process.c */; };
+		992A4A85C2874A14A59DA9CB /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/thread.c */ = {isa = PBXBuildFile; fileRef = 329E4C984BCC45B7AB5FCC85 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/thread.c */; };
+		9EAF2FFDF3CB4541A69B06BC /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop-watcher.c */ = {isa = PBXBuildFile; fileRef = A2E7F5F7BB86473AB51B87BE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop-watcher.c */; };
+		A1847DE4CF5747F3BEBEBAF5 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/threadpool.c */ = {isa = PBXBuildFile; fileRef = 2AF3086E9B554BA5BFB86E18 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/threadpool.c */; };
+		A30D95FA5485453D97CDDB9B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/timer.c */ = {isa = PBXBuildFile; fileRef = BC954D2EB63C41218219B18B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/timer.c */; };
+		A696B7DCC6C34824922009CE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-devurandom.c */ = {isa = PBXBuildFile; fileRef = CED3E6845EF54564A8E007C0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-devurandom.c */; };
+		B14CE031F36744E5912D9EE8 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0CACC814D0994088A6E958B6 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */; };
+		BACCE00699364CB4BAE14021 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/dl.c */ = {isa = PBXBuildFile; fileRef = 5FB3C6510BAC4B4FB5DFF346 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/dl.c */; };
+		BF6308ECA3A54FE2B77CC7E3 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/poll.c */ = {isa = PBXBuildFile; fileRef = 310F627B8D914618A9FCEAF1 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/poll.c */; };
+		C2BE292F5CFA467093EE7ED0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/signal.c */ = {isa = PBXBuildFile; fileRef = FC54207B40D34538AA289517 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/signal.c */; };
+		C3E6BC67BC3F4F33B7C99656 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/version.c */ = {isa = PBXBuildFile; fileRef = 375ED33A1DF34DF7AE8A5CB0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/version.c */; };
+		C5438CF8DE384848A9D6B0CD /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin-proctitle.c */ = {isa = PBXBuildFile; fileRef = 50F689159BC9490DA71D7BA7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin-proctitle.c */; };
+		D54F58B4E72245AA950E9774 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/stream.c */ = {isa = PBXBuildFile; fileRef = 80CD11969E70493F8D0C3906 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/stream.c */; };
+		D7AE7BA9794243B995B84453 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-getentropy.c */ = {isa = PBXBuildFile; fileRef = B90DED6EAB7146298842B1B7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-getentropy.c */; };
+		D816536D747C496C9B0D32C7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/random.c */ = {isa = PBXBuildFile; fileRef = 2BC3421A85654C6A8A4068F1 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/random.c */; };
+		D9641B1537414DD695CFD5AB /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fsevents.c */ = {isa = PBXBuildFile; fileRef = C439CB22B88740EDA3C7D61A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fsevents.c */; };
+		E47913E810AF4508B4CFE21E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fs.c */ = {isa = PBXBuildFile; fileRef = 2E6FACE4D7B942C0A6E4382A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fs.c */; };
+		EB7FE00DE71449EA8E7B229F /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/pipe.c */ = {isa = PBXBuildFile; fileRef = AF17EA3B8B27454FACB556C2 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/pipe.c */; };
+		F5230A257C724AC989BEF422 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/udp.c */ = {isa = PBXBuildFile; fileRef = 508C9AD3AF444363B56A0428 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/udp.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		03547A8F71DC4F0B9FCE77FA /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		2E9035F5F2C94C33A27C8258 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		44D1DBB6F2BD4A53A4CEDDF8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		C6ACBB60E28349718FC69420 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		2D1832A608D843FB823EA8B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5D0C2C6AD3441BA80CBD15;
+			remoteInfo = ZERO_CHECK;
+		};
+		8BEF4DC38F174A30980C9685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B32E87E9435452EB11114B5;
+			remoteInfo = uv_a;
+		};
+		9404007A772941D8B6BA34C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5D0C2C6AD3441BA80CBD15;
+			remoteInfo = ZERO_CHECK;
+		};
+		9A95662E817441CF8D2F7DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E663257CFA430EA6EF5B70;
+			remoteInfo = ALL_BUILD;
+		};
+		A6F7C29B08BF41BA803F3D4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5D0C2C6AD3441BA80CBD15;
+			remoteInfo = ZERO_CHECK;
+		};
+		AF6A2FEF7EED450FAE6035FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5D0C2C6AD3441BA80CBD15;
+			remoteInfo = ZERO_CHECK;
+		};
+		B17561748E2247C49E606A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5D0C2C6AD3441BA80CBD15;
+			remoteInfo = ZERO_CHECK;
+		};
+		BBD1C891BE6A4BDF8B62752C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D5D0C2C6AD3441BA80CBD15;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0670D33DB8824DE9AA1C7450 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tcp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tcp.c; path = src/unix/tcp.c; sourceTree = SOURCE_ROOT; };
+		08B43E4C2D9E4826B5C85F93 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/strscpy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strscpy.c; path = src/strscpy.c; sourceTree = SOURCE_ROOT; };
+		0CACC814D0994088A6E958B6 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		206BB646CEB34C94A123FEF6 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = darwin.c; path = src/unix/darwin.c; sourceTree = SOURCE_ROOT; };
+		2AF3086E9B554BA5BFB86E18 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/threadpool.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = threadpool.c; path = src/threadpool.c; sourceTree = SOURCE_ROOT; };
+		2BC3421A85654C6A8A4068F1 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/random.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = random.c; path = src/random.c; sourceTree = SOURCE_ROOT; };
+		2E6FACE4D7B942C0A6E4382A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fs.c; path = src/unix/fs.c; sourceTree = SOURCE_ROOT; };
+		310F627B8D914618A9FCEAF1 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/poll.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = poll.c; path = src/unix/poll.c; sourceTree = SOURCE_ROOT; };
+		329E4C984BCC45B7AB5FCC85 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = thread.c; path = src/unix/thread.c; sourceTree = SOURCE_ROOT; };
+		32AB898B37DE44788B5C61A7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/idna.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = idna.c; path = src/idna.c; sourceTree = SOURCE_ROOT; };
+		375ED33A1DF34DF7AE8A5CB0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/version.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = version.c; path = src/version.c; sourceTree = SOURCE_ROOT; };
+		407B4C88C00C4704891A89EB /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/kqueue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kqueue.c; path = src/unix/kqueue.c; sourceTree = SOURCE_ROOT; };
+		44E98A8D3F1D4BBEA396ED63 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/process.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = process.c; path = src/unix/process.c; sourceTree = SOURCE_ROOT; };
+		4D0BF1EA74CD43AE9B82980B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/bsd-ifaddrs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "bsd-ifaddrs.c"; path = "src/unix/bsd-ifaddrs.c"; sourceTree = SOURCE_ROOT; };
+		4E804C41968C4C648A2D2F68 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		50449E1AE80D4EA9A8D94D1B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		508C9AD3AF444363B56A0428 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/udp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = udp.c; path = src/unix/udp.c; sourceTree = SOURCE_ROOT; };
+		50F689159BC9490DA71D7BA7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin-proctitle.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "darwin-proctitle.c"; path = "src/unix/darwin-proctitle.c"; sourceTree = SOURCE_ROOT; };
+		5AA644369F934ADE9DD2D43E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/async.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = async.c; path = src/unix/async.c; sourceTree = SOURCE_ROOT; };
+		5FB3C6510BAC4B4FB5DFF346 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/dl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dl.c; path = src/unix/dl.c; sourceTree = SOURCE_ROOT; };
+		64D10D039CB74DBB88DBA3F9 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getnameinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = getnameinfo.c; path = src/unix/getnameinfo.c; sourceTree = SOURCE_ROOT; };
+		80CD11969E70493F8D0C3906 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/stream.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = stream.c; path = src/unix/stream.c; sourceTree = SOURCE_ROOT; };
+		836656EBEDF94C16B6B02341 /* uv_a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libuv_a.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B41B99FD5A245D09E363283 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-data-getter-setters.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "uv-data-getter-setters.c"; path = "src/uv-data-getter-setters.c"; sourceTree = SOURCE_ROOT; };
+		8C230633188E48A188282C4A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = loop.c; path = src/unix/loop.c; sourceTree = SOURCE_ROOT; };
+		9C4BE58BFE61484C8905EF5D /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tty.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tty.c; path = src/unix/tty.c; sourceTree = SOURCE_ROOT; };
+		A2E7F5F7BB86473AB51B87BE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop-watcher.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "loop-watcher.c"; path = "src/unix/loop-watcher.c"; sourceTree = SOURCE_ROOT; };
+		AF17EA3B8B27454FACB556C2 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/pipe.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pipe.c; path = src/unix/pipe.c; sourceTree = SOURCE_ROOT; };
+		B670D67460D8419993D2B91E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/inet.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = inet.c; path = src/inet.c; sourceTree = SOURCE_ROOT; };
+		B90DED6EAB7146298842B1B7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-getentropy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "random-getentropy.c"; path = "src/unix/random-getentropy.c"; sourceTree = SOURCE_ROOT; };
+		BB789F5D74FD4D0B96BF8915 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BC954D2EB63C41218219B18B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/timer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = timer.c; path = src/timer.c; sourceTree = SOURCE_ROOT; };
+		BE4ACEDE984042F58E82D7F5 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/core.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = core.c; path = src/unix/core.c; sourceTree = SOURCE_ROOT; };
+		BFF0CC9B0418458098890D78 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getaddrinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = getaddrinfo.c; path = src/unix/getaddrinfo.c; sourceTree = SOURCE_ROOT; };
+		C439CB22B88740EDA3C7D61A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fsevents.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsevents.c; path = src/unix/fsevents.c; sourceTree = SOURCE_ROOT; };
+		C5321A0A5E9742948394D6E0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CED3E6845EF54564A8E007C0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-devurandom.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "random-devurandom.c"; path = "src/unix/random-devurandom.c"; sourceTree = SOURCE_ROOT; };
+		D4C00DB6B31B42908C3486DE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-common.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "uv-common.c"; path = "src/uv-common.c"; sourceTree = SOURCE_ROOT; };
+		D56536E699AA4291BA374AF7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeFiles/uv_a.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ../libuv_build/ios_32_64/CMakeFiles/uv_a.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		E2A6723306364A29895597DD /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E45A5AEDD57E4263B19D77F3 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/fs-poll.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "fs-poll.c"; path = "src/fs-poll.c"; sourceTree = SOURCE_ROOT; };
+		F973DA49F1F34CA2BA49B155 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/proctitle.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = proctitle.c; path = src/unix/proctitle.c; sourceTree = SOURCE_ROOT; };
+		FC54207B40D34538AA289517 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/signal.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = signal.c; path = src/unix/signal.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		140307E36C5A426FA6DB748B /* uv_a */ = {
+			isa = PBXGroup;
+			children = (
+				8125FCB4E8AD49A4B7714ACE /* Source Files */,
+				A28AE0103EBD4C138463B8EB /* Resources */,
+				0CACC814D0994088A6E958B6 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */,
+			);
+			name = uv_a;
+			sourceTree = "<group>";
+		};
+		16A94B5266CC4D7A9D03EC09 /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				EEA050700BC44B09A31BFBB2 /* CMake Rules */,
+				BB789F5D74FD4D0B96BF8915 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+		1823E255322B47FC83F12968 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		221D31633CA748118ACF4828 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		46227BE912D140EE93E59A3A /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				1823E255322B47FC83F12968 /* CMake Rules */,
+				50449E1AE80D4EA9A8D94D1B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		5ACB1645314246FB9F4DB17E /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				62106992887745DDB8F11601 /* CMake Rules */,
+				4E804C41968C4C648A2D2F68 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		62106992887745DDB8F11601 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		71050C47B8F94188AFEC88E9 = {
+			isa = PBXGroup;
+			children = (
+				140307E36C5A426FA6DB748B /* uv_a */,
+				46227BE912D140EE93E59A3A /* NightlyMemoryCheck */,
+				16A94B5266CC4D7A9D03EC09 /* Nightly */,
+				5ACB1645314246FB9F4DB17E /* Continuous */,
+				88491091DB754675936AF485 /* Experimental */,
+				BD063532BE7A407FBA93CAFC /* ALL_BUILD */,
+				F882C6796CA4494D8A9C2EBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8125FCB4E8AD49A4B7714ACE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E45A5AEDD57E4263B19D77F3 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/fs-poll.c */,
+				32AB898B37DE44788B5C61A7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/idna.c */,
+				B670D67460D8419993D2B91E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/inet.c */,
+				2BC3421A85654C6A8A4068F1 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/random.c */,
+				08B43E4C2D9E4826B5C85F93 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/strscpy.c */,
+				2AF3086E9B554BA5BFB86E18 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/threadpool.c */,
+				BC954D2EB63C41218219B18B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/timer.c */,
+				5AA644369F934ADE9DD2D43E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/async.c */,
+				4D0BF1EA74CD43AE9B82980B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/bsd-ifaddrs.c */,
+				BE4ACEDE984042F58E82D7F5 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/core.c */,
+				50F689159BC9490DA71D7BA7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin-proctitle.c */,
+				206BB646CEB34C94A123FEF6 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin.c */,
+				5FB3C6510BAC4B4FB5DFF346 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/dl.c */,
+				2E6FACE4D7B942C0A6E4382A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fs.c */,
+				C439CB22B88740EDA3C7D61A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fsevents.c */,
+				BFF0CC9B0418458098890D78 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getaddrinfo.c */,
+				64D10D039CB74DBB88DBA3F9 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getnameinfo.c */,
+				407B4C88C00C4704891A89EB /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/kqueue.c */,
+				A2E7F5F7BB86473AB51B87BE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop-watcher.c */,
+				8C230633188E48A188282C4A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop.c */,
+				AF17EA3B8B27454FACB556C2 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/pipe.c */,
+				310F627B8D914618A9FCEAF1 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/poll.c */,
+				44E98A8D3F1D4BBEA396ED63 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/process.c */,
+				F973DA49F1F34CA2BA49B155 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/proctitle.c */,
+				CED3E6845EF54564A8E007C0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-devurandom.c */,
+				B90DED6EAB7146298842B1B7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-getentropy.c */,
+				FC54207B40D34538AA289517 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/signal.c */,
+				80CD11969E70493F8D0C3906 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/stream.c */,
+				0670D33DB8824DE9AA1C7450 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tcp.c */,
+				329E4C984BCC45B7AB5FCC85 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/thread.c */,
+				9C4BE58BFE61484C8905EF5D /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tty.c */,
+				508C9AD3AF444363B56A0428 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/udp.c */,
+				D4C00DB6B31B42908C3486DE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-common.c */,
+				8B41B99FD5A245D09E363283 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-data-getter-setters.c */,
+				375ED33A1DF34DF7AE8A5CB0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/version.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		88491091DB754675936AF485 /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				BF669499977D4DDCAB8510CF /* CMake Rules */,
+				E2A6723306364A29895597DD /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		A28AE0103EBD4C138463B8EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D56536E699AA4291BA374AF7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeFiles/uv_a.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BD063532BE7A407FBA93CAFC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				221D31633CA748118ACF4828 /* CMake Rules */,
+				C5321A0A5E9742948394D6E0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BF669499977D4DDCAB8510CF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		EEA050700BC44B09A31BFBB2 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F882C6796CA4494D8A9C2EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				836656EBEDF94C16B6B02341 /* uv_a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B32E87E9435452EB11114B5 /* uv_a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D097D6DEE31A40EFBE6677EB /* Build configuration list for PBXNativeTarget "uv_a" */;
+			buildPhases = (
+				90EAA3403D1D4432BC0BC3E0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5F1404838CF4761B7CD35F0 /* PBXTargetDependency */,
+			);
+			name = uv_a;
+			productName = uv_a;
+			productReference = 836656EBEDF94C16B6B02341 /* uv_a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CAB6B75059D4BA3A46EFF21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 92F1AAB1BC704B9EA5719DB1 /* Build configuration list for PBXProject "libuv" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2E9035F5F2C94C33A27C8258 /* Debug */,
+				C6ACBB60E28349718FC69420 /* Release */,
+				03547A8F71DC4F0B9FCE77FA /* MinSizeRel */,
+				44D1DBB6F2BD4A53A4CEDDF8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 71050C47B8F94188AFEC88E9;
+			projectDirPath = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv;
+			projectRoot = "";
+			targets = (
+				90E663257CFA430EA6EF5B70 /* ALL_BUILD */,
+				6E54FD69E498450FA84F3E6E /* Continuous */,
+				328A962ADAC44E9FA76B90B8 /* Experimental */,
+				8913D7B76B78456B89DA40F1 /* Nightly */,
+				EA66B689C5B84DDDABA88C40 /* NightlyMemoryCheck */,
+				F11DDAFF12614BA2B8A70C97 /* RUN_TESTS */,
+				5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */,
+				D9E445321D2F413E88FBD127 /* install */,
+				6B32E87E9435452EB11114B5 /* uv_a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03F5BCF3536E484CBD63604D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1A62E00193FF455A83C8EBEF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1DAF533436004FD1A8F331E2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		45779D00CEDD4F25B8644C8D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		482006B262D54DE499C68E8D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		506627B0215640DBB69C5045 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6A17006E55BE44888E0FA8E1 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		6AF6CDC46A974E18B5EF1CA4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		7E925554C0384954864E651B /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		9786F2970E2A4429ACA0C7BB /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/Experimental_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		99E4B131948C4692A8496FCE = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9C1152EEB2E248F8834F06E8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/Continuous_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		A20D593A86DE4344909A1667 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B08B8D01911047359DB493F3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/Nightly_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		DC02B032D44D4DE9B242078A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		FEED70D0215F41518952AB1C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64 -f /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/CMakeScripts/NightlyMemoryCheck_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90EAA3403D1D4432BC0BC3E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA82899D31E4C478990F96C /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/fs-poll.c */,
+				02B7EB27A5434FDF9E73E116 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/idna.c */,
+				0DC8825065E341C88A943ACF /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/inet.c */,
+				D816536D747C496C9B0D32C7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/random.c */,
+				71D3A8ADBC654097A07B4404 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/strscpy.c */,
+				A1847DE4CF5747F3BEBEBAF5 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/threadpool.c */,
+				A30D95FA5485453D97CDDB9B /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/timer.c */,
+				2A3FAB352B7F40DB879C08B7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/async.c */,
+				5671744ACD6340BE8418E37E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/bsd-ifaddrs.c */,
+				25731AEBA61B4FD18C28A2DD /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/core.c */,
+				C5438CF8DE384848A9D6B0CD /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin-proctitle.c */,
+				77968BB546834E98BBBFE0FE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/darwin.c */,
+				BACCE00699364CB4BAE14021 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/dl.c */,
+				E47913E810AF4508B4CFE21E /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fs.c */,
+				D9641B1537414DD695CFD5AB /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/fsevents.c */,
+				1A378EF100DE4CA3A2891C48 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getaddrinfo.c */,
+				68F28E84709F4114A9185A92 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/getnameinfo.c */,
+				5F3966605B494348BDF5B6D2 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/kqueue.c */,
+				9EAF2FFDF3CB4541A69B06BC /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop-watcher.c */,
+				63519044BE87487C81B7DBD3 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/loop.c */,
+				EB7FE00DE71449EA8E7B229F /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/pipe.c */,
+				BF6308ECA3A54FE2B77CC7E3 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/poll.c */,
+				954F947B346E4FA7AA769FDA /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/process.c */,
+				9098831FA5014D1DB74FAE22 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/proctitle.c */,
+				A696B7DCC6C34824922009CE /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-devurandom.c */,
+				D7AE7BA9794243B995B84453 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/random-getentropy.c */,
+				C2BE292F5CFA467093EE7ED0 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/signal.c */,
+				D54F58B4E72245AA950E9774 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/stream.c */,
+				4FF03001706D4B3AA076620A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tcp.c */,
+				992A4A85C2874A14A59DA9CB /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/thread.c */,
+				240A9926389348EDA3F0EEC8 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/tty.c */,
+				F5230A257C724AC989BEF422 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/unix/udp.c */,
+				7DA9E900E12B484AB7EDEA3A /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-common.c */,
+				44876EAECB3A401F8D5131E7 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/uv-data-getter-setters.c */,
+				C3E6BC67BC3F4F33B7C99656 /* /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src/version.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		233FE4743F824701960C2D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */;
+			targetProxy = 9404007A772941D8B6BA34C7 /* PBXContainerItemProxy */;
+		};
+		4DDE63DF9946449E830BD234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */;
+			targetProxy = A6F7C29B08BF41BA803F3D4B /* PBXContainerItemProxy */;
+		};
+		803F606605FB48DE997781D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E663257CFA430EA6EF5B70 /* ALL_BUILD */;
+			targetProxy = 9A95662E817441CF8D2F7DDA /* PBXContainerItemProxy */;
+		};
+		91BFAC794DEE4B8690DC4CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */;
+			targetProxy = B17561748E2247C49E606A6C /* PBXContainerItemProxy */;
+		};
+		B5F1404838CF4761B7CD35F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */;
+			targetProxy = AF6A2FEF7EED450FAE6035FB /* PBXContainerItemProxy */;
+		};
+		B7AA6586C97A41C2B8E395C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */;
+			targetProxy = 2D1832A608D843FB823EA8B2 /* PBXContainerItemProxy */;
+		};
+		D86B5BBE80184E4283A08354 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D5D0C2C6AD3441BA80CBD15 /* ZERO_CHECK */;
+			targetProxy = BBD1C891BE6A4BDF8B62752C /* PBXContainerItemProxy */;
+		};
+		F91DC0A75A2C40DA94B70BF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B32E87E9435452EB11114B5 /* uv_a */;
+			targetProxy = 8BEF4DC38F174A30980C9685 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0064207F55B748F68A392FE2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0264172153284F659610584B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/build;
+			};
+			name = Release;
+		};
+		0AC3E9101CC94D47B85E680F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0F4267810BA74027B5978551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		290304AB346F444FA40275F7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		29BDB8633B6A4B918E16B0C3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2C205A08775E47E684E74BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		304ECB5B82A24B95A20E92C9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		35A8189EBD8C4D12B26D6D80 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		44AC6D4047434928B790C3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4520760BF6F045E7928AAF00 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4FFF06B4E8EB45D78382D890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		52F04D7F93954D818A560452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		55392796346749FA9AC27B70 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/build;
+			};
+			name = MinSizeRel;
+		};
+		57A70297C26141A794E92A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5F1740BEC9954C22AFC87FFF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5F8BEFE98B944EB980DD6D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		71679AD98B0E4CE0BDAC764D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7741D04BE5C2446BB8E579C5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/build;
+			};
+			name = RelWithDebInfo;
+		};
+		8162582E88E2411AB2983A59 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		87E364CF48384653B53DA10E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9561296AB60E44489E9FFBA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/include,/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter '-std=gnu90'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		99324428E3E14DE29D11A40E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9BBAA7B120FD473A988B9BB5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/include,/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    -DNDEBUG -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter '-std=gnu90'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9C26A35B43D94E37B56D7D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "armv7 armv7s arm64";
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				DEVELOPMENT_TEAM = 123456789A;
+				ENABLE_BITCODE = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64/build;
+			};
+			name = Debug;
+		};
+		A8F01251AF704DB1A8F8BFB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AB2ED15F6FE44506995E8AD3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AD72BC6AEA2B456E97F95785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/include,/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "   -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter '-std=gnu90'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B5BCB6B798EB49268035A120 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C40DCD19E5D54E83A4BE2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		CB05BC5C1C4B404781798CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CB6D1C7343A645CEADC10FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CD74D0853C6A47BC89B45812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D382290960814C78855B9440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D79C3EAB6C0A4385BAA5891E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DF0EDB82939E47D3BC8D7307 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E534B97EDD764C14BD39FB61 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E953E480194D42CEB77D446E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'",_LARGEFILE_SOURCE,"'_DARWIN_UNLIMITED_SELECT=1'","'_DARWIN_USE_64_BIT_INODE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/include,/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "       -DNDEBUG -fvisibility=hidden -Wstrict-prototypes -Wextra -Wall -Wno-unused-parameter '-std=gnu90'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uv_a;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EECD37D6592A4B30A0DCBDF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FD8D0C377104482C835AD0DA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (armv7,armv7s,arm64);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/ios_32_64;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1896B6AF8F684DF3ABE3DD95 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D382290960814C78855B9440 /* Debug */,
+				A8F01251AF704DB1A8F8BFB5 /* Release */,
+				0AC3E9101CC94D47B85E680F /* MinSizeRel */,
+				99324428E3E14DE29D11A40E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		327AC6FF64A84D78BEBD1529 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD74D0853C6A47BC89B45812 /* Debug */,
+				4FFF06B4E8EB45D78382D890 /* Release */,
+				304ECB5B82A24B95A20E92C9 /* MinSizeRel */,
+				29BDB8633B6A4B918E16B0C3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3EBE94DC05AE4868AFA1B6B8 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A70297C26141A794E92A98 /* Debug */,
+				71679AD98B0E4CE0BDAC764D /* Release */,
+				5F1740BEC9954C22AFC87FFF /* MinSizeRel */,
+				FD8D0C377104482C835AD0DA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76079679042C469A91E12362 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E364CF48384653B53DA10E /* Debug */,
+				52F04D7F93954D818A560452 /* Release */,
+				8162582E88E2411AB2983A59 /* MinSizeRel */,
+				0064207F55B748F68A392FE2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		842CF16348084558AE734516 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8BEFE98B944EB980DD6D9E /* Debug */,
+				EECD37D6592A4B30A0DCBDF8 /* Release */,
+				4520760BF6F045E7928AAF00 /* MinSizeRel */,
+				35A8189EBD8C4D12B26D6D80 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A4AAFDE3B21440981C7D7EA /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6D1C7343A645CEADC10FF3 /* Debug */,
+				C40DCD19E5D54E83A4BE2177 /* Release */,
+				290304AB346F444FA40275F7 /* MinSizeRel */,
+				B5BCB6B798EB49268035A120 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		92F1AAB1BC704B9EA5719DB1 /* Build configuration list for PBXProject "libuv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C26A35B43D94E37B56D7D02 /* Debug */,
+				0264172153284F659610584B /* Release */,
+				55392796346749FA9AC27B70 /* MinSizeRel */,
+				7741D04BE5C2446BB8E579C5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1FAB4DE78E0421480167801 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44AC6D4047434928B790C3F2 /* Debug */,
+				2C205A08775E47E684E74BBB /* Release */,
+				E534B97EDD764C14BD39FB61 /* MinSizeRel */,
+				D79C3EAB6C0A4385BAA5891E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D097D6DEE31A40EFBE6677EB /* Build configuration list for PBXNativeTarget "uv_a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD72BC6AEA2B456E97F95785 /* Debug */,
+				9561296AB60E44489E9FFBA5 /* Release */,
+				9BBAA7B120FD473A988B9BB5 /* MinSizeRel */,
+				E953E480194D42CEB77D446E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE84586CB70B444ABD7DAD7E /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB05BC5C1C4B404781798CCF /* Debug */,
+				0F4267810BA74027B5978551 /* Release */,
+				AB2ED15F6FE44506995E8AD3 /* MinSizeRel */,
+				DF0EDB82939E47D3BC8D7307 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CAB6B75059D4BA3A46EFF21 /* Project object */;
+}

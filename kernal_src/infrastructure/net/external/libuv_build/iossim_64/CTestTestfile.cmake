@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv
+# Build directory: /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(uv_test "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/Debug\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests.app/uv_run_tests")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;447;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(uv_test "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/Release\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests.app/uv_run_tests")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;447;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(uv_test "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/MinSizeRel\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests.app/uv_run_tests")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;447;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(uv_test "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/RelWithDebInfo\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests.app/uv_run_tests")
+  set_tests_properties(uv_test PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;447;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+else()
+  add_test(uv_test NOT_AVAILABLE)
+endif()
+if("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(uv_test_a "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/Debug\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests_a.app/uv_run_tests_a")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;454;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(uv_test_a "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/Release\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests_a.app/uv_run_tests_a")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;454;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(uv_test_a "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/MinSizeRel\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests_a.app/uv_run_tests_a")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;454;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(uv_test_a "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/iossim_64/RelWithDebInfo\${EFFECTIVE_PLATFORM_NAME}/uv_run_tests_a.app/uv_run_tests_a")
+  set_tests_properties(uv_test_a PROPERTIES  WORKING_DIRECTORY "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv" _BACKTRACE_TRIPLES "/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;454;add_test;/Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv/CMakeLists.txt;0;")
+else()
+  add_test(uv_test_a NOT_AVAILABLE)
+endif()

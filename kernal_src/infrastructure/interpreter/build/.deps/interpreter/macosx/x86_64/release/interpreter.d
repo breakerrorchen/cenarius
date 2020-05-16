@@ -1,0 +1,51 @@
+{
+    files = {
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_value_holder.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_vm.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_actuator.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_actuator.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_initializer.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_object_field.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_context.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_initializer.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_value_holder.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_value.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_str.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_object_holder.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_class.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/benchmark/_start.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_str.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_object_holder.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_object.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_class.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_object.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_object_field.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_context.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_parameter.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_v8_vm.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_parameter.cc.o",
+        "build/.objs/interpreter/macosx/x86_64/release/src/i_javascriptcore_value.cc.o"
+    },
+    values = {
+        "/usr/bin/xcrun -sdk macosx clang++",
+        {
+            "-L/Users/bytedance/Desktop/interpreter的副本/external/v8/mac/libs",
+            "-Xlinker",
+            "-rpath",
+            "-Xlinker",
+            "/Users/bytedance/Desktop/interpreter的副本/external/v8/mac/libs",
+            "-lv8_libplatform",
+            "-lv8_libbase",
+            "-lv8",
+            "-framework",
+            "JavaScriptCore",
+            "-arch",
+            "x86_64",
+            "-mmacosx-version-min=10.15",
+            "-isysroot",
+            "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+            "-stdlib=libc++",
+            "-lz"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+Create NV seed file
+0
+
+PSA init/deinit
+1:int:2
+
+PSA deinit without init
+2:int:0
+
+PSA deinit twice
+2:int:1
+
+No random without init
+3:int:0
+
+No key slot access without init
+4:int:0
+
+No random after deinit
+3:int:1
+
+No key slot access after deinit
+4:int:1
+
+Custom entropy sources: all standard
+5:int:0x0000ffff:exp:0
+
+Custom entropy sources: none
+5:int:0:exp:1
+
+Fake entropy: never returns anything
+6:exp:2:int:0:int:0:int:0:int:0:exp:1
+
+Fake entropy: less than the block size
+6:exp:2:exp:3:exp:4:exp:4:exp:4:exp:1
+
+Fake entropy: not enough for a nonce
+depends_on:0
+6:exp:2:exp:5:exp:4:exp:4:exp:4:exp:1
+
+Fake entropy: one block eventually
+depends_on:1
+6:exp:2:int:0:int:0:int:0:exp:2:exp:0
+
+Fake entropy: one block in two steps
+depends_on:1
+6:exp:2:exp:3:int:1:exp:4:exp:4:exp:0
+
+Fake entropy: more than one block in two steps
+depends_on:1
+6:exp:2:exp:3:exp:3:exp:4:exp:4:exp:0
+
+Fake entropy: two blocks eventually
+6:exp:2:int:0:exp:2:int:0:exp:2:exp:0
+
+NV seed only: less than minimum
+7:exp:6:exp:1
+
+NV seed only: less than one block
+7:exp:3:exp:1
+
+NV seed only: just enough
+7:exp:7:exp:0
+
+Recreate NV seed file
+0
+

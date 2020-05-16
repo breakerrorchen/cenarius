@@ -1,0 +1,13 @@
+Performing C SOURCE FILE Test UV_LINT_W4 failed with the following output:
+Change Dir: /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/mac/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59729/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_59729.dir/build.make CMakeFiles/cmTC_59729.dir/build
+Building C object CMakeFiles/cmTC_59729.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DUV_LINT_W4 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   /W4 -o CMakeFiles/cmTC_59729.dir/src.c.o   -c /Users/bytedance/Code/Cenarius/kernal_src/source/essential/network/external/libuv_build/mac/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '/W4'
+make[1]: *** [CMakeFiles/cmTC_59729.dir/src.c.o] Error 1
+make: *** [cmTC_59729/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }

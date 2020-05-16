@@ -1,0 +1,83 @@
+Create NV seed_file
+7
+
+Entropy write/update seed file: good
+0:char*:"data_files/entropy_seed":int:0
+
+Entropy write/update seed file: nonexistent
+0:char*:"no_such_dir/file":exp:0
+
+Entropy no sources
+1
+
+Entropy too many sources
+2
+
+Entropy output length: 0
+3:int:0:int:0
+
+Entropy output length: 1
+3:int:1:int:0
+
+Entropy output length: 2
+3:int:2:int:0
+
+Entropy output length: 31
+3:int:31:int:0
+
+Entropy output length: 65 > BLOCK_SIZE
+3:int:65:exp:1
+
+Entropy failing source
+4:char*:"data_files/entropy_seed"
+
+Entropy threshold: 16=2*8
+5:int:16:int:2:int:8
+
+Entropy threshold: 32=1*32
+5:int:32:int:1:int:32
+
+Entropy threshold: 0* never reaches the threshold
+5:int:16:int:0:exp:1
+
+Entropy threshold: 1024 never reached
+5:int:1024:int:1:exp:1
+
+Entropy calls: no strong
+6:exp:2:exp:2:int:1:exp:3:exp:4
+
+Entropy calls: 1 strong, 1*BLOCK_SIZE
+6:exp:5:exp:2:int:1:exp:3:int:1
+
+Entropy calls: 1 strong, 2*(BLOCK_SIZE/2)
+6:exp:5:exp:2:int:1:exp:6:int:2
+
+Entropy calls: 1 strong, BLOCK_SIZE*1
+6:exp:5:exp:2:int:1:int:1:exp:3
+
+Entropy calls: 1 strong, 2*BLOCK_SIZE to reach threshold
+6:exp:5:exp:2:exp:7:exp:3:int:2
+
+Entropy calls: 2 strong, BLOCK_SIZE/2 each
+6:exp:5:exp:2:exp:6:exp:6:int:2
+
+Check NV seed standard IO
+8
+
+Check NV seed manually #1
+9:hex:"00112233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF"
+
+Check NV seed manually #2
+9:hex:"00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+
+Check NV seed manually #3
+9:hex:"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+
+Entropy self test
+depends_on:0
+10:int:0
+
+Entropy self test (MBEDTLS_TEST_NULL_ENTROPY)
+depends_on:1
+10:int:1
+

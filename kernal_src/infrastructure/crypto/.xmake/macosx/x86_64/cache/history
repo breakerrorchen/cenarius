@@ -1,0 +1,10 @@
+{
+    __version = "2.2.9",
+    cmdlines = {
+        "xmake -P",
+        "xmake -P",
+        "xmake -P",
+        "xmake -P",
+        "xmake -P"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    options_v8_interpreter = {
+        plat = "android",
+        arch = "armv7-a"
+    },
+    options_all = {
+        clean = true
+    },
+    mtimes = {
+        ["xmake.lua"] = 1584874661
+    },
+    __version = "2.3.1",
+    options_interpreter = ref("options_all")
+}

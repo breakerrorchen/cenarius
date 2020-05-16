@@ -1,0 +1,64 @@
+CMAC self test
+0
+
+CMAC null arguments
+1
+
+CMAC init #1 AES-128: OK
+depends_on:0
+2:exp:0:int:128:int:0
+
+CMAC init #2 AES-192: OK
+depends_on:0
+2:exp:1:int:192:int:0
+
+CMAC init #3 AES-256: OK
+depends_on:0
+2:exp:2:int:256:int:0
+
+CMAC init #4 3DES : OK
+depends_on:1
+2:exp:3:int:192:int:0
+
+CMAC init #5 AES-224: bad key size
+depends_on:0
+2:exp:4:int:224:exp:5
+
+CMAC init #6 AES-0: bad key size
+depends_on:0
+2:exp:4:int:0:exp:5
+
+CMAC init #7 Camellia: wrong cipher
+depends_on:2
+2:exp:6:int:128:exp:5
+
+CMAC Single Blocks #1 - Empty block, no updates
+3:exp:0:hex:"2b7e151628aed2a6abf7158809cf4f3c":int:128:int:16:hex:"":exp:7:hex:"":exp:7:hex:"":exp:7:hex:"":exp:7:hex:"bb1d6929e95937287fa37d129b756746"
+
+CMAC Single Blocks #2 - Single 16 byte block
+3:exp:0:hex:"2b7e151628aed2a6abf7158809cf4f3c":int:128:int:16:hex:"6bc1bee22e409f96e93d7e117393172a":int:16:hex:"":exp:7:hex:"":exp:7:hex:"":exp:7:hex:"070a16b46b4d4144f79bdd9dd04a287c"
+
+CMAC Single Blocks #3 - Single 64 byte block
+3:exp:0:hex:"2b7e151628aed2a6abf7158809cf4f3c":int:128:int:16:hex:"6bc1bee22e409f96e93d7e117393172aae2d8a571e03ac9c9eb76fac45af8e5130c81c46a35ce411e5fbc1191a0a52eff69f2445df4f9b17ad2b417be66c3710":int:64:hex:"":exp:7:hex:"":exp:7:hex:"":exp:7:hex:"51f0bebf7e3b9d92fc49741779363cfe"
+
+CMAC Multiple Blocks #1 - Multiple 8 byte blocks
+3:exp:0:hex:"2b7e151628aed2a6abf7158809cf4f3c":int:128:int:16:hex:"6bc1bee22e409f96":int:8:hex:"e93d7e117393172a":int:8:hex:"":exp:7:hex:"":exp:7:hex:"070a16b46b4d4144f79bdd9dd04a287c"
+
+CMAC Multiple Blocks #2 - Multiple 16 byte blocks
+3:exp:0:hex:"2b7e151628aed2a6abf7158809cf4f3c":int:128:int:16:hex:"6bc1bee22e409f96e93d7e117393172a":int:16:hex:"ae2d8a571e03ac9c9eb76fac45af8e51":int:16:hex:"30c81c46a35ce411e5fbc1191a0a52ef":int:16:hex:"f69f2445df4f9b17ad2b417be66c3710":int:16:hex:"51f0bebf7e3b9d92fc49741779363cfe"
+
+CMAC Multiple Blocks #3 - Multiple variable sized blocks
+3:exp:0:hex:"2b7e151628aed2a6abf7158809cf4f3c":int:128:int:16:hex:"6bc1bee22e409f96":int:8:hex:"e93d7e117393172aae2d8a571e03ac9c":int:16:hex:"9eb76fac45af8e5130c81c46a35ce411e5fbc1191a0a52ef":int:24:hex:"f69f2445df4f9b17ad2b417be66c3710":int:16:hex:"51f0bebf7e3b9d92fc49741779363cfe"
+
+CMAC Multiple Blocks #4 - Multiple 8 byte blocks with gaps
+3:exp:0:hex:"2b7e151628aed2a6abf7158809cf4f3c":int:128:int:16:hex:"":int:0:hex:"6bc1bee22e409f96":int:8:hex:"":int:0:hex:"e93d7e117393172a":int:8:hex:"070a16b46b4d4144f79bdd9dd04a287c"
+
+CMAC Multiple Operations, same key #1 - Empty, empty
+4:exp:1:hex:"8e73b0f7da0e6452c810f32b809079e562f8ead2522c6b7b":int:192:int:16:hex:"":exp:7:hex:"":exp:7:hex:"":exp:7:hex:"d17ddf46adaacde531cac483de7a9367":hex:"":exp:7:hex:"":exp:7:hex:"":exp:7:hex:"d17ddf46adaacde531cac483de7a9367"
+
+CMAC Multiple Operations, same key #2 - Empty, 64 byte block
+4:exp:1:hex:"8e73b0f7da0e6452c810f32b809079e562f8ead2522c6b7b":int:192:int:16:hex:"":exp:7:hex:"":exp:7:hex:"":exp:7:hex:"d17ddf46adaacde531cac483de7a9367":hex:"6bc1bee22e409f96e93d7e117393172aae2d8a571e03ac9c9eb76fac45af8e5130c81c46a35ce411e5fbc1191a0a52eff69f2445df4f9b17ad2b417be66c3710":int:64:hex:"":exp:7:hex:"":exp:7:hex:"a1d5df0eed790f794d77589659f39a11"
+
+CMAC Multiple Operations, same key #3 - variable byte blocks
+4:exp:1:hex:"8e73b0f7da0e6452c810f32b809079e562f8ead2522c6b7b":int:192:int:16:hex:"6bc1bee22e409f96e93d7e117393172aae2d8a571e03ac9c9eb76fac45af8e51":int:32:hex:"30c81c46a35ce411e5fbc1191a0a52eff69f2445df4f9b17ad2b417be66c3710":int:32:hex:"":exp:7:hex:"a1d5df0eed790f794d77589659f39a11":hex:"6bc1bee22e409f96e93d7e117393172aae2d8a571e03ac9c9eb76fac45af8e51":int:32:hex:"30c81c46a35ce411e5fbc1191a0a52eff69f2445df4f9b17ad2b417be66c3710":int:32:hex:"":exp:7:hex:"a1d5df0eed790f794d77589659f39a11"
+

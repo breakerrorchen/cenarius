@@ -1,0 +1,146 @@
+
+当前使用master分支的 24e3e6706ea596099b1821c418d80be48d2b714e
+
+
+bin/gn gen out/arm.android   --args='ndk="/Users/bytedance/Code/android-ndk-r20b" target_cpu="arm" target_os="android"  is_component_build=false  
+is_debug=false 
+skia_enable_discrete_gpu=false   
+skia_enable_skshaper=false
+skia_use_fixed_gamma_text=false
+skia_enable_sksl_interpreter=false
+skia_enable_pdf=false 
+skia_enable_skottie=false 
+skia_enable_tools=false
+skia_use_harfbuzz=false 
+skia_use_libgifcodec=false
+skia_use_expat=false  
+skia_use_icu=false 
+skia_use_lua=false 
+skia_use_zlib=false      
+skia_enable_fontmgr_android=true 
+skia_enable_fontmgr_empty=false
+skia_use_sfntly=false  
+skia_use_piex=false 
+skia_use_fontconfig = false 
+skia_use_icu = false
+skia_use_harfbuzz = false
+skia_use_piex=false 
+skia_use_dng_sdk=false 
+skia_use_libheif=false
+skia_enable_ccpr=false
+skia_enable_flutter_defines=true
+skia_gl_standard="gles"
+skia_use_harfbuzz=false
+skia_use_metal=false
+skia_use_vulkan = false
+skia_enable_vulkan_debug_layers=false 
+
+skia_use_system_freetype2=false
+skia_use_system_zlib=true
+skia_use_xps=false
+
+
+skia_use_libwebp=true
+skia_use_libpng=true
+skia_use_libjpeg_turbo=true 
+'
+
+
+
+extra_cflags_cc = ["-Oz",  "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-fno-stack-protector", "-flto"]
+'
+
+
+extra_cflags_cc = ["-O3",  "-fdata-sections", "-ffunction-sections"]
+extra_cflags_c = ["-O3",  "-fdata-sections", "-ffunction-sections"]
+extra_ldflags=["-Wl", "-dead_strip"]
+'
+
+
+
+
+
+
+
+bin/gn gen out/arm.android   --args='ndk="/Users/bytedance/Code/android-ndk-r20b" target_cpu="arm" target_os="android"  is_component_build=false  
+is_debug=false 
+skia_enable_discrete_gpu=false   
+skia_enable_skshaper=false
+skia_use_fixed_gamma_text=false
+skia_enable_sksl_interpreter=false
+skia_enable_pdf=false 
+skia_enable_skottie=false 
+skia_enable_tools=false
+skia_use_harfbuzz=false 
+skia_use_libgifcodec=false
+skia_use_expat=false  
+skia_use_icu=false 
+skia_use_libwebp=true 
+skia_use_lua=false 
+skia_use_zlib=false      
+skia_enable_fontmgr_android=false 
+skia_enable_fontmgr_empty=true
+skia_use_sfntly=false  
+skia_use_piex=false 
+skia_use_fontconfig = false 
+skia_use_icu = false
+skia_use_harfbuzz = false
+skia_use_piex=false 
+skia_use_dng_sdk=false 
+skia_use_libheif=false
+skia_enable_flutter_defines=true
+skia_gl_standard="gles"
+skia_use_harfbuzz=false
+skia_use_metal=false
+skia_use_vulkan = false
+skia_enable_vulkan_debug_layers=false 
+
+skia_use_system_freetype2=false
+skia_use_system_zlib=true
+skia_use_xps=false
+
+
+skia_use_libwebp=true
+skia_use_libpng=true
+skia_use_libjpeg_turbo=true 
+'
+
+
+
+
+
+
+
+
+
+bin/gn gen out/mac    --args='is_component_build=true  
+is_debug=false    
+skia_enable_pdf=false 
+skia_enable_skottie=false 
+skia_enable_tools=false 
+skia_use_expat=false  
+skia_use_icu=false 
+skia_use_libwebp=true 
+skia_use_lua=false 
+skia_use_zlib=false      
+skia_enable_fontmgr_android=false 
+skia_enable_fontmgr_empty=true 
+skia_use_sfntly=false  
+skia_use_piex=false 
+skia_use_fontconfig = false 
+skia_use_icu = false
+skia_use_harfbuzz = false
+skia_use_piex=false 
+skia_use_dng_sdk=false 
+skia_use_libheif=false
+skia_enable_ccpr=true
+skia_enable_flutter_defines=true
+skia_gl_standard="gles"
+skia_use_harfbuzz=false
+skia_use_metal=false
+skia_use_vulkan = false
+skia_enable_vulkan_debug_layers=false 
+extra_cflags_cc = ["-O3  -fdata-sections -ffunction-sections"]
+extra_cflags_c = ["-O3  -fdata-sections -ffunction-sections"]
+extra_ldflags=["-Wl,--gc-sections"]
+'

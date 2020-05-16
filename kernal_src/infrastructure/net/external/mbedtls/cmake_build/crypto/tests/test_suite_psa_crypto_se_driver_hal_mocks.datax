@@ -1,0 +1,57 @@
+SE init mock test: success
+0:int:2:exp:0:exp:0:exp:0:int:1
+
+SE init mock test: failure
+0:int:2:exp:0:exp:1:exp:1:int:1
+
+SE init mock test: invalid lifetime
+0:int:1:exp:2:exp:3:exp:0:int:0
+
+SE key importing mock test
+1:exp:0:exp:0:int:0:exp:0
+
+SE key importing mock test: max key bits
+1:exp:0:exp:0:exp:4:exp:0
+
+SE key importing mock test: more than max key bits
+1:exp:0:exp:5:exp:6:exp:5
+
+SE key importing mock test: alloc failed
+1:exp:1:exp:0:int:0:exp:1
+
+SE key importing mock test: import failed
+1:exp:0:exp:1:int:0:exp:1
+
+SE key exporting mock test
+2:exp:0:exp:0
+
+SE key exporting mock test: export failed
+2:exp:1:exp:1
+
+SE public key exporting mock test
+4:exp:0:exp:0
+
+SE public key exporting mock test: export failed
+4:exp:1:exp:1
+
+SE key generating mock test
+3:exp:0:exp:0:exp:0
+
+SE key generating mock test: alloc failed
+3:exp:1:exp:0:exp:1
+
+SE key generating mock test: generating failed
+3:exp:0:exp:1:exp:1
+
+SE signing mock test
+5:exp:0:exp:0
+
+SE signing mock test: sign failed
+5:exp:1:exp:1
+
+SE verification mock test
+6:exp:0:exp:0
+
+SE verification mock test: verify failed
+6:exp:1:exp:1
+

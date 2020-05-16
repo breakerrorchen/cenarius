@@ -1,0 +1,216 @@
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #1 (128-en)
+depends_on:0
+1:exp:0:hex:"00000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":hex:"":int:128:hex:"f5574acc3148dfcb9015200631024df9":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #2 (128-en)
+depends_on:0
+1:exp:0:hex:"00000000000000000000000000000000":hex:"00000000000000000000000000000000":hex:"000000000000000000000000":hex:"":hex:"defe3e0b5c54c94b4f2a0f5a46f6210d":int:128:hex:"f672b94d192266c7c8c8dbb427cc989a":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #3 (128-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255":hex:"cafebabefacedbaddecaf888":hex:"":hex:"d0d94a13b632f337a0cc9955b94fa020c815f903aab12f1efaf2fe9d90f729a6cccbfa986ef2ff2c33de418d9a2529091cf18fe652c1cfde13f8260614bab815":int:128:hex:"86e318012dd8329dc9dae6a170f61b24":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #4 (128-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"d0d94a13b632f337a0cc9955b94fa020c815f903aab12f1efaf2fe9d90f729a6cccbfa986ef2ff2c33de418d9a2529091cf18fe652c1cfde13f82606":int:128:hex:"9f458869431576ea6a095456ec6b8101":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #5 (128-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"28fd7434d5cd424a5353818fc21a982460d20cf632eb1e6c4fbfca17d5abcf6a52111086162fe9570e7774c7a912aca3dfa10067ddaad40688645bdd":int:128:hex:"e86f8f2e730c49d536f00fb5225d28b1":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #6 (128-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"2e582b8417c93f2ff4f6f7ee3c361e4496e710ee12433baa964987d02f42953e402e6f4af407fe08cd2f35123696014c34db19128df4056faebcd647":int:128:hex:"ceae5569b2af8641572622731aed3e53":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #7 (192-en)
+depends_on:0
+1:exp:0:hex:"000000000000000000000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":hex:"":int:128:hex:"ba9ae89fddce4b51131e17c4d65ce587":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #8 (192-en)
+depends_on:0
+1:exp:0:hex:"000000000000000000000000000000000000000000000000":hex:"00000000000000000000000000000000":hex:"000000000000000000000000":hex:"":hex:"8f9c0aa2549714c88bb2665e8af86d41":int:128:hex:"783cff5c5aca7197320658a74279ab37":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #9 (192-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255":hex:"cafebabefacedbaddecaf888":hex:"":hex:"0f009e88410d84ad93c90d55efbe20ffa855492f4dfd0fb485c4f02f536feffbb4d967729e5c67f1de0750255cc500716ba483eb3b0a2bf607af28f6a60bb2e9":int:128:hex:"8d645a0b0e48d3c3b60a014157cb49b4":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #10 (192-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"0f009e88410d84ad93c90d55efbe20ffa855492f4dfd0fb485c4f02f536feffbb4d967729e5c67f1de0750255cc500716ba483eb3b0a2bf607af28f6":int:128:hex:"01b15bb5ab6fac0c422014e91eacbf2b":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #11 (192-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"678b3dcb270faa206dc5f6fbb5014996e86d6f3e35cdcdfeb03b37b9b06ff4ff2682248823bd3c84124dc76af7bde3dd440c228b5efbc795dd80dfb6":int:128:hex:"f876143d933214a5035ff0bb96ff650b":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #12 (192-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"9733ea567c3bad2259ccd63ef7012f5de709e50b1fdc31f1a16db02ede1b66f11dcc4d953f2d4d4671587b65882afbf9545fdb6deab22413d091b703":int:128:hex:"4b72e520b2521e63d240ed5c903216fa":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #13 (256-en)
+depends_on:0
+1:exp:0:hex:"0000000000000000000000000000000000000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":hex:"":int:128:hex:"9cdb269b5d293bc5db9c55b057d9b591":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #14 (256-en)
+depends_on:0
+1:exp:0:hex:"0000000000000000000000000000000000000000000000000000000000000000":hex:"00000000000000000000000000000000":hex:"000000000000000000000000":hex:"":hex:"3d4b2cde666761ba5dfb305178e667fb":int:128:hex:"284b63bb143c40ce100fb4dea6bb617b":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #15 (256-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255":hex:"cafebabefacedbaddecaf888":hex:"":hex:"ad142c11579dd95e41f3c1f324dabc255864d920f1b65759d8f560d4948d447758dfdcf77aa9f62581c7ff572a037f810cb1a9c4b3ca6ed638179b776549e092":int:128:hex:"c912686270a2b9966415fca3be75c468":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #16 (256-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"ad142c11579dd95e41f3c1f324dabc255864d920f1b65759d8f560d4948d447758dfdcf77aa9f62581c7ff572a037f810cb1a9c4b3ca6ed638179b77":int:128:hex:"4e4b178d8fe26fdc95e2e7246dd94bec":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #17 (256-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"6ca95fbb7d16577a9ef2fded94dc85b5d40c629f6bef2c649888e3cbb0ededc7810c04b12c2983bbbbc482e16e45c9215ae12c15c55f2f4809d06652":int:128:hex:"e6472b8ebd331bfcc7c0fa63ce094461":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #18 (256-en)
+depends_on:0
+1:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":hex:"e0cddd7564d09c4dc522dd65949262bbf9dcdb07421cf67f3032becb7253c284a16e5bf0f556a308043f53fab9eebb526be7f7ad33d697ac77c67862":int:128:hex:"5791883f822013f8bd136fc36fb9946b":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #1 (128-de)
+depends_on:0
+2:exp:0:hex:"00000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":int:128:hex:"f5574acc3148dfcb9015200631024df9":char*:"":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #2 (128-de)
+depends_on:0
+2:exp:0:hex:"00000000000000000000000000000000":hex:"defe3e0b5c54c94b4f2a0f5a46f6210d":hex:"000000000000000000000000":hex:"":int:128:hex:"f672b94d192266c7c8c8dbb427cc989a":char*:"":hex:"00000000000000000000000000000000":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #3 (128-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d0d94a13b632f337a0cc9955b94fa020c815f903aab12f1efaf2fe9d90f729a6cccbfa986ef2ff2c33de418d9a2529091cf18fe652c1cfde13f8260614bab815":hex:"cafebabefacedbaddecaf888":hex:"":int:128:hex:"86e318012dd8329dc9dae6a170f61b24":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #4 (128-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d0d94a13b632f337a0cc9955b94fa020c815f903aab12f1efaf2fe9d90f729a6cccbfa986ef2ff2c33de418d9a2529091cf18fe652c1cfde13f82606":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"9f458869431576ea6a095456ec6b8101":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #5 (128-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"28fd7434d5cd424a5353818fc21a982460d20cf632eb1e6c4fbfca17d5abcf6a52111086162fe9570e7774c7a912aca3dfa10067ddaad40688645bdd":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"e86f8f2e730c49d536f00fb5225d28b1":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #6 (128-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"2e582b8417c93f2ff4f6f7ee3c361e4496e710ee12433baa964987d02f42953e402e6f4af407fe08cd2f35123696014c34db19128df4056faebcd647":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"ceae5569b2af8641572622731aed3e53":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #7 (192-de)
+depends_on:0
+2:exp:0:hex:"000000000000000000000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":int:128:hex:"ba9ae89fddce4b51131e17c4d65ce587":char*:"":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #8 (192-de)
+depends_on:0
+2:exp:0:hex:"000000000000000000000000000000000000000000000000":hex:"8f9c0aa2549714c88bb2665e8af86d41":hex:"000000000000000000000000":hex:"":int:128:hex:"783cff5c5aca7197320658a74279ab37":char*:"":hex:"00000000000000000000000000000000":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #9 (192-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"0f009e88410d84ad93c90d55efbe20ffa855492f4dfd0fb485c4f02f536feffbb4d967729e5c67f1de0750255cc500716ba483eb3b0a2bf607af28f6a60bb2e9":hex:"cafebabefacedbaddecaf888":hex:"":int:128:hex:"8d645a0b0e48d3c3b60a014157cb49b4":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #10 (192-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"0f009e88410d84ad93c90d55efbe20ffa855492f4dfd0fb485c4f02f536feffbb4d967729e5c67f1de0750255cc500716ba483eb3b0a2bf607af28f6":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"01b15bb5ab6fac0c422014e91eacbf2b":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #11 (192-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"678b3dcb270faa206dc5f6fbb5014996e86d6f3e35cdcdfeb03b37b9b06ff4ff2682248823bd3c84124dc76af7bde3dd440c228b5efbc795dd80dfb6":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"f876143d933214a5035ff0bb96ff650b":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #12 (192-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"9733ea567c3bad2259ccd63ef7012f5de709e50b1fdc31f1a16db02ede1b66f11dcc4d953f2d4d4671587b65882afbf9545fdb6deab22413d091b703":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"4b72e520b2521e63d240ed5c903216fa":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #13 (256-de)
+depends_on:0
+2:exp:0:hex:"0000000000000000000000000000000000000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":int:128:hex:"9cdb269b5d293bc5db9c55b057d9b591":char*:"":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #14 (256-de)
+depends_on:0
+2:exp:0:hex:"0000000000000000000000000000000000000000000000000000000000000000":hex:"3d4b2cde666761ba5dfb305178e667fb":hex:"000000000000000000000000":hex:"":int:128:hex:"284b63bb143c40ce100fb4dea6bb617b":char*:"":hex:"00000000000000000000000000000000":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #15 (256-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"ad142c11579dd95e41f3c1f324dabc255864d920f1b65759d8f560d4948d447758dfdcf77aa9f62581c7ff572a037f810cb1a9c4b3ca6ed638179b776549e092":hex:"cafebabefacedbaddecaf888":hex:"":int:128:hex:"c912686270a2b9966415fca3be75c468":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #16 (256-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"ad142c11579dd95e41f3c1f324dabc255864d920f1b65759d8f560d4948d447758dfdcf77aa9f62581c7ff572a037f810cb1a9c4b3ca6ed638179b77":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"4e4b178d8fe26fdc95e2e7246dd94bec":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #17 (256-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"6ca95fbb7d16577a9ef2fded94dc85b5d40c629f6bef2c649888e3cbb0ededc7810c04b12c2983bbbbc482e16e45c9215ae12c15c55f2f4809d06652":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"e6472b8ebd331bfcc7c0fa63ce094461":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #18 (256-de)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"e0cddd7564d09c4dc522dd65949262bbf9dcdb07421cf67f3032becb7253c284a16e5bf0f556a308043f53fab9eebb526be7f7ad33d697ac77c67862":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"5791883f822013f8bd136fc36fb9946b":char*:"":hex:"d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b39":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #1 (128-bad)
+depends_on:0
+2:exp:0:hex:"00000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":int:128:hex:"f5574acc3148dfcb9015200631024df8":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #2 (128-bad)
+depends_on:0
+2:exp:0:hex:"00000000000000000000000000000000":hex:"defe3e0b5c54c94b4f2a0f5a46f7210d":hex:"000000000000000000000000":hex:"":int:128:hex:"f672b94d192266c7c8c8dbb427cc989a":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #3 (128-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d0d94a13b632f337a0cc9955b94fa020c815f903aab12f1efaf2fe9d90f729a6cccbfa986ef2ff2c33de418d9a2529091cf18fe652c1cfde13f8260614bab815":hex:"cafebabefacedbaddecaf889":hex:"":int:128:hex:"86e318012dd8329dc9dae6a170f61b24":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #4 (128-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"d0d94a13b632f337a0cc9955b94fa020c815f903aab12f1efaf2fe9d90f729a6cccbfa986ef2ff2c33de418d9a2529091cf18fe652c1cfde13f82606":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"9f458869431576ea6a095456ec6b8100":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #5 (128-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"28fd7434d5cd424a5353818fc21a982460d20cf632eb1e6c4fbfca17d5abcf6a52111086162fe9570e7774c7a912aca3dfa10067ddaad40688645bdd":hex:"cafebabefacedbad":hex:"feedfadedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"e86f8f2e730c49d536f00fb5225d28b1":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #6 (128-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308":hex:"2e582b8417c83f2ff4f6f7ee3c361e4496e710ee12433baa964987d02f42953e402e6f4af407fe08cd2f35123696014c34db19128df4056faebcd647":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"ceae5569b2af8641572622731aed3e53":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #7 (192-bad)
+depends_on:0
+2:exp:0:hex:"000000000000000000000000000000000000000000000000":hex:"":hex:"000000000000000000000000":hex:"":int:128:hex:"ba9ae89fddce4b51131e17c4d65ce586":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #8 (192-bad)
+depends_on:0
+2:exp:0:hex:"000000000000000000000000000000000000000000000000":hex:"8f9c0aa2549714c88bb2665e8af86d42":hex:"000000000000000000000000":hex:"":int:128:hex:"783cff5c5aca7197320658a74279ab37":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #9 (192-bad)
+depends_on:0
+2:exp:0:hex:"ffffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"0f009e88410d84ad93c90d55efbe20ffa855492f4dfd0fb485c4f02f536feffbb4d967729e5c67f1de0750255cc500716ba483eb3b0a2bf607af28f6a60bb2e9":hex:"cafebabefacedbaddecaf888":hex:"":int:128:hex:"8d645a0b0e48d3c3b60a014157cb49b4":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #10 (192-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"0f009e88410d84ad93c90d55efbe20ffa855492f4dfd0fb485c4f02f536feffbb4d967729e5c67f1de0750255cc500716ba483eb3b0a2bf607af28f6":hex:"cafebabefacedbaddecaf888":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"11b15bb5ab6fac0c422014e91eacbf2b":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #11 (192-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"678b3dcb270faa206dc5f6fbb5014996e86d6f3e35cdcdfeb03b37b9b06ff4ff2682248823bd3c84124dc76af7bde3dd440c228b5efbc795dd80dfb6":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad3":int:128:hex:"f876143d933214a5035ff0bb96ff650b":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #12 (192-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c":hex:"9733ea567c3bad2259ccd63ef7012f5de709e50b1fdc31f1a16db02ede1b66f11dcc4d953f2d4d4671587b65882afbf9545fdb6deab22413d091b703":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a328a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"4b72e520b2521e63d240ed5c903216fa":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #13 (256-bad)
+depends_on:0
+2:exp:0:hex:"0000000000000000000000000000000000000000000000000000000000000001":hex:"":hex:"000000000000000000000000":hex:"":int:128:hex:"9cdb269b5d293bc5db9c55b057d9b591":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #14 (256-bad)
+depends_on:0
+2:exp:0:hex:"0000000000000000000000000000000000000000000000000000000000000000":hex:"3d4b2cde666761ba5dfb305178e667fb":hex:"000000000000000000000001":hex:"":int:128:hex:"284b63bb143c40ce100fb4dea6bb617b":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #15 (256-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"ad142c11579dd95e41f3c1f324dabc255864d920f1b65759d8f560d4949d447758dfdcf77aa9f62581c7ff572a037f810cb1a9c4b3ca6ed638179b776549e092":hex:"cafebabefacedbaddecaf888":hex:"":int:128:hex:"c912686270a2b9966415fca3be75c468":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #16 (256-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"ad142c11579dd95e41f3c1f324dabc255864d920f1b65759d8f560d4948d447758dfdcf77aa9f62581c7ff572a037f810cb1a9c4b3ca6ed638179b77":hex:"cafebabefacedbaddecaf888":hex:"ffedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"4e4b178d8fe26fdc95e2e7246dd94bec":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #17 (256-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308":hex:"6ca95fbb7d16577a9ef2fded94dc85b5d40c629f6bef2c649888e3cbb0ededc7810c04b12c2983bbbbc482e16e45c9215ae12c15c55f2f4809d06652":hex:"cafebabefacedbad":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"e6472b8ebd331bfcc7c0fa63ce094462":char*:"FAIL":hex:"":int:0
+
+Camellia-GCM test vect draft-kato-ipsec-camellia-gcm #18 (256-bad)
+depends_on:0
+2:exp:0:hex:"feffe9928665731c6d6a9f9467308308feffe9928665731c6d6a8f9467308308":hex:"e0cddd7564d09c4dc522dd65949262bbf9dcdb07421cf67f3032becb7253c284a16e5bf0f556a308043f53fab9eebb526be7f7ad33d697ac77c67862":hex:"9313225df88406e555909c5aff5269aa6a7a9538534f7da1e4c303d2a318a728c3c0c95156809539fcf0e2429a6b525416aedbf5a0de6a57a637b39b":hex:"feedfacedeadbeeffeedfacedeadbeefabaddad2":int:128:hex:"5791883f822013f8bd136fc36fb9946b":char*:"FAIL":hex:"":int:0
+
