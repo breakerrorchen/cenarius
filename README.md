@@ -27,6 +27,6 @@
 
 目前是GPL协议，稳定后会修改成更加友好的开源协议。 个人开发者或者小公司(dau 50w以下的项目)可以直接用于商业项目中。 
 
-## 联系方式
+## 联系方式(微信，用以提供长久的技术支持)
 
 <img src="./doc/doc-image/wechat-image.jpg" width = "200" height = "200" div align=left />
