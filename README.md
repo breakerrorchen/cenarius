@@ -29,7 +29,4 @@
 
 ## 联系方式
 
-<img src="./doc/doc-image/wechat-image.jpg" width = "100" height = "100" div align=right />
-
-![Image text](./doc/doc-image/wechat-image.jpg)
-
+<img src="./doc/doc-image/wechat-image.jpg" width = "200" height = "200" div align=left />
