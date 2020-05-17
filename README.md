@@ -29,4 +29,4 @@
 
 ## 联系方式(微信，用以提供长久的技术支持)
 
-<img src="./doc/doc-image/wechat-image.jpg" width = "200" height = "200"/>
+微信号:breakerror,   Join me ~~~
