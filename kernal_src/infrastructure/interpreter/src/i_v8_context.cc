@@ -54,6 +54,14 @@ i_value i_context::eval(const char* code, i_value* exception) const {
         if (try_catch.HasCaught() && exception) {
             exception->context_._$_ = _$_;
             exception->_$_ = try_catch.Exception();
+            if (on_exception_) {
+                String::Utf8Value _error(raw_isolate, try_catch.Exception());
+                auto _message = try_catch.Message();
+                int line   = _message->GetLineNumber (_$_).ToChecked();
+                int column = _message->GetStartColumn(_$_).ToChecked();
+                std::string _error_str = *_error;
+                on_exception_(_error_str, line, column);
+            }
         }
     }
     return i_value(_$_, handle_scope.Escape(result));

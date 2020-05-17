@@ -18,6 +18,10 @@ void content::on_create() {
 	// 启动js虚拟机
     js_release_scope __release_scope__(vm_);
     auto context = actuator_.get_context();
+    context.on_exception_ = 
+        [](std::string& info, int line, int column) {
+        __log_error("JSE: %s %d %d", info.c_str(), line, column);
+    };
     auto global_object = context.get_global_object();
     global_object["global"] = global_object;
     extension_ = extension_embeder::create(actuator_);

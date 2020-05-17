@@ -31,6 +31,9 @@ public:
 public:
     void gc();
 
+public:
+    std::function<void(std::string&, int, int)> on_exception_;
+
 protected:
     // a JavaScript execution context. 
     // holds the global object and other execution state
