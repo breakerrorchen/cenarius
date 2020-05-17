@@ -29,4 +29,4 @@
 
 ## 联系方式
 
-Wechat: breakerror Join Me....
+<img src=https://raw.githubusercontent.com/breakerrorchen/cenarius/master/doc/doc-image/wechat-image.jpg" width="400px"/>
