@@ -28,5 +28,5 @@
 目前是GPL协议，稳定后会修改成更加友好的开源协议。 个人开发者或者小公司(dau 50w以下的项目)可以直接用于商业项目中。 
 
 ## 联系方式
+![Image text](./doc/doc-image/wechat-image.jpg)
 
-<img src=https://raw.githubusercontent.com/breakerrorchen/cenarius/master/doc/doc-image/wechat-image.jpg" width="400px"/>
