@@ -121,7 +121,7 @@ void core_controller::stop(bool sync) {
 }
 
 bool core_controller::post(std::function<void()> task) {
-    if (!task && !care_controller_) {
+    if (task && care_controller_) {
         care_controller_->commit(task);
     }
     return true;

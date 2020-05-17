@@ -11,6 +11,10 @@ using namespace cc;
 class runtime_isolate final {
 public:
     runtime_isolate() = default;
+
+public:
+    void startup_script(std::string&, bool move_ = false);
+
 public:
     void on_create();
     void on_receive_vsync();
@@ -22,6 +26,9 @@ public:
 public:
     // 引擎侧的协调器，用来控制逻辑和渲染的相关性
     std::shared_ptr<coordiator> coordiator_;
+
+    // 内核需要第一时间启动的script
+    std::string startup_script_;
 
     // 和上层交互的对象
     std::shared_ptr<care_i> care_;

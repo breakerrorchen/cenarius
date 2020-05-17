@@ -14,8 +14,9 @@ class coordiator final {
 public:
     coordiator(std::shared_ptr<care>);
 public:
-    void start ();
-    void pause ();
+    void start();
+    void eval_script(std::string&, bool move_ = false);
+    void pause();
     void size_changed(uint32_t, uint32_t);
     void resume();
     void finalization();

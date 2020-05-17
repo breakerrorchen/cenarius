@@ -28,6 +28,26 @@ void coordiator::start() {
     controller_->start();
 }
 
+void coordiator::eval_script(std::string& script, bool move_) {
+    if (!controller_ || script.empty()) return;
+    std::weak_ptr<core_controller> _controller = controller_;
+    if (move_) {
+        controller_->post([_controller, _script{std::move(script)}]() {
+            auto s_controller = _controller.lock();
+            if (s_controller && s_controller->content_) {
+                s_controller->content_->eval(_script.c_str());
+            }
+        });
+    } else {
+        controller_->post([_controller, _script { script }]() {
+            auto s_controller = _controller.lock();
+            if (s_controller && s_controller->content_) {
+                s_controller->content_->eval(_script.c_str());
+            }
+        });
+    }
+}
+
 void coordiator::size_changed(uint32_t w, uint32_t h) {
     if (controller_) { controller_->resize(w, h); }
 }

@@ -8,6 +8,14 @@ using namespace platform;
 using namespace kernal;
 using namespace cc;
 
+void runtime_isolate::startup_script(std::string& script, bool move_) {
+    if (!move_) {
+        startup_script_ = script;
+    } else {
+        startup_script_ = std::move(script);
+    }
+}
+
 void runtime_isolate::on_create() {
     //::cenarius::kernal::test::_start_test();
 }
@@ -76,6 +84,7 @@ __log_error("runtime_isolate::on_surface_changed %x", win);
         coordiator_ = std::make_shared<coordiator>(
             std::dynamic_pointer_cast<care>(care_));
         coordiator_->start();
+        coordiator_->eval_script(startup_script_, true);
     }
 
     // 标记

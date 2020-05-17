@@ -1,4 +1,4 @@
-
+#include "common/logger.h"
 #include "env.h"
 #include "runtime_isolate.h"
 using namespace cenarius;
@@ -6,6 +6,7 @@ using namespace platform;
 
 #define CENARIUS_PACKAGE(CLASS_NAME, FUNC)              \
     Java_com_cenarius_component_##CLASS_NAME##_##FUNC
+
 // TorchController.ntCreate
 extern "C" JNIEXPORT jlong JNICALL CENARIUS_PACKAGE(
     TorchController, ntCreateInstance)(
@@ -15,6 +16,27 @@ extern "C" JNIEXPORT jlong JNICALL CENARIUS_PACKAGE(
         isolate->on_create();
     }
     return reinterpret_cast<jlong>(isolate);
+}
+
+// TorchController.ntStartupScript
+extern "C" JNIEXPORT jlong JNICALL CENARIUS_PACKAGE(
+    TorchController, ntStartupScript)(
+    JNIEnv* env, jobject, jlong instance, jstring script)  {
+    auto ptr = reinterpret_cast<runtime_isolate*>(instance);
+    if (nullptr == ptr) return 0;
+    std::string code;
+    if (env && script) {
+        const jsize len = env->GetStringUTFLength(script);
+        const char* buffer = env
+            ->GetStringUTFChars(script, (jboolean*)0);
+        code.append(buffer, len);
+        env->ReleaseStringUTFChars(script, buffer);
+    }
+
+    if (!code.empty()) {
+        ptr->startup_script(code, true);
+    }
+    return 0;
 }
 
 // TorchController.ntSendVsyncEvent

@@ -7,10 +7,14 @@ import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 class TorchController implements SurfaceHolder.Callback{
     static {
         System.loadLibrary("cenarius");
     }
+
     private float       mScreenScale = 1.0f;
     private TorchView   mRelatedView = null;
     private Context     mContext     = null;
@@ -21,6 +25,13 @@ class TorchController implements SurfaceHolder.Callback{
         mScreenScale = mContext.getResources()
                 .getDisplayMetrics().density;
         mNativeCoreHandle = ntCreateInstance();
+    }
+
+    protected TorchController(TorchView view, String script) {
+        this(view);
+        if (0 != mNativeCoreHandle) {
+            ntStartupScript(mNativeCoreHandle, script);
+        }
     }
 
     @Override
@@ -43,6 +54,7 @@ class TorchController implements SurfaceHolder.Callback{
 
     // native interface
     static native long ntCreateInstance  ();
+    static native long ntStartupScript   (long _id, String script);
     static native long ntSendVsyncEvent  (long _id);
     static native long ntSetHomePath     (long _id, String path);
     static native long ntSetCachePath    (long _id, String path);

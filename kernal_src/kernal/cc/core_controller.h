@@ -57,7 +57,7 @@ public:
      * */
     void resize(uint32_t, uint32_t);
 
-private:
+public:
     std::atomic_bool should_exit_ = ATOMIC_VAR_INIT(false);
     std::shared_ptr<barrel_buffer_center> buffer_center_;
     std::thread controller_thread_;

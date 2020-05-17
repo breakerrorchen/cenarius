@@ -9,14 +9,31 @@ import android.view.SurfaceView;
 import android.view.inputmethod.InputMethod;
 import android.view.inputmethod.InputMethodManager;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class TorchView
         extends SurfaceView implements Choreographer.FrameCallback{
     public TorchView(Context context) {
         this(context, null);
     }
-
     public TorchView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
+    }
+
+    public String getFromAssets(String fileName){
+        try {
+            InputStreamReader inputReader = new InputStreamReader( getResources().getAssets().open(fileName) );
+            BufferedReader bufReader = new BufferedReader(inputReader);
+            String line="";
+            String Result="";
+            while((line = bufReader.readLine()) != null)
+                Result += line;
+            return Result;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
     }
 
     private TorchController mTorchController = null;
@@ -25,7 +42,7 @@ public class TorchView
     private Thread mVsyncThread = null;
     public TorchView(Context context, AttributeSet attrs, int style) {
         super(context, attrs, style);
-        this.mTorchController = new TorchController(this);
+        this.mTorchController = new TorchController(this, getFromAssets("start.js"));
         this.setFocusable(true);
         this.setFocusableInTouchMode(true);
         this.setClickable(true);
