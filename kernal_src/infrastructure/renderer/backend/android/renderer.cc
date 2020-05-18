@@ -18,6 +18,11 @@ renderer_combined::renderer_combined(const render_native_window& window)
     }
 }
 
+renderer_combined::~renderer_combined() {
+    // 所有依赖framebuffer_的对象都要在framebuffer_析构前析构
+    sk_context_ = nullptr; sk_interface_ = nullptr;
+}
+
 bool renderer_combined::reset(const render_native_window& window) {
     if (framebuffer_.reset(window)) {
         return framebuffer_.make_current();
@@ -25,8 +30,7 @@ bool renderer_combined::reset(const render_native_window& window) {
     return false;
 }
 
-std::shared_ptr<render_context> 
-    renderer_combined::new_context() {
+std::shared_ptr<render_context> renderer_combined::new_context() {
     if (framebuffer_.is_useable()) {
         auto context = std::make_shared<render_context>();
         context->state_ = context_.state_;

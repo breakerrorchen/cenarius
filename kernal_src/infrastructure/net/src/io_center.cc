@@ -13,6 +13,13 @@ io_center::io_center() {
     });
 }
 
+io_center::~io_center() {
+    if (poller_thread_) {
+        poller_thread_->stop([]() {
+        }, true);
+    }
+}
+
 std::shared_ptr<io_center> io_center::get_instance() {
     static std::shared_ptr<io_center> _g_instance;
     static std::once_flag _once;

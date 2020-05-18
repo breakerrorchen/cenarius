@@ -1,4 +1,4 @@
-#include "common/logger.h"
+
 #include "render_framebuffer.h"
 using namespace cenarius;
 using namespace infrastructure;

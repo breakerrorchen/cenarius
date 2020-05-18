@@ -8,7 +8,7 @@ using namespace isolate;
 void related_thread::construct() {
     render_attitude_ = std::make_shared<render_attitude>();
     anima_timer_ = std::make_shared<batch_timer_container>();
-    
+
     // 创建网络服务
     net_io_center_ = std::make_shared<net::io_center>();
     net_io_committer_ = std::dynamic_pointer_cast<

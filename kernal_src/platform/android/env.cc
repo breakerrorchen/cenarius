@@ -11,6 +11,7 @@ public:
 		if (_g_vm) {
 			_g_vm->DetachCurrentThread();
 			_g_thread_env = nullptr;
+
 		}
 	}
 };

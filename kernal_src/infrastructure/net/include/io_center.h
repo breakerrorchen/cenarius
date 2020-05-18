@@ -25,6 +25,7 @@ public:
     io_center(io_center&&) = delete;
     io_center& operator=(const io_center&) = delete;
     io_center& operator=(io_center&&) = delete;
+    virtual ~io_center();
 
 public:
     /**

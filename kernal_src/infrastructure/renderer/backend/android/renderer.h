@@ -18,6 +18,7 @@ class renderer_combined final
     friend class render_canvas_3d;
 public:
     renderer_combined(const render_native_window&);
+    virtual ~renderer_combined();
     bool reset(const render_native_window&);
     std::shared_ptr<render_context> new_context();
     std::shared_ptr<render_context> shared_2d_context(
