@@ -37,5 +37,7 @@ void render_context_3d::link_program(js_parameter& _parameter) {
     task->program_    = program->related_value_;
     task->reflection_ = &program->reflection_;
     task->context_    = raw_context_.get();
+
+    // ！！！同步
     transmitter_->force_commit(true);
 }

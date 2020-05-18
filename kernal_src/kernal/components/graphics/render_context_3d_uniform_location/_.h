@@ -9,6 +9,8 @@ class render_context_3d_uniform_location {
 public:
     render_context_3d_uniform_location() = default;
 public:
+    uint32_t location_ = 0;
+public:
     static void outlet(js_context&, js_object&);
 };
 

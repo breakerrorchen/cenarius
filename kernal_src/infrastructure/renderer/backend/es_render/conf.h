@@ -2,6 +2,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <sstream>
 #include <stdio.h>
 #if defined(__ANDROID__) || defined(ANDROID)
 #include "backend/android/render_care.h"
