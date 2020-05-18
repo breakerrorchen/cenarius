@@ -31,6 +31,8 @@ std::shared_ptr<related_thread> related_thread::obtain() {
 }
 
 void related_thread::dispose() {
-    if (nullptr != _tl_related) { _tl_related = nullptr; }
+    if (nullptr != _tl_related) { 
+        _tl_related = nullptr; 
+    }
 }
 

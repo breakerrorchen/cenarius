@@ -38,10 +38,6 @@ void runtime_isolate::on_receive_vsync() {
  * */
 void runtime_isolate::on_surface_created(ANativeWindow* win) {
     is_new_created_surface_ = true;
-    if (nullptr != win) {
-        ::ANativeWindow_release(win);
-    }
-__log_error("runtime_isolate::on_surface_created");
 }
 
 /**
@@ -50,7 +46,6 @@ __log_error("runtime_isolate::on_surface_created");
  * 2. 当界面发生大小变化的时候，只会通知changed的
  * */
 void runtime_isolate::on_surface_changed(ANativeWindow* win, float scale) {
-__log_error("runtime_isolate::on_surface_changed %x", win);
     assert(win);
     auto w = ::ANativeWindow_getWidth (win);
     auto h = ::ANativeWindow_getHeight(win);
@@ -80,7 +75,6 @@ __log_error("runtime_isolate::on_surface_changed %x", win);
         care_->render_->reset_window(renderable);
         care_->communicate_ = std::shared_ptr<care_communicate_i>();
         care_->info_ = info;
-        
         coordiator_ = std::make_shared<coordiator>(
             std::dynamic_pointer_cast<care>(care_));
         coordiator_->start();
@@ -89,9 +83,6 @@ __log_error("runtime_isolate::on_surface_changed %x", win);
 
     // 标记
     is_new_created_surface_ = false;
-
-    // 减少native windows的引用计数
-    ::ANativeWindow_release(win);
 }
 
 /**
@@ -101,15 +92,13 @@ __log_error("runtime_isolate::on_surface_changed %x", win);
  * 3. 然后在调用changed
  * */
 void runtime_isolate::on_surface_destroy() {
-__log_error("runtime_isolate::on_surface_destroy");
     if (coordiator_) {
         coordiator_->pause();
     }
 }
 
 /**
- * android系统的特性：
- * 1. 需要在activity退出的时候通知渲染引擎退出
+ * 同步渲染引擎退出
  * */
 void runtime_isolate::on_finalization() {
     if (coordiator_) {

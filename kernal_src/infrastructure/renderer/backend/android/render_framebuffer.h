@@ -25,8 +25,6 @@ public:
 	int h() const;
 
 private:
-    EGLDisplay display_ = EGL_NO_DISPLAY;
-    EGLConfig config_ = nullptr;
     EGLint w_ = 0, h_ = 0;
     EGLSurface surface_ = EGL_NO_SURFACE;
     EGLContext context_ = EGL_NO_CONTEXT;

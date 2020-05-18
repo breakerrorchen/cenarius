@@ -36,6 +36,7 @@ care_controller_i::~care_controller_i() {
         ::ALooper_release(native_looper_);
     }
     ::close(event_fd_); ::close(vsync_event_fd_);
+    __log_error("%s %d", __FILE__, __LINE__);
 }
 
 void care_controller_i::vsync_dispatch() {

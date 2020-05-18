@@ -142,7 +142,7 @@ void core_controller::pause() {
 
             // 通过信号量来实现暂停和恢复的逻辑
             _content->on_pause();
-            _syncer->wait();
+            _syncer ->wait();
             _content->on_resum();
         });
         syncer_condition_ = _syncer;

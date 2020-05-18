@@ -10,13 +10,13 @@ void components::canvas::on_vsync() {
     assert(care_render_ && transmitter_ && canvas_center_);
     struct __task__ {
     	__sptr<canvas_center> canvas_center_;
-    	__sptr<care_render> care_render_;
+    	__sptr<care_render>   care_render_;
     	void run(barrel_buffer*) {
     		assert(care_render_ && canvas_center_);
-    		care_render_->pre_commit_drawable();
+    		care_render_  ->pre_commit_drawable();
     		canvas_center_->commit_drawable();
-    		care_render_->commit_drawable();
-    		care_render_->after_commit_drawable();
+    		care_render_  ->commit_drawable();
+    		care_render_  ->after_commit_drawable();
     	}
     };
     auto task = transmitter_->alloc<__task__>();

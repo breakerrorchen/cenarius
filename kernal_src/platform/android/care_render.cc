@@ -123,5 +123,6 @@ void care_render_i::on_finish() {
 }
 
 void care_render_i::reset_window(std::shared_ptr<render_window> _w) {
-    spinlocker_watcher _watcher(locker_); new_window_ = _w;
+    spinlocker_watcher _watcher(locker_); 
+    new_window_ = _w;
 }

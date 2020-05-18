@@ -4,64 +4,72 @@ using namespace cenarius;
 using namespace infrastructure;
 using namespace renderer;
 
+static EGLDisplay g_display_ = EGL_NO_DISPLAY;
+static EGLConfig  g_config_  = nullptr;
 render_framebuffer::render_framebuffer(const render_native_window& window)
     : related_window_(window)  {
-    assert(window.window_);
-    auto& raw_window = related_window_.window_;
-    display_ = ::eglGetDisplay(EGL_DEFAULT_DISPLAY);
-	::eglInitialize(display_, nullptr, nullptr);
-    ::eglSwapInterval(display_, 0);
-    EGLint attribs[] = {
-        EGL_SURFACE_TYPE,   	EGL_WINDOW_BIT,
-		EGL_RED_SIZE,       	8,
-		EGL_GREEN_SIZE,     	8,
-		EGL_BLUE_SIZE,      	8,
-		EGL_ALPHA_SIZE,     	8,
-#if defined(__target_framebuffer_with_depth_stencil__)
-		EGL_DEPTH_SIZE,     	24,
-		EGL_STENCIL_SIZE,   	8,
-#endif 
-        EGL_NONE
-    };
+	// display只需要构建一次
+	static std::once_flag _display_init_once_;
+	std::call_once(_display_init_once_, [&]() {
+		EGLint num_configs;
+		g_display_ = ::eglGetDisplay(EGL_DEFAULT_DISPLAY);
+		::eglInitialize(g_display_, nullptr, nullptr);
+		::eglSwapInterval(g_display_, EGL_MAX_SWAP_INTERVAL);
+		EGLint attribs[] = {
+			EGL_SURFACE_TYPE,   	EGL_WINDOW_BIT,
+			EGL_RED_SIZE,       	8,
+			EGL_GREEN_SIZE,     	8,
+			EGL_BLUE_SIZE,      	8,
+			EGL_ALPHA_SIZE,     	8,
+	#if defined(__target_framebuffer_with_depth_stencil__)
+			EGL_DEPTH_SIZE,     	24,
+			EGL_STENCIL_SIZE,   	8,
+	#endif 
+			EGL_NONE
+		};
+		::eglChooseConfig(g_display_, attribs, &g_config_, 1, &num_configs);
+	});
 
-    EGLint num_configs; EGLint format;
-	::eglChooseConfig(display_, attribs, &config_, 1, &num_configs);
-    ::eglGetConfigAttrib(display_, config_, EGL_NATIVE_VISUAL_ID, &format);
-    ::ANativeWindow_setBuffersGeometry(raw_window, 0, 0, format);
-    surface_ = ::eglCreateWindowSurface(display_, config_, raw_window, nullptr);
-    ::eglQuerySurface(display_, surface_, EGL_WIDTH,  &w_);
-    ::eglQuerySurface(display_, surface_, EGL_HEIGHT, &h_);
-    EGLint context_attr[] = {EGL_CONTEXT_CLIENT_VERSION, 3, EGL_NONE};
-    context_ = ::eglCreateContext(display_, config_, nullptr, context_attr);
+	assert(window.window_);
+	auto& raw_window = related_window_.window_;
+	// EGLint format;
+    // ::eglGetConfigAttrib(
+	//	g_display_, g_config_, EGL_NATIVE_VISUAL_ID, &format);
+    //::ANativeWindow_setBuffersGeometry(raw_window, 0, 0, format);
+    surface_ = ::eglCreateWindowSurface(
+		g_display_, g_config_, raw_window, nullptr);
+    ::eglQuerySurface(g_display_, surface_, EGL_WIDTH,  &w_);
+    ::eglQuerySurface(g_display_, surface_, EGL_HEIGHT, &h_);
+    EGLint context_attr[] = {
+		EGL_CONTEXT_CLIENT_VERSION, 3, EGL_NONE
+	};
+    context_ = ::eglCreateContext(
+		g_display_, g_config_, nullptr, context_attr);
+	assert(EGL_NO_CONTEXT != context_);
 }
 
 render_framebuffer::~render_framebuffer() {
-    if (EGL_NO_DISPLAY != display_) {
-		::eglMakeCurrent(display_,
+    if (EGL_NO_DISPLAY != g_display_) {
+		::eglMakeCurrent(g_display_,
 			EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT);
 		if (EGL_NO_CONTEXT != context_) {
-			::eglDestroyContext(display_, context_);
+			::eglDestroyContext(g_display_, context_);
 		}
 		if (EGL_NO_SURFACE != surface_) {
-			::eglDestroySurface(display_, surface_);
+			::eglDestroySurface(g_display_, surface_);
 		}
-		::eglTerminate(display_);
+		//::eglTerminate(g_display_);
 	}
-
-    display_ = EGL_NO_DISPLAY;
-	context_ = EGL_NO_CONTEXT;
-	surface_ = EGL_NO_SURFACE;
+	context_ = EGL_NO_CONTEXT; surface_ = EGL_NO_SURFACE;
 }
 
 bool render_framebuffer::reset(const render_native_window& window) {
     if (EGL_NO_SURFACE != surface_) {
-		::eglDestroySurface(display_, surface_);
+		::eglDestroySurface(g_display_, surface_);
 		surface_ = EGL_NO_DISPLAY;
 	}
-    related_window_ = window;
-    if (nullptr == related_window_.window_) {
-		return false;
-	}
+    related_window_ = window; 
+	assert(related_window_.window_);
 
     if (EGL_NO_SURFACE != surface_) {
         /**
@@ -70,30 +78,29 @@ bool render_framebuffer::reset(const render_native_window& window) {
 		 * eglCreateWindowSurface: native_window_api_connect
 		 * (win=0xab798928) failed (0xffffffea) (already connected to another API?)
 		 * */
-		::eglMakeCurrent(display_, 
+		::eglMakeCurrent(g_display_, 
             EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT);
-		::eglDestroySurface(display_, surface_);
+		::eglDestroySurface(g_display_, surface_);
     }
     surface_ = ::eglCreateWindowSurface(
-		display_, config_, related_window_.window_, nullptr);
-    if (EGL_NO_SURFACE == surface_) { 
-    	return false; 
-   	}
-    ::eglQuerySurface(display_, surface_, EGL_WIDTH,  &w_);
-	::eglQuerySurface(display_, surface_, EGL_HEIGHT, &h_);
+		g_display_, g_config_, related_window_.window_, nullptr);
+	assert(EGL_NO_SURFACE != surface_);
+	assert(EGL_NO_CONTEXT != context_);
+    ::eglQuerySurface(g_display_, surface_, EGL_WIDTH,  &w_);
+	::eglQuerySurface(g_display_, surface_, EGL_HEIGHT, &h_);
+	::eglMakeCurrent (g_display_, surface_, surface_, context_);
 
     return render_framebuffer::is_useable();
 }
 
 bool render_framebuffer::is_useable() const {
     return EGL_NO_SURFACE != surface_ 
-		&& EGL_NO_DISPLAY != display_
 		&& EGL_NO_CONTEXT != context_;
 }
 
 bool render_framebuffer::make_current() const {
 	if (!is_useable()) return false;
-	::eglMakeCurrent(display_, surface_, surface_, context_);
+	::eglMakeCurrent(g_display_, surface_, surface_, context_);
 	return true;
 }
 
@@ -110,7 +117,7 @@ GLuint render_framebuffer::display_framebuffer() const {
 }
 
 EGLDisplay render_framebuffer::display() const {
-	return display_;
+	return g_display_;
 }
 
 EGLSurface render_framebuffer::surface() const {
@@ -122,5 +129,5 @@ EGLContext render_framebuffer::context() const {
 }
 
 EGLConfig render_framebuffer::surface_config() const {
-	return config_;
+	return g_config_;
 }

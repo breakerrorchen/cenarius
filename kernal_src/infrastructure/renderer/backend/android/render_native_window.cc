@@ -12,6 +12,12 @@ render_native_window::render_native_window(
     }
 }
 
+render_native_window::~render_native_window() {
+    if (window_) {
+        ::ANativeWindow_release(window_);
+    }
+}
+
 render_native_window::render_native_window(
     const render_native_window& from) {
     operator=(from);
@@ -26,7 +32,8 @@ render_native_window& render_native_window::operator=(
     const render_native_window& from) {
     if (this != &from) {
         if (window_) {
-            ::ANativeWindow_release(window_); window_ = nullptr;
+            ::ANativeWindow_release(window_); 
+            window_ = nullptr;
         }
         window_ = from.window_; scale_ = from.scale_;
         if (window_) {
@@ -46,12 +53,6 @@ render_native_window& render_native_window::operator=(
         from.window_ = nullptr; from.scale_ = 1.0f;
     }
     return *this;
-}
-
-render_native_window::~render_native_window() {
-    if (window_) {
-        ::ANativeWindow_release(window_);
-    }
 }
 
 float render_native_window::w() const {

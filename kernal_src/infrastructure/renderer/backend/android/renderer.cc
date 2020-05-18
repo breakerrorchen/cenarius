@@ -24,10 +24,7 @@ renderer_combined::~renderer_combined() {
 }
 
 bool renderer_combined::reset(const render_native_window& window) {
-    if (framebuffer_.reset(window)) {
-        return framebuffer_.make_current();
-    }
-    return false;
+    return framebuffer_.reset(window);
 }
 
 std::shared_ptr<render_context> renderer_combined::new_context() {

@@ -58,7 +58,9 @@ extern "C" JNIEXPORT jlong JNICALL CENARIUS_PACKAGE(
     auto ptr = reinterpret_cast<runtime_isolate*>(instance);
     if (ptr) {
         ptr->on_surface_created(_surface);
-    } else if (_surface) {
+    }
+
+    if (_surface) {
         ::ANativeWindow_release(_surface);
     }
     return 0;
@@ -72,7 +74,9 @@ extern "C" JNIEXPORT jlong JNICALL CENARIUS_PACKAGE(
     auto ptr = reinterpret_cast<runtime_isolate*>(instance);
     if (ptr) {
         ptr->on_surface_changed(_surface, scale);
-    } else if (_surface) {
+    } 
+    
+    if (_surface) {
         ::ANativeWindow_release(_surface);
     }
     return 0;
