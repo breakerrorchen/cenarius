@@ -56,6 +56,14 @@ template<class cls> inline bool buffer_extract(
         buffer_extract_t(float);        return true;
     } else if (v.is_typed_arr_float64()) {
         buffer_extract_t(double);       return true;
+    } else if (v.is_array()) {
+        if (want_size != v.value_arr_size()) {
+            return false;
+        }
+        for (int i = 0; i < want_size; ++i) {
+             out[i] = (cls)v.value_arr_at(i).to_float();
+        }
+        return true;
     }
     
 #undef  buffer_extract_t
