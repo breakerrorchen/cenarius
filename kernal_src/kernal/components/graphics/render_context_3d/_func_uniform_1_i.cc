@@ -20,15 +20,21 @@
 void render_context_3d::uniform_1_i(js_parameter& _parameter) {
     assert(transmitter_ && raw_context_ && render_attitude_);
     render_context_3d_uniform_intend_code(_parameter);
-    if (_parameter.get_argument_count() != 2) return;
-    int32_t v = _parameter[1].to_int32();
-    if (DWL_FLOAT == local_uniform->type_) {
-        local_uniform->value_.f_16_[0] = (float)v;
-    } else if (DWL_BOOL == local_uniform->type_) {
-        local_uniform->value_.b_16_[0] = (bool)v;
-    } else if (DWL_INT == local_uniform->type_) {
-        local_uniform->value_.i_16_[0] = (int)v;
+    if (DWL_BOOL != local_uniform->type_ &&
+        DWL_INT  != local_uniform->type_) {
+        return;
     }
+    if (_parameter.get_argument_count() < 2) return;
+    auto v = _parameter.get_argument_at(1);
+    if (!v.is_number()) return;
+    
+    auto data = v.to_int32();
+    if (DWL_BOOL == local_uniform->type_) {
+        local_uniform->value_.b_16_[0] = (bool)data;
+    } else if (DWL_INT == local_uniform->type_) {
+        local_uniform->value_.i_16_[0] = (int)data;
+    }
+
     struct __task__ {
         puppet_container<canvas_render_3d>* context_ = nullptr;
         int32_t location_; int32_t value_ = 0;
@@ -42,6 +48,6 @@ void render_context_3d::uniform_1_i(js_parameter& _parameter) {
     auto task = transmitter_->alloc<__task__>();
     assert(nullptr != task);
     task->location_ = location_index;
-    task->value_    = v;
+    task->value_    = data;
     task->context_  = raw_context_.get();
 }
