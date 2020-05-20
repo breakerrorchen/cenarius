@@ -41,6 +41,13 @@ void render_context_3d::viewport(js_parameter& _parameter) {
     auto w = _parameter[2].to_int32();
     auto h = _parameter[3].to_int32();
     if (w < 0 || h < 0) return;
+    if (w > render_attitude_->max_viewport_size_[0]) {
+        w = render_attitude_->max_viewport_size_[0];
+    }
+
+    if (h > render_attitude_->max_viewport_size_[1]) {
+        h = render_attitude_->max_viewport_size_[1];
+    }
 
     context_cache_.viewport_[0] = x;
     context_cache_.viewport_[1] = y;
