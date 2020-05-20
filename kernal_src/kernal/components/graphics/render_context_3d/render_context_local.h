@@ -178,7 +178,7 @@ public:
      * The WebGLRenderingContext.depthRange() method of the WebGL API specifies the depth 
      * range mapping from normalized device coordinates to window or viewport coordinates.
      */
-    float depth_range_[2] = {0.0f, 1.0f};
+    float depth_range_[2] = { 0.0f, 1.0f };
 
     /**
      * The WebGLRenderingContext.bindBuffer() method of the WebGL API binds a given 

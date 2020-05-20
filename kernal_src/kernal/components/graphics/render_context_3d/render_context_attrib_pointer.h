@@ -5,6 +5,7 @@
 
 namespace cenarius { namespace kernal { namespace components {
 using namespace interpreter;
+class render_context_3d_buffer;
 class render_context_attrib_pointer {
 public:
     uint32_t size_       = 0;
@@ -13,6 +14,13 @@ public:
     uint32_t offset_     = 0;
     bool     normalized_ = false;
     bool     enable_     = false;
+    
+public:
+    float data_[4] = {0, 0, 0, 1};
+    
+public:
+    js_value_holder buffer_;
+    render_context_3d_buffer* raw_buffer_ = nullptr;
 };
 
 
