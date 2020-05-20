@@ -24,5 +24,7 @@ void render_context_3d::flush(js_parameter& _parameter) {
     auto task = transmitter_->alloc<__task__>();
     assert(nullptr != task);
     task->context_ = raw_context_.get();
+
+    // 异步推送
     transmitter_->force_commit(false, false);
 }

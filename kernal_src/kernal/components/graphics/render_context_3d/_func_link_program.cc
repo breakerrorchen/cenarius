@@ -20,6 +20,7 @@ void render_context_3d::link_program(js_parameter& _parameter) {
     auto program = js_class_extract::extract<
         render_context_3d_program>(_0);
     if (!program || !program->is_useable()) return;
+    if (program->reflection_.is_linked_) return;
     struct __task__ {
         puppet_container<canvas_render_3d>* context_ = nullptr;
         uint32_t* program_ = nullptr;
