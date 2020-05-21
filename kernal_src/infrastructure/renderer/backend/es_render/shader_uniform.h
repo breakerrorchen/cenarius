@@ -7,7 +7,7 @@ union shader_uniform_value {
     int   i_16_[16];
     float f_16_[16];
     bool  b_16_[16];
-    int   sampler_ ;
+    int   sampler_ ; // sampler2D or samplerCube
 };
 
 class shader_uniform final {

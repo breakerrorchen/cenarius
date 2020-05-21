@@ -22,8 +22,10 @@ void render_context_3d::uniform_1_i_v(js_parameter& _parameter) {
     assert(transmitter_ && raw_context_ && render_attitude_);
     if (_parameter.get_argument_count() < 2) return;
     render_context_3d_uniform_intend_code(_parameter);
-    if (DWL_BOOL != local_uniform->type_ &&
-        DWL_INT  != local_uniform->type_) {
+    if (DWL_BOOL         != local_uniform->type_ &&
+        DWL_INT          != local_uniform->type_ &&
+        DWL_SAMPLER_2D   != local_uniform->type_ &&
+        DWL_SAMPLER_CUBE != local_uniform->type_) {
         return;
     }
     auto v = _parameter.get_argument_at(1);
@@ -33,6 +35,10 @@ void render_context_3d::uniform_1_i_v(js_parameter& _parameter) {
         local_uniform->value_.b_16_[0] = (bool)data;
     } else if (DWL_INT == local_uniform->type_) {
         local_uniform->value_.i_16_[0] = (int) data;
+    } else if (DWL_SAMPLER_2D == local_uniform->type_) {
+        local_uniform->value_.sampler_ = (int)data;
+    } else if (DWL_SAMPLER_CUBE == local_uniform->type_) {
+        local_uniform->value_.sampler_ = (int)data;
     }
 
     struct __task__ {

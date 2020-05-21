@@ -24,6 +24,7 @@ void render_context_3d::enable_vertex_attrib_arr(js_parameter& _parameter) {
         return;
     }
     context_cache_.attrib_pointer_[index].enable_ = true;
+    
     struct __task__ {
         puppet_container<canvas_render_3d>* context_ = nullptr;
         uint32_t index_ = 0;

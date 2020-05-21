@@ -126,15 +126,15 @@ public:
     /**
      * create typedarray
      * */
-    // static i_value create_typed_arr_clamped(const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_int8   (const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_int16  (const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_int32  (const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_uint8  (const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_uint16 (const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_uint32 (const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_float32(const i_context&, i_typedarr_buffer*);
-    // static i_value create_typed_arr_float64(const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_clamped(const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_int8   (const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_int16  (const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_int32  (const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_uint8  (const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_uint16 (const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_uint32 (const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_float32(const i_context&, i_typedarr_buffer*);
+    static i_value create_typed_arr_float64(const i_context&, i_typedarr_buffer*);
 
 protected:
     i_context context_; Local<Value> _$_;

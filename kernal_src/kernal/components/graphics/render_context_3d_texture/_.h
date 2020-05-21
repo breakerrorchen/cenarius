@@ -21,6 +21,12 @@ public:
     bool dispose();
 
 public:
+    uint32_t mag_filter_ = DWL_LINEAR;
+	uint32_t min_filter_ = DWL_NEAREST_MIPMAP_LINEAR;
+	uint32_t wrap_s_	 = DWL_REPEAT;
+	uint32_t wrap_t_ 	 = DWL_REPEAT;
+
+public:
     std::shared_ptr<alived_token<render_context_3d>> related_;
     enum __status__ { _nil_, _builded_, _deleted_ };
     __status__ status_ = _builded_;

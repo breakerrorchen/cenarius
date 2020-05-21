@@ -15,5 +15,15 @@ using namespace components;
  *      context parameters, or null if the context is lost.
  */
 void render_context_3d::get_context_attributes(js_parameter& _parameter) {
-    
+    const char* context_attributes = 
+        "   {                                   "
+        "       alpha:                  true,   " 
+        "       antialias:              true,   "
+        "       depth:                  true,   "
+        "       stencil:                true,   "
+        "       preserveDrawingBuffer:  true    "
+        "   }                                   ";
+    auto js_context = _parameter.get_context();
+    _parameter.set_return(
+        js_value::create(js_context, context_attributes, true));
 }

@@ -344,4 +344,38 @@ i_value i_value::create_clamped_arr(const i_context& context, size_t size) {
         ArrayBuffer::New(isolate, size), 0, size);
     return i_value(context._$_, Local<Value>::Cast(value));
 }
+
+#ifndef i_value_create_typed_arr
+#define i_value_create_typed_arr(func_name, v8_typed_arr_t)             \
+    i_value i_value::func_name(                                         \
+        const i_context& context, i_typedarr_buffer* buffer) {          \
+        if (!context.is_useable() || !buffer) return i_value();         \
+        auto isolate = context._$_->GetIsolate();                       \
+        auto value = v8_typed_arr_t::New(                               \
+            ArrayBuffer::New(isolate, buffer->size_),                   \
+            0, buffer->size_);                                          \
+        auto buffer_view = Local<ArrayBufferView>::Cast(value);         \
+        if (!buffer_view.IsEmpty()) {                                   \
+            auto buffer_data  = buffer_view->Buffer();                  \
+            auto content_data = buffer_data->GetContents();             \
+            if (buffer->addr_) {                                        \
+                memcpy(content_data.Data(),                             \
+                    buffer->addr_, buffer->size_);                      \
+            }                                                           \
+        }                                                               \
+        return i_value(context._$_, Local<Value>::Cast(value));         \
+    }
+
+    i_value_create_typed_arr(create_typed_arr_clamped, Uint8ClampedArray)
+    i_value_create_typed_arr(create_typed_arr_int8,    Int8Array        )
+    i_value_create_typed_arr(create_typed_arr_int16,   Int16Array       )
+    i_value_create_typed_arr(create_typed_arr_int32,   Int32Array       )
+    i_value_create_typed_arr(create_typed_arr_uint8,   Uint8Array       )
+    i_value_create_typed_arr(create_typed_arr_uint16,  Uint16Array      )
+    i_value_create_typed_arr(create_typed_arr_uint32,  Uint32Array      )
+    i_value_create_typed_arr(create_typed_arr_float32, Float32Array     )
+    i_value_create_typed_arr(create_typed_arr_float64, Float64Array     )
+#undef  i_value_create_typed_arr
+#endif//i_value_create_typed_arr
+
 #endif//__use_v8_backend__

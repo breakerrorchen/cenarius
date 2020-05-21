@@ -1,4 +1,5 @@
 
+#include "../render_context_3d_texture/_.h"
 #include "_.h"
 using namespace cenarius;
 using namespace kernal;
@@ -24,10 +25,15 @@ void render_context_3d::texparameter_i(js_parameter& _parameter) {
     uint32_t target = (uint32_t)_parameter[0].to_int32();
     uint32_t pname  = (uint32_t)_parameter[1].to_int32();
     int      param  = _parameter[1].to_int32();
-    if (DWL_TEXTURE_2D != target &&
-        DWL_TEXTURE_CUBE_MAP != target) {
+    render_context_3d_texture* raw_texture = nullptr;
+    if (DWL_TEXTURE_2D == target) {
+        raw_texture = context_cache_.raw_texture_2d_bind_;
+    } else if (DWL_TEXTURE_CUBE_MAP == target) {
+        raw_texture = context_cache_.raw_texture_cube_bind_;
+    } else {
         return;
     }
+    if (nullptr == raw_texture) return;
 
     if (DWL_TEXTURE_MAG_FILTER == pname) {
         if (DWL_LINEAR                 != param && 
@@ -38,18 +44,31 @@ void render_context_3d::texparameter_i(js_parameter& _parameter) {
             DWL_LINEAR_MIPMAP_LINEAR   != param) {
             return;
         }
+        raw_texture->mag_filter_ = param;
+    } else if (DWL_TEXTURE_MIN_FILTER == pname) {
+        if (DWL_LINEAR                 != param && 
+            DWL_NEAREST                != param &&
+            DWL_NEAREST_MIPMAP_NEAREST != param &&
+            DWL_LINEAR_MIPMAP_NEAREST  != param &&
+            DWL_NEAREST_MIPMAP_LINEAR  != param &&
+            DWL_LINEAR_MIPMAP_LINEAR   != param) {
+            return;
+        }
+        raw_texture->min_filter_ = param;
     } else if (DWL_TEXTURE_WRAP_S == pname) {
         if (DWL_REPEAT                 != param && 
             DWL_CLAMP_TO_EDGE          != param &&
             DWL_MIRRORED_REPEAT        != param) {
             return;
         }
+        raw_texture->wrap_s_ = param;
     } else if (DWL_TEXTURE_WRAP_T == pname) {
         if (DWL_REPEAT                 != param && 
             DWL_CLAMP_TO_EDGE          != param &&
             DWL_MIRRORED_REPEAT        != param) {
             return;
         }
+        raw_texture->wrap_t_ = param;
     } else {
         return;
     }
