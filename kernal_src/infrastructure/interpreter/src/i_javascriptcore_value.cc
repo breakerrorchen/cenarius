@@ -355,13 +355,13 @@ i_value i_value::create_clamped_arr(const i_context& context, size_t size) {
 }
 
 #ifndef i_value_create_typed_arr
-#define i_value_create_typed_arr(func_name, jsc_typed_arr_t)            \
-    i_value i_value::func_name(                                         \
-        const i_context& context, i_typedarr_buffer* buffer) {          \
-        if (!context._$_) return i_value();                             \
-        auto value = ::JSObjectMakeTypedArray(                          \
-            context._$_, jsc_typed_arr_t, buffer->size_, buffer->addr_);\
-        return i_value(context._$_, value);                             \
+#define i_value_create_typed_arr(func_name, jsc_typed_arr_t)                \
+    i_value i_value::func_name(                                             \
+        const i_context& context, i_typedarr_buffer* buffer) {              \
+        if (!context._$_) return i_value();                                 \
+        auto value = ::JSObjectMakeTypedArray(                              \
+            context._$_, jsc_typed_arr_t, buffer->size_, buffer->addr_);    \
+        return i_value(context._$_, value);                                 \
     }
     i_value_create_typed_arr(create_typed_arr_clamped, kJSTypedArrayTypeUint8ClampedArray)
     i_value_create_typed_arr(create_typed_arr_int8,    kJSTypedArrayTypeInt8Array        )
