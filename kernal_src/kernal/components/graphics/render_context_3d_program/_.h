@@ -20,6 +20,7 @@ public:
     virtual ~render_context_3d_program();
 public:
     bool is_useable();
+    bool is_deleted();
     bool dispose();
 
 public:
@@ -36,7 +37,6 @@ public:
     render_context_3d_shader* fs_raw_shader_ = nullptr;
 public:
     shader_reflection reflection_;
-
 public:
     static void outlet(js_context&, js_object&);
 };

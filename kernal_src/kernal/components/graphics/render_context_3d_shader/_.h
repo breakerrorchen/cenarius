@@ -26,6 +26,7 @@ public:
     virtual ~render_context_3d_shader();
 public:
     bool is_useable();
+    bool is_deleted();
     bool dispose();
 
 public:

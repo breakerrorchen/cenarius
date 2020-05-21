@@ -18,6 +18,10 @@ bool render_context_3d_program::is_useable() {
         && related_ && related_->is_useable();
 }
 
+bool render_context_3d_program::is_deleted() {
+    return _deleted_ == status_;
+}
+
 bool render_context_3d_program::dispose() {
     if (_builded_ != status_) return false;
     status_ = _deleted_;

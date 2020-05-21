@@ -7,12 +7,14 @@
 namespace cenarius { namespace infrastructure { namespace renderer {
 class shader_reflection final {
 public:
-    bool is_linked_  = false;
-    bool is_success_ = false;
+    bool is_linked_   = false;
+    bool is_validate_ = false;
+    bool is_success_  = false;
     std::string program_info_;
     std::vector<shader_attrib > attribs_;
     std::vector<shader_uniform> uniforms_;
     std::vector<shader_uniform> active_uniforms_;
+    
 public:
     inline void reset() {
         is_success_     = false; 

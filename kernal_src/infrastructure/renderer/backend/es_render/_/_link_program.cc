@@ -8,8 +8,9 @@ void render_connector::link_program(uint32_t index, shader_reflection* env) {
     ::glLinkProgram((GLuint)index); if (nullptr == env) return;
     GLint ret_params = GL_TRUE;
     ::glGetProgramiv((GLuint)index, GL_LINK_STATUS, &ret_params);
-    env->is_success_ = (GL_TRUE == ret_params);
-    env->is_linked_ = true;
+    env->is_success_  = (GL_TRUE == ret_params);
+    env->is_linked_   = true;
+    env->is_validate_ = false;
     
     if (!env->is_success_) {
         GLchar error_log[512] = {0}; GLint size = 512;
