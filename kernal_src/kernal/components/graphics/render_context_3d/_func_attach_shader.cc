@@ -44,6 +44,7 @@ void render_context_3d::attach_shader(js_parameter& _parameter) {
         _program->fs_shader_ = _1;
         _program->fs_raw_shader_ = _shader;
     }
+    
     struct __task__ {
         puppet_container<canvas_render_3d>* context_ = nullptr;
         uint32_t *program_ = nullptr, *shader_ = nullptr;

@@ -15,6 +15,10 @@ public:
     void type(js_parameter&);
 
 public:
+    std::string name_;
+    uint32_t type_ = 0, size_ = 0;
+    
+public:
     static void outlet(js_context&, js_object&);
 };
 

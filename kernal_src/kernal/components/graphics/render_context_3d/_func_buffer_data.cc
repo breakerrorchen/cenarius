@@ -1,4 +1,5 @@
 
+#include "../render_context_3d_buffer/_.h"
 #include "_.h"
 using namespace cenarius;
 using namespace kernal;
@@ -17,14 +18,19 @@ using namespace components;
  */
 void render_context_3d::buffer_data(js_parameter& _parameter) {
     assert(transmitter_ && raw_context_ && render_attitude_);
-    if (_parameter.get_argument_count() != 2) return;
+    if (_parameter.get_argument_count() != 3) return;
     auto _0 = _parameter.get_argument_at(0);
     if (!_0.is_number()) return;
+    render_context_3d_buffer* raw_buffer = nullptr;
     auto target = (uint32_t)_0.to_int32();
-    if (DWL_ARRAY_BUFFER != target && 
-        DWL_ELEMENT_ARRAY_BUFFER != target) {
+    if (DWL_ARRAY_BUFFER == target) {
+        raw_buffer = context_cache_.raw_arraybuffer_bind_;
+    } else if (DWL_ELEMENT_ARRAY_BUFFER == target) {
+        raw_buffer = context_cache_.raw_element_arraybuffer_bind_;
+    } else {
         return;
     }
+    if (nullptr == raw_buffer) return;
 
     auto _2 = _parameter.get_argument_at(2);
     if (!_2.is_number()) return;
@@ -58,6 +64,9 @@ void render_context_3d::buffer_data(js_parameter& _parameter) {
         task->usage_  = usage;
         task->buffer_size_ = size;
         transmitter_->force_commit();
+
+        // save buffer state
+        raw_buffer->size_ = size; raw_buffer->usage_ = usage; 
     }
 
     // WebGL1:
@@ -87,5 +96,8 @@ void render_context_3d::buffer_data(js_parameter& _parameter) {
             memcpy(task->buffer_.data(), buffer.addr_, buffer.size_);
         }
         transmitter_->force_commit();
+
+        // save buffer state
+        raw_buffer->size_ = buffer.size_; raw_buffer->usage_ = usage; 
     }
 }

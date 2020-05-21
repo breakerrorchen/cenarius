@@ -21,6 +21,7 @@ public:
     bool dispose();
 
 public:
+    uint32_t size_ = 0, usage_ = DWL_NONE;
     std::shared_ptr<alived_token<render_context_3d>> related_;
     enum __status__ { _nil_, _builded_, _deleted_ };
     __status__ status_ = _builded_;
