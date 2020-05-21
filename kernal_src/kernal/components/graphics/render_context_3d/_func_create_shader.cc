@@ -7,6 +7,17 @@ using namespace infrastructure;
 using namespace renderer;
 using namespace components;
 
+/**
+ * Syntax
+ *      WebGLShader gl.createShader(type);
+ * 
+ * type
+ *      Either gl.VERTEX_SHADER or gl.FRAGMENT_SHADER
+ * 
+ * Return value
+ *      A WebGLRenderbuffer object that stores data such an image, 
+ *      or can be source or target of an rendering operation.
+ */
 void render_context_3d::create_shader(js_parameter& _parameter) {
     assert(transmitter_ && raw_context_ && render_attitude_);
     if (_parameter.get_argument_count() != 1) return;

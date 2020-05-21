@@ -7,6 +7,13 @@ using namespace infrastructure;
 using namespace renderer;
 using namespace components;
 
+/**
+ * Syntax
+ *      WebGLTexture gl.createTexture();
+ * 
+ * Return value
+ *      A WebGLTexture object to which images can be bound to.
+ */
 void render_context_3d::create_texture(js_parameter& _parameter) {
     auto thread_related = related_thread::obtain();
     assert(thread_related);

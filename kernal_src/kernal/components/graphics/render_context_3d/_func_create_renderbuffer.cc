@@ -7,6 +7,14 @@ using namespace infrastructure;
 using namespace renderer;
 using namespace components;
 
+/**
+ * Syntax
+ *      WebGLRenderbuffer gl.createRenderbuffer();
+ * 
+ * Return value
+ *      A WebGLRenderbuffer object that stores data such an image, 
+ *      or can be source or target of an rendering operation.
+ */
 void render_context_3d::create_renderbuffer(js_parameter& _parameter) {
     assert(transmitter_ && raw_context_ && render_attitude_);
     auto thread_related = related_thread::obtain();

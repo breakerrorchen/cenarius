@@ -7,6 +7,13 @@ using namespace infrastructure;
 using namespace renderer;
 using namespace components;
 
+/**
+ * Syntax
+ *      WebGLFramebuffer gl.createFramebuffer();
+ * 
+ * Return value
+ *      A WebGLFramebuffer object.
+ */
 void render_context_3d::create_framebuffer(js_parameter& _parameter) {
     assert(transmitter_ && raw_context_ && render_attitude_);
     auto thread_related = related_thread::obtain();

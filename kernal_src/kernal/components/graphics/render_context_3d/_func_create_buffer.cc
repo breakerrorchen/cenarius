@@ -7,6 +7,13 @@ using namespace infrastructure;
 using namespace renderer;
 using namespace components;
 
+/**
+ * Syntax
+ *      WebGLBuffer gl.createBuffer();
+ * 
+ * Return value
+ *      A WebGLBuffer storing data such as vertices or colors.
+ */
 void render_context_3d::create_buffer(js_parameter& _parameter) {
     assert(transmitter_ && raw_context_ && render_attitude_);
     auto thread_related = related_thread::obtain();
