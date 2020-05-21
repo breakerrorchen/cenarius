@@ -24,9 +24,10 @@ using namespace components;
 void render_context_3d::get_shader_info_log(js_parameter& _parameter) {
     if (_parameter.get_argument_count() != 1) return;
     auto v = _parameter.get_argument_at(0);
-    auto _i = js_class_extract::extract<render_context_3d_shader>(v);
-    if (!_i || !_i->is_useable()) return;
+    auto shader = js_class_extract::extract<
+        render_context_3d_shader>(v);
+    if (!shader || !shader->is_useable()) return;
     auto js_context = _parameter.get_context();
     _parameter.set_return(js_value::create(
-        js_context, _i->compile_log_.c_str(), false));
+        js_context, shader->compile_log_.c_str(), false));
 }

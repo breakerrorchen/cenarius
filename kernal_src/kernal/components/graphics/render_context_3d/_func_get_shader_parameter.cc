@@ -30,8 +30,38 @@ using namespace components;
 void render_context_3d::get_shader_parameter(js_parameter& _parameter) {
     if (_parameter.get_argument_count() != 2) return;
     auto _0 = _parameter.get_argument_at(0);
-    auto _i = js_class_extract::extract<render_context_3d_shader>(_0);
-    if (!_i || !_i->is_useable()) return;
+    auto shader = js_class_extract::extract<
+        render_context_3d_shader>(_0);
+    if (!shader || !shader->is_useable()) return;
     auto _1 = _parameter.get_argument_at(1);
-    
+    if (!_1.is_number()) return;
+    auto pname = (uint32_t)_1.to_int32();
+
+    auto js_context = _parameter.get_context();
+    if (DWL_DELETE_STATUS == pname) {
+        _parameter.set_return(js_value::create(
+            js_context, shader->is_deleted()));
+    } 
+    else if (DWL_COMPILE_STATUS == pname) {
+        bool status = (shader->state_ == 
+            render_context_3d_shader_state::_compile_success_);
+        _parameter.set_return(
+            js_value::create(js_context, status));
+    } 
+    else if (DWL_SHADER_TYPE == pname) {
+        int32_t type = DWL_NONE;
+        if (shader->class_ == 
+            render_context_3d_shader_class::_vs_) {
+            type = DWL_VERTEX_SHADER;
+        }
+        else if (shader->class_ ==
+            render_context_3d_shader_class::_fs_) {
+            type = DWL_FRAGMENT_SHADER;
+        }
+        _parameter.set_return(
+            js_value::create(js_context, type));
+    } 
+    else {
+        ;
+    }
 }
