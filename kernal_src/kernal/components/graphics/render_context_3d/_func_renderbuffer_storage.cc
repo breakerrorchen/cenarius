@@ -1,4 +1,5 @@
 
+#include "../render_context_3d_renderbuffer/_.h"
 #include "_.h"
 using namespace cenarius;
 using namespace kernal;
@@ -81,11 +82,15 @@ void render_context_3d::renderbuffer_storage(js_parameter& _parameter) {
     auto internal_format = (uint32_t)_parameter[1].to_int32();
     int  width           = _parameter[2].to_int32();
     int  height          = _parameter[3].to_int32();
-
     if (DWL_RENDERBUFFER != target) {
         return;
     }
 
+    if (width  <= 0 || width  > render_attitude_->max_renderbuffer_size_ ||
+        height <= 0 || height > render_attitude_->max_renderbuffer_size_) {
+        return;
+    }
+    
     if (DWL_RGBA4             != internal_format &&
         DWL_RGB565            != internal_format &&
         DWL_RGB5_A1           != internal_format &&
@@ -99,6 +104,11 @@ void render_context_3d::renderbuffer_storage(js_parameter& _parameter) {
         internal_format = DWL_DEPTH24_STENCIL8;
     }
 
+    auto renderbuffer = context_cache_.raw_renderbuffer_bind_;
+    if (nullptr == renderbuffer) return;
+    renderbuffer->w_ = (uint32_t)width ;
+    renderbuffer->h_ = (uint32_t)height;
+    renderbuffer->internal_format_ = internal_format;
     struct __task__ {
         puppet_container<canvas_render_3d>* context_ = nullptr;
         uint32_t internal_format_; int w_, h_;

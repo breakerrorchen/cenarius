@@ -1,6 +1,7 @@
 package com.cenarius.component;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.graphics.PixelFormat;
 import android.os.Looper;
 import android.util.AttributeSet;
@@ -10,6 +11,9 @@ import android.view.inputmethod.InputMethod;
 import android.view.inputmethod.InputMethodManager;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class TorchView
@@ -22,18 +26,32 @@ public class TorchView
     }
 
     public String getFromAssets(String fileName){
+        if (null == fileName) return null;
+        AssetManager am = getResources().getAssets();
+        InputStream input = null;
         try {
-            InputStreamReader inputReader = new InputStreamReader( getResources().getAssets().open(fileName) );
-            BufferedReader bufReader = new BufferedReader(inputReader);
-            String line="";
-            String Result="";
-            while((line = bufReader.readLine()) != null)
-                Result += line;
-            return Result;
-        } catch (Exception e) {
+            input = am.open(fileName);
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        return "";
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        byte[] buffer = new byte[1024];
+        int len = 0;
+        while (true) {
+            try {
+                if (!((len = input.read(buffer)) != -1)) break;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            output.write(buffer, 0, len);
+        }
+        try {
+            output.close();
+            input.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return output.toString();
     }
 
     private TorchController mTorchController = null;
@@ -49,6 +67,7 @@ public class TorchView
         this.setZOrderOnTop(false);
         this.getHolder().setFormat(PixelFormat.RGBA_8888);
         this.getHolder().addCallback(this.mTorchController);
+
         // Here, a new thread is started to get vsync notifications,
         // which is mainly to prevent the main thread from running
         // and causing the vsync signal to be distributed quickly
@@ -126,7 +145,9 @@ public class TorchView
         }
 
         if (null != mTorchController) {
+            this.getHolder().removeCallback(mTorchController);
             mTorchController.onFinalFinalization();
         }
+
     }
 }

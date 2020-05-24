@@ -1,5 +1,4 @@
 
-#include "common/logger.h"
 #include "renderer.h"
 #include "render_context.h"
 using namespace cenarius;

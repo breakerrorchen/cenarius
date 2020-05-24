@@ -8,11 +8,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ffffff33"/>
-        <com.cenarius.component.TorchView
+        <com.cenarius.component.TorchGround
             android:id="@+id/dashview"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </com.cenarius.component.TorchView>
+        </com.cenarius.component.TorchGround>
         <FrameLayout
             android:layout_margin="100dp"
             android:layout_width="match_parent"

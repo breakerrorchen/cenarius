@@ -27,6 +27,10 @@ public:
     uint32_t* related_value_ = nullptr;
     std::shared_ptr<command_transmitter> transmitter_;
 public:
+    uint32_t internal_format_ = DWL_NONE; 
+    uint32_t w_ = 0, h_ = 0;
+
+public:
     static void outlet(js_context&, js_object&);
 };
 

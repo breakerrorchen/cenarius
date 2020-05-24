@@ -53,5 +53,171 @@ using namespace components;
  *      any sampler type	GLint
  */
 void render_context_3d::get_uniform(js_parameter& _parameter) {
-    
+    if (_parameter.get_argument_count() != 2) return;
+    auto _0 = _parameter.get_argument_at(0);
+    auto _1 = _parameter.get_argument_at(1);
+    auto program = js_class_extract::extract<
+        render_context_3d_program>(_0);
+    auto location = js_class_extract::extract<
+        render_context_3d_uniform_location>(_1);
+    if (!program || !location) return;
+    if (!program || !program->is_useable()) return;
+    shader_uniform* current_item = nullptr;
+    auto& all_uniforms = program->reflection_.uniforms_;
+    for (auto& item: all_uniforms) {
+        if (item.location_index_ == location->location_) {
+            current_item = &item;
+            break;
+        }
+    }
+    if (nullptr == current_item) return;
+
+    auto js_context = _parameter.get_context();
+    if (current_item->type_ == DWL_BOOL) {
+        _parameter.set_return(js_value::create(js_context, 
+            current_item->value_.b_16_[0]));
+    }
+    else if (current_item->type_ == DWL_INT) {
+        _parameter.set_return(js_value::create(js_context, 
+            current_item->value_.i_16_[0]));
+    }
+    else if (current_item->type_ == DWL_FLOAT) {
+        _parameter.set_return(js_value::create(js_context, 
+            current_item->value_.f_16_[0]));
+    }
+    else if (current_item->type_ == DWL_FLOAT_VEC2) {
+        i_typedarr_buffer buffer; float data[2];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(float) * 2;
+        data[0] = current_item->value_.f_16_[0];
+        data[1] = current_item->value_.f_16_[1];
+        _parameter.set_return(
+            js_value::create_typed_arr_float32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_INT_VEC2) {
+        i_typedarr_buffer buffer; int32_t data[2];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(int32_t) * 2;
+        data[0] = current_item->value_.i_16_[0];
+        data[1] = current_item->value_.i_16_[1];
+        _parameter.set_return(
+            js_value::create_typed_arr_int32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_BOOL_VEC2) {
+        js_value arr[2];
+        for (int i = 0; i < 2; ++i) {
+            arr[i] = js_value::create(js_context, 
+                current_item->value_.b_16_[i]);
+        }
+        _parameter.set_return(
+            js_value::create(js_context, arr, 2));
+    } 
+    else if (current_item->type_ == DWL_FLOAT_VEC3) {
+        i_typedarr_buffer buffer; float data[3];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(float) * 3;
+        data[0] = current_item->value_.f_16_[0];
+        data[1] = current_item->value_.f_16_[1];
+        data[2] = current_item->value_.f_16_[2];
+        _parameter.set_return(
+            js_value::create_typed_arr_float32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_INT_VEC3) {
+        i_typedarr_buffer buffer; int32_t data[3];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(int32_t) * 3;
+        data[0] = current_item->value_.i_16_[0];
+        data[1] = current_item->value_.i_16_[1];
+        data[2] = current_item->value_.i_16_[2];
+        _parameter.set_return(
+            js_value::create_typed_arr_int32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_BOOL_VEC3) {
+        js_value arr[3];
+        for (int i = 0; i < 3; ++i) {
+            arr[i] = js_value::create(js_context, 
+                current_item->value_.b_16_[i]);
+        }
+        _parameter.set_return(
+            js_value::create(js_context, arr, 3));
+    } 
+    else if (current_item->type_ == DWL_FLOAT_VEC4) {
+        i_typedarr_buffer buffer; float data[4];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(float) * 4;
+        data[0] = current_item->value_.f_16_[0];
+        data[1] = current_item->value_.f_16_[1];
+        data[2] = current_item->value_.f_16_[2];
+        data[3] = current_item->value_.f_16_[3];
+        _parameter.set_return(
+            js_value::create_typed_arr_float32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_INT_VEC4) {
+        i_typedarr_buffer buffer; int32_t data[4];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(int32_t) * 4;
+        data[0] = current_item->value_.i_16_[0];
+        data[1] = current_item->value_.i_16_[1];
+        data[2] = current_item->value_.i_16_[2];
+        data[3] = current_item->value_.i_16_[3];
+        _parameter.set_return(
+            js_value::create_typed_arr_int32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_BOOL_VEC4) {
+        js_value arr[4];
+        for (int i = 0; i < 4; ++i) {
+            arr[i] = js_value::create(js_context, 
+                current_item->value_.b_16_[i]);
+        }
+        _parameter.set_return(
+            js_value::create(js_context, arr, 4));
+    }
+    else if (current_item->type_ == DWL_FLOAT_MAT2) {
+        i_typedarr_buffer buffer; float data[4];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(float) * 4;
+        data[0] = current_item->value_.f_16_[0];
+        data[1] = current_item->value_.f_16_[1];
+        data[2] = current_item->value_.f_16_[2];
+        data[3] = current_item->value_.f_16_[3];
+        _parameter.set_return(
+            js_value::create_typed_arr_float32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_FLOAT_MAT3) {
+        i_typedarr_buffer buffer; float data[9];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(float) * 9;
+        for (int i = 0; i < 9; ++i) {
+            data[i] = current_item->value_.f_16_[i];
+        }
+        _parameter.set_return(
+            js_value::create_typed_arr_float32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_FLOAT_MAT4) {
+        i_typedarr_buffer buffer; float data[16];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(float) * 16;
+        for (int i = 0; i < 16; ++i) {
+            data[i] = current_item->value_.f_16_[i];
+        }
+        _parameter.set_return(
+            js_value::create_typed_arr_float32(
+            js_context, &buffer));
+    }
+    else if (current_item->type_ == DWL_SAMPLER_2D) {
+        _parameter.set_return(js_value::create(js_context, 
+            (int32_t)current_item->value_.sampler_));
+    }
+    else if (current_item->type_ == DWL_SAMPLER_CUBE) {
+        _parameter.set_return(js_value::create(js_context, 
+            (int32_t)current_item->value_.sampler_));
+    }
 }

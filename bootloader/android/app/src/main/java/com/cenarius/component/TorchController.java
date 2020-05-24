@@ -1,14 +1,8 @@
 package com.cenarius.component;
 
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 
 class TorchController implements SurfaceHolder.Callback{
     static {
@@ -42,9 +36,6 @@ class TorchController implements SurfaceHolder.Callback{
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {
         ntSurfaceChanged(mNativeCoreHandle, holder.getSurface(), mScreenScale);
-//        Canvas canvas = holder.lockCanvas();
-//        canvas.drawColor(Color.argb(10, 255, 0, 0));
-//        holder.unlockCanvasAndPost(canvas);
     }
 
     @Override

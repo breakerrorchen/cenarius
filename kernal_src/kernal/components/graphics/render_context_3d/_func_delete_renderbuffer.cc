@@ -14,4 +14,9 @@ void render_context_3d::delete_renderbuffer(js_parameter& _parameter) {
     if (_i) {
         _i->dispose();
     }
+    
+    if (context_cache_.raw_renderbuffer_bind_ == _i) {
+        context_cache_.renderbuffer_bind_.reset();
+        context_cache_.raw_renderbuffer_bind_ = nullptr;
+    }
 }
