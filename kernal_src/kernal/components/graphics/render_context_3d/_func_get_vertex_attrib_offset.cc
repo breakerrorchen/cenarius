@@ -33,7 +33,7 @@ void render_context_3d::get_vertex_attrib_offset(js_parameter& _parameter) {
     if (DWL_VERTEX_ATTRIB_ARRAY_POINTER != pname) {
         return;
     }
-    auto offset = (int32_t)context_cache_.attrib_pointer_[index].offset_;
+    auto offset = (int32_t)context_cache_.vertex_attrib_[index].offset_;
     auto js_context = _parameter.get_context();
     _parameter.set_return(js_value::create(js_context, offset));
 }

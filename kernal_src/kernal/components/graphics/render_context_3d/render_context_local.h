@@ -4,7 +4,7 @@
 #include "infrastructure/interpreter/include/interpreter.h"
 #include "infrastructure/renderer/include/canvas.h"
 #include "infrastructure/renderer/include/canvas_center.h"
-#include "render_context_attrib_pointer.h"
+#include "render_context_vertex_attrib.h"
 #include "render_constants.h"
 
 namespace cenarius { namespace kernal { namespace components {
@@ -238,7 +238,7 @@ public:
      * other methods can be used to access the attribute, 
      * including vertexAttribPointer(), vertexAttrib*(), and getVertexAttrib().
      */
-    render_context_attrib_pointer attrib_pointer_[64];
+    render_context_vertex_attrib vertex_attrib_[64];
 
     /**
      * The WebGLRenderingContext.scissor() method of the WebGL API sets a scissor box, 

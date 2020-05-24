@@ -23,7 +23,7 @@ void render_context_3d::enable_vertex_attrib_arr(js_parameter& _parameter) {
     if (index >= render_attitude_->max_vertex_attribs_ || index >= 64) {
         return;
     }
-    context_cache_.attrib_pointer_[index].enable_ = true;
+    context_cache_.vertex_attrib_[index].enable_ = true;
     
     struct __task__ {
         puppet_container<canvas_render_3d>* context_ = nullptr;

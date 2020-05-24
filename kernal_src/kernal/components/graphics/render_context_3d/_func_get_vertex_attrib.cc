@@ -46,5 +46,17 @@ using namespace components;
  *      Returns the requested vertex attribute information (as specified with pname).
  */
 void render_context_3d::get_vertex_attrib(js_parameter& _parameter) {
+    assert(transmitter_ && raw_context_ && render_attitude_);
+    if (_parameter.get_argument_count() != 2) return;
+    auto _0 = _parameter.get_argument_at(0);
+    auto _1 = _parameter.get_argument_at(1);
+    if (!_0.is_number() || !_1.is_number()) return;
+    auto index = _0.to_int32();
+    if (index < 0 || index >= 64 || 
+        index >= render_attitude_->max_vertex_attribs_) {
+        return;
+    }
     
+    auto pname = (uint32_t)_1.to_int32();
+
 }

@@ -93,7 +93,7 @@ void render_context_3d::vertex_attrib_pointer(js_parameter& _parameter) {
         if (0 != offset % 4) return;
     }
 
-    auto& item = context_cache_.attrib_pointer_[index];
+    auto& item = context_cache_.vertex_attrib_[index];
     item.buffer_     = context_cache_.arraybuffer_bind_;
     item.raw_buffer_ = context_cache_.raw_arraybuffer_bind_;
     item.size_       = size;

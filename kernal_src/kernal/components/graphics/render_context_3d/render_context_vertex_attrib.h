@@ -6,7 +6,7 @@
 namespace cenarius { namespace kernal { namespace components {
 using namespace interpreter;
 class render_context_3d_buffer;
-class render_context_attrib_pointer {
+class render_context_vertex_attrib {
 public:
     uint32_t size_       = 0;
     uint32_t type_       = 0;

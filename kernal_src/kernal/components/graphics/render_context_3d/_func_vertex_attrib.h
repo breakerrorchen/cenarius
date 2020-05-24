@@ -16,5 +16,5 @@ using namespace components;
         render_attitude_->max_vertex_attribs_ <= index) {           \
         return;                                                     \
     }                                                               \
-    float* attrib_data = context_cache_.attrib_pointer_[index].data_;
+    float* attrib_data = context_cache_.vertex_attrib_[index].data_;
     
