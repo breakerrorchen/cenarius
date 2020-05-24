@@ -56,7 +56,47 @@ void render_context_3d::get_vertex_attrib(js_parameter& _parameter) {
         index >= render_attitude_->max_vertex_attribs_) {
         return;
     }
-    
-    auto pname = (uint32_t)_1.to_int32();
+    auto& vertex_attrib = context_cache_.vertex_attrib_[index];
 
+    auto js_context = _parameter.get_context();
+    auto pname = (uint32_t)_1.to_int32();
+    if (DWL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING == pname) {
+        _parameter.set_return(
+            (js_value)(vertex_attrib.buffer_));
+    }
+    else if (DWL_VERTEX_ATTRIB_ARRAY_ENABLED == pname) {
+        _parameter.set_return(js_value::create(
+            js_context, (bool)vertex_attrib.enable_));
+    }
+    else if (DWL_VERTEX_ATTRIB_ARRAY_SIZE == pname) {
+        _parameter.set_return(js_value::create(
+            js_context, (int32_t)vertex_attrib.size_));
+    }
+    else if (DWL_VERTEX_ATTRIB_ARRAY_STRIDE == pname) {
+        _parameter.set_return(js_value::create(
+            js_context, (int32_t)vertex_attrib.stride_));
+    }
+    else if (DWL_VERTEX_ATTRIB_ARRAY_TYPE == pname) {
+        _parameter.set_return(js_value::create(
+            js_context, (int32_t)vertex_attrib.type_));
+    }
+    else if (DWL_VERTEX_ATTRIB_ARRAY_NORMALIZED == pname) {
+        _parameter.set_return(js_value::create(
+            js_context, (int32_t)vertex_attrib.normalized_));
+    }
+    else if (DWL_CURRENT_VERTEX_ATTRIB == pname) {
+        i_typedarr_buffer buffer; float data[4];
+        buffer.addr_ = (void*)data;
+        buffer.size_ = sizeof(float) * 4;
+        data[0] = vertex_attrib.data_[0];
+        data[1] = vertex_attrib.data_[1];
+        data[2] = vertex_attrib.data_[2];
+        data[3] = vertex_attrib.data_[3];
+        _parameter.set_return(
+            js_value::create_typed_arr_float32(
+            js_context, &buffer));
+    }
+    else {
+        ;
+    }
 }
