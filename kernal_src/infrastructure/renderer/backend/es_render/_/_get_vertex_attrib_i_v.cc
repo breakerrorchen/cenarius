@@ -14,7 +14,9 @@ void render_connector::get_vertex_attrib_i_v(
         i == GL_VERTEX_ATTRIB_ARRAY_NORMALIZED      ||
         i == GL_VERTEX_ATTRIB_ARRAY_SIZE            ||
         i == GL_VERTEX_ATTRIB_ARRAY_STRIDE          ||
-        i == GL_VERTEX_ATTRIB_ARRAY_TYPE) {
+        i == GL_VERTEX_ATTRIB_ARRAY_TYPE            ||
+        i == GL_VERTEX_ATTRIB_ARRAY_INTEGER         ||
+        i == GL_VERTEX_ATTRIB_ARRAY_DIVISOR) {
         GLint ret = 0;
         ::glGetVertexAttribiv((GLuint)index, i, &ret);
         if (v) { *v = (int32_t)ret; }
