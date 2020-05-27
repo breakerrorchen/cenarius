@@ -9,8 +9,8 @@ void render_connector::get_active_uniform_block_name(
     int32_t* length, char* buffer) {
     if (!buffer || 0 == buffer_size) return;
     GLsizei size = 0;
-    ::glGetActiveUniformBlockName((GLuint)program,
-        (GLuint)index, (GLsizei)buffer_size,
-        &size, (GLchar*)buffer);
+    ::glGetActiveUniformBlockName(
+        (GLuint)program, (GLuint)index, 
+        (GLsizei)buffer_size, &size, (GLchar*)buffer);
     if (length) { *length = (int32_t)size; }
 }

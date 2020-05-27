@@ -18,7 +18,7 @@ void render_connector::get_active_uniform_s_i_v(
             (GLuint)program, (GLsizei)count, &(_0[0]), 
             (GLenum)pname, &(_1[0]));
         for (int i = 0; i < count; ++i) {
-            params[0] = (int32_t)_1[i];
+            params[i] = (int32_t)_1[i];
         }
     } else {
         GLuint _0[32]; GLint _1[32];
@@ -29,7 +29,7 @@ void render_connector::get_active_uniform_s_i_v(
             (GLuint)program, (GLsizei)count, &(_0[0]), 
             (GLenum)pname, &(_1[0]));
         for (int i = 0; i < count; ++i) {
-            params[0] = (int32_t)_1[i];
+            params[i] = (int32_t)_1[i];
         }
     }
 }

@@ -13,10 +13,10 @@ void render_connector::gen_textures(int32_t n, uint32_t* arr) {
                 arr[i] = buffers[i];
             }
         } else {
-            GLuint raw_buffer[32] = { 0 };
-            ::glGenTextures((GLsizei)n, &(raw_buffer[0]));
+            GLuint buffers[32] = { 0 };
+            ::glGenTextures((GLsizei)n, &(buffers[0]));
             for (int32_t i = 0; i < n; ++i) {
-                arr[i] = raw_buffer[i];
+                arr[i] = buffers[i];
             }
         }
     }

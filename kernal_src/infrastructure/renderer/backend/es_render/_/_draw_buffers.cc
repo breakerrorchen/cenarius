@@ -11,13 +11,13 @@ void render_connector::draw_buffers(int32_t n, const uint32_t* arr) {
             for (int32_t i = 0; i < n; ++i) {
                 _enum[i] = (GLenum)arr[i];
             }
-            ::glDeleteSamplers((GLsizei)n, &(_enum[0]));
+            ::glDrawBuffers((GLsizei)n, &(_enum[0]));
         } else {
             GLenum _enum[32];
             for (int32_t i = 0; i < n; ++i) {
                 _enum[i] = (GLenum)arr[i];
             }
-            ::glDeleteSamplers((GLsizei)n, &(_enum[0]));
+            ::glDrawBuffers((GLsizei)n, &(_enum[0]));
         }
     }
 }

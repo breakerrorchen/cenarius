@@ -5,5 +5,5 @@ using namespace infrastructure;
 using namespace renderer;
 
 void render_connector::release_shader_compiler() {
-    ;
+    ::glReleaseShaderCompiler();
 }
