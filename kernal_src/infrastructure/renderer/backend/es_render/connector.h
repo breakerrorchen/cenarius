@@ -260,13 +260,22 @@ public:
     void vertex_attrib_2_f              (uint32_t, float, float);
     void vertex_attrib_3_f              (uint32_t, float, float, float);
     void vertex_attrib_4_f              (uint32_t, float, float, float, float);
+    void vertex_attrib_i_4_u_i          (uint32_t, uint32_t, 
+                                         uint32_t, uint32_t, uint32_t);
     void vertex_attrib_1_f_v            (uint32_t, float*);
     void vertex_attrib_2_f_v            (uint32_t, float*);
     void vertex_attrib_3_f_v            (uint32_t, float*);
     void vertex_attrib_4_f_v            (uint32_t, float*);
+    void vertex_attrib_i_4_i_v          (uint32_t, int32_t*);
+    void vertex_attrib_i_4_u_i_v        (uint32_t, uint32_t*);
+    void vertex_attrib_divisor          (uint32_t, uint32_t);
     void vertex_attrib_pointer          (uint32_t, int32_t,
                                          uint32_t, bool, uint32_t, const void*);
-    void viewport                       (int32_t, int32_t, uint32_t, uint32_t);    
+    void vertex_attrib_i_pointer        (uint32_t, int32_t,
+                                         uint32_t, uint32_t, const void*);
+    void viewport                       (int32_t, int32_t, uint32_t, uint32_t);
+    void wait_sync                      (render_syncer*, uint32_t, uint64_t);
+
 public:
     uint32_t related_frambuffer_id_ = 0;
 };
