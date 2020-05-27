@@ -228,7 +228,10 @@ public:
     void uniform_2_i                    (int32_t, int32_t, int32_t);
     void uniform_3_i                    (int32_t, int32_t, int32_t, int32_t);
     void uniform_4_i                    (int32_t, int32_t, int32_t, int32_t, int32_t);
-        
+    void uniform_1_u_i                  (int32_t, uint32_t);
+    void uniform_2_u_i                  (int32_t, uint32_t, uint32_t);
+    void uniform_3_u_i                  (int32_t, uint32_t, uint32_t, uint32_t);
+    void uniform_4_u_i                  (int32_t, uint32_t, uint32_t, uint32_t, uint32_t);
     void uniform_1_f_v                  (int32_t, uint32_t, float*);
     void uniform_2_f_v                  (int32_t, uint32_t, float*);
     void uniform_3_f_v                  (int32_t, uint32_t, float*);
@@ -237,10 +240,20 @@ public:
     void uniform_2_i_v                  (int32_t, uint32_t, int32_t*);
     void uniform_3_i_v                  (int32_t, uint32_t, int32_t*);
     void uniform_4_i_v                  (int32_t, uint32_t, int32_t*);
+    void uniform_1_u_i_v                (int32_t, uint32_t, uint32_t*);
+    void uniform_2_u_i_v                (int32_t, uint32_t, uint32_t*);
+    void uniform_3_u_i_v                (int32_t, uint32_t, uint32_t*);
+    void uniform_4_u_i_v                (int32_t, uint32_t, uint32_t*);
+    void uniform_block_binding          (uint32_t, uint32_t, uint32_t);
     void uniform_matrix_2_f_v           (int32_t, uint32_t, bool, float*);
+    void uniform_matrix_2x3_f_v         (int32_t, uint32_t, bool, float*);
+    void uniform_matrix_2x4_f_v         (int32_t, uint32_t, bool, float*);
     void uniform_matrix_3_f_v           (int32_t, uint32_t, bool, float*);
+    void uniform_matrix_3x4_f_v         (int32_t, uint32_t, bool, float*);
     void uniform_matrix_4_f_v           (int32_t, uint32_t, bool, float*);
-        
+    void uniform_matrix_4x2_f_v         (int32_t, uint32_t, bool, float*);
+    void uniform_matrix_4x3_f_v         (int32_t, uint32_t, bool, float*);
+    void unmap_buffer                   (uint32_t, bool*);
     void use_program                    (uint32_t);
     void validate_program               (uint32_t);
     void vertex_attrib_1_f              (uint32_t, float);

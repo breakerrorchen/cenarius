@@ -58,24 +58,22 @@
 #include <GLES3/gl3platform.h>
 
 
-#define glClearDepth                        glClearDepthf
-#define glDeleteVertexArrays                glDeleteVertexArraysOES
-#define glGenVertexArrays                   glGenVertexArraysOES
-#define glBindVertexArray                   glBindVertexArrayOES
-#define GL_VERTEX_ARRAY_BINDING             GL_VERTEX_ARRAY_BINDING_OES
-#define glMapBuffer                         glMapBufferOES
-#define glUnmapBuffer                       glUnmapBufferOES
-#define glRenderbufferStorageMultisample    glRenderbufferStorageMultisampleOES
-#define glBlitFramebuffer                   glBlitFramebufferOES
-#define glCompressedTexImage3D              glCompressedTexImage3DOES
-#define GL_RGBA8                            GL_RGBA8_OES
-#define GL_DEPTH24_STENCIL8                 GL_DEPTH24_STENCIL8_OES
-#define GL_DEPTH_COMPONENT24                GL_DEPTH_COMPONENT24_OES
-#define GL_WRITE_ONLY                       GL_WRITE_ONLY_OES
-#define GL_READ_FRAMEBUFFER                 GL_READ_FRAMEBUFFER_ANGLE
-#define GL_DRAW_FRAMEBUFFER                 GL_DRAW_FRAMEBUFFER_ANGLE
-#define GL_READ_FRAMEBUFFER_BINDING         GL_READ_FRAMEBUFFER_BINDING_ANGLE
-#define GL_DRAW_FRAMEBUFFER_BINDING         GL_DRAW_FRAMEBUFFER_BINDING_ANGLE
+// #define glClearDepth                        glClearDepthf
+// #define glDeleteVertexArrays                glDeleteVertexArraysOES
+// #define glGenVertexArrays                   glGenVertexArraysOES
+// #define glBindVertexArray                   glBindVertexArrayOES
+// #define GL_VERTEX_ARRAY_BINDING             GL_VERTEX_ARRAY_BINDING_OES
+// #define glRenderbufferStorageMultisample    glRenderbufferStorageMultisampleOES
+// #define glBlitFramebuffer                   glBlitFramebufferOES
+// #define glCompressedTexImage3D              glCompressedTexImage3DOES
+// #define GL_RGBA8                            GL_RGBA8_OES
+// #define GL_DEPTH24_STENCIL8                 GL_DEPTH24_STENCIL8_OES
+// #define GL_DEPTH_COMPONENT24                GL_DEPTH_COMPONENT24_OES
+// #define GL_WRITE_ONLY                       GL_WRITE_ONLY_OES
+// #define GL_READ_FRAMEBUFFER                 GL_READ_FRAMEBUFFER_ANGLE
+// #define GL_DRAW_FRAMEBUFFER                 GL_DRAW_FRAMEBUFFER_ANGLE
+// #define GL_READ_FRAMEBUFFER_BINDING         GL_READ_FRAMEBUFFER_BINDING_ANGLE
+// #define GL_DRAW_FRAMEBUFFER_BINDING         GL_DRAW_FRAMEBUFFER_BINDING_ANGLE
 
 // GL_GLEXT_PROTOTYPES isn't defined in glplatform.h on android ndk r7
 // we manually define it here
